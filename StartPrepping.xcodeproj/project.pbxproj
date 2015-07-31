@@ -14,6 +14,12 @@
 		6305BF851B5AD5DD00F7CB0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6305BF841B5AD5DD00F7CB0A /* Images.xcassets */; };
 		6305BF881B5AD5DD00F7CB0A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6305BF861B5AD5DD00F7CB0A /* LaunchScreen.xib */; };
 		6305BF941B5AD5DD00F7CB0A /* StartPreppingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6305BF931B5AD5DD00F7CB0A /* StartPreppingTests.m */; };
+		639FC6101B6B162600999BBA /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 639FC60F1B6B162600999BBA /* Home.m */; };
+		639FC6131B6B162700999BBA /* Kitchen.m in Sources */ = {isa = PBXBuildFile; fileRef = 639FC6121B6B162700999BBA /* Kitchen.m */; };
+		639FC6161B6B162700999BBA /* SelfDefense.m in Sources */ = {isa = PBXBuildFile; fileRef = 639FC6151B6B162700999BBA /* SelfDefense.m */; };
+		639FC6191B6B162700999BBA /* Bathroom.m in Sources */ = {isa = PBXBuildFile; fileRef = 639FC6181B6B162700999BBA /* Bathroom.m */; };
+		639FC61C1B6B162700999BBA /* Camping.m in Sources */ = {isa = PBXBuildFile; fileRef = 639FC61B1B6B162700999BBA /* Camping.m */; };
+		63D24F1C1B5F36C40000641B /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63D24F1A1B5F36C40000641B /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,17 @@
 		6305BF8D1B5AD5DD00F7CB0A /* StartPreppingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StartPreppingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6305BF921B5AD5DD00F7CB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6305BF931B5AD5DD00F7CB0A /* StartPreppingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartPreppingTests.m; sourceTree = "<group>"; };
+		639FC60E1B6B162600999BBA /* Home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
+		639FC60F1B6B162600999BBA /* Home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
+		639FC6111B6B162700999BBA /* Kitchen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kitchen.h; sourceTree = "<group>"; };
+		639FC6121B6B162700999BBA /* Kitchen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kitchen.m; sourceTree = "<group>"; };
+		639FC6141B6B162700999BBA /* SelfDefense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfDefense.h; sourceTree = "<group>"; };
+		639FC6151B6B162700999BBA /* SelfDefense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfDefense.m; sourceTree = "<group>"; };
+		639FC6171B6B162700999BBA /* Bathroom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bathroom.h; sourceTree = "<group>"; };
+		639FC6181B6B162700999BBA /* Bathroom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bathroom.m; sourceTree = "<group>"; };
+		639FC61A1B6B162700999BBA /* Camping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camping.h; sourceTree = "<group>"; };
+		639FC61B1B6B162700999BBA /* Camping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camping.m; sourceTree = "<group>"; };
+		63D24F1B1B5F36C40000641B /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +80,16 @@
 		6305BF6B1B5AD5DC00F7CB0A = {
 			isa = PBXGroup;
 			children = (
+				639FC61A1B6B162700999BBA /* Camping.h */,
+				639FC61B1B6B162700999BBA /* Camping.m */,
+				639FC6171B6B162700999BBA /* Bathroom.h */,
+				639FC6181B6B162700999BBA /* Bathroom.m */,
+				639FC6141B6B162700999BBA /* SelfDefense.h */,
+				639FC6151B6B162700999BBA /* SelfDefense.m */,
+				639FC6111B6B162700999BBA /* Kitchen.h */,
+				639FC6121B6B162700999BBA /* Kitchen.m */,
+				639FC60E1B6B162600999BBA /* Home.h */,
+				639FC60F1B6B162600999BBA /* Home.m */,
 				6305BF761B5AD5DD00F7CB0A /* StartPrepping */,
 				6305BF901B5AD5DD00F7CB0A /* StartPreppingTests */,
 				6305BF751B5AD5DD00F7CB0A /* Products */,
@@ -85,6 +112,7 @@
 				6305BF7C1B5AD5DD00F7CB0A /* AppDelegate.m */,
 				6305BF7E1B5AD5DD00F7CB0A /* ViewController.h */,
 				6305BF7F1B5AD5DD00F7CB0A /* ViewController.m */,
+				63D24F1A1B5F36C40000641B /* Model.xcdatamodeld */,
 				6305BF811B5AD5DD00F7CB0A /* Main.storyboard */,
 				6305BF841B5AD5DD00F7CB0A /* Images.xcassets */,
 				6305BF861B5AD5DD00F7CB0A /* LaunchScreen.xib */,
@@ -219,9 +247,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				639FC6101B6B162600999BBA /* Home.m in Sources */,
+				639FC6191B6B162700999BBA /* Bathroom.m in Sources */,
 				6305BF801B5AD5DD00F7CB0A /* ViewController.m in Sources */,
+				639FC6131B6B162700999BBA /* Kitchen.m in Sources */,
 				6305BF7D1B5AD5DD00F7CB0A /* AppDelegate.m in Sources */,
+				639FC61C1B6B162700999BBA /* Camping.m in Sources */,
 				6305BF7A1B5AD5DD00F7CB0A /* main.m in Sources */,
+				639FC6161B6B162700999BBA /* SelfDefense.m in Sources */,
+				63D24F1C1B5F36C40000641B /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +452,7 @@
 				6305BF991B5AD5DD00F7CB0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6305BF9A1B5AD5DD00F7CB0A /* Build configuration list for PBXNativeTarget "StartPreppingTests" */ = {
 			isa = XCConfigurationList;
@@ -426,8 +461,22 @@
 				6305BF9C1B5AD5DD00F7CB0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		63D24F1A1B5F36C40000641B /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				63D24F1B1B5F36C40000641B /* Model.xcdatamodel */,
+			);
+			currentVersion = 63D24F1B1B5F36C40000641B /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6305BF6C1B5AD5DC00F7CB0A /* Project object */;
 }
