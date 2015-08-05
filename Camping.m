@@ -2,7 +2,7 @@
 //  Camping.m
 //  StartPrepping
 //
-//  Created by Mac User on 7/30/15.
+//  Created by Mac User on 8/4/15.
 //  Copyright (c) 2015 Big Nerd Ranch. All rights reserved.
 //
 
@@ -11,24 +11,24 @@
 
 @implementation Camping
 
-@dynamic AxeOrHatchet;
-@dynamic CampLantern;
-@dynamic CampStove;
-@dynamic Canteen;
-@dynamic Compass;
-@dynamic CookKit;
-@dynamic FirstAidKit;
-@dynamic Flashlights;
-@dynamic Matches;
-@dynamic Propane;
-@dynamic Raincoat;
-@dynamic SeasonalClothing;
-@dynamic SingleBurnerStove;
-@dynamic SleepingBags;
-@dynamic SurvivalKnife;
-@dynamic Tarps;
-@dynamic Tents;
-@dynamic ToiletPaper;
-@dynamic WaterPurification;
+@dynamic axeOrHatchet;
+@dynamic campLantern;
+@dynamic campStove;
+@dynamic canteen;
+@dynamic compass;
+@dynamic cookKit;
+@dynamic firstAidKit;
+@dynamic flashlights;
+@dynamic matches;
+@dynamic propane;
+@dynamic raincoat;
+@dynamic seasonalClothing;
+@dynamic singleBurnerStove;
+@dynamic sleepingBags;
+@dynamic survivalKnife;
+@dynamic tarps;
+@dynamic tents;
+@dynamic toiletPaper;
+@dynamic waterPurification;
 
 @end

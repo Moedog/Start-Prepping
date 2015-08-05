@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BMO-8v-WFa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zFA-n7-RcR">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -13,18 +13,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="1iO-99-x57" kind="show" id="V2A-v4-B9H"/>
                         <segue destination="po5-WC-hrB" kind="show" id="Zhg-Hx-HIr"/>
                         <segue destination="BYZ-38-t0r" kind="show" id="dYC-eB-KdB"/>
+                        <segue destination="zFA-n7-RcR" kind="show" id="4gV-zN-BkR"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FMs-ss-nvu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="454" y="-895"/>
+            <point key="canvasLocation" x="570" y="-1025"/>
         </scene>
         <!--Food Calorie Calculator-->
         <scene sceneID="tne-QT-ifu">
@@ -43,9 +44,8 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
                                     <tabBarItem title="Food Calorie Calculator" id="Vgg-Yy-0d2"/>
-                                    <tabBarItem title="Crisis Investment Calculator" id="Lns-7D-BRL" userLabel="Crisis Investment Calculator"/>
+                                    <tabBarItem title="Calories" id="Lns-7D-BRL" userLabel="Crisis Investment Calculator"/>
                                     <tabBarItem title="Preparations Checklist" id="AlE-82-fPA"/>
-                                    <tabBarItem title="Danger Map" id="Tx0-FJ-rzR"/>
                                 </items>
                             </tabBar>
                         </subviews>
@@ -55,6 +55,157 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-72" y="-146"/>
+        </scene>
+        <!--Kitchen Inventory-->
+        <scene sceneID="4ZG-Ai-LjF">
+            <objects>
+                <tableViewController title="Kitchen Inventory" id="cLR-dZ-HXG" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="HmH-XZ-PcY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <switch key="tableFooterView" opaque="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="center" on="YES" id="gCM-q9-wy1">
+                            <rect key="frame" x="0.0" y="66" width="600" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </switch>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1vC-r2-BsY">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1vC-r2-BsY" id="1Bj-N1-5UU">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BUr-yu-dZK">
+                                            <rect key="frame" x="0.0" y="-3" width="600" height="49"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <items>
+                                                <tabBarItem title="Food Calorie Calculator" id="QcZ-pq-2fL"/>
+                                                <tabBarItem title="Checklists" id="FHx-0k-Kdr" userLabel="Crisis Investment Calculator"/>
+                                                <tabBarItem title="Preparations Checklist" id="ZmW-oP-Y5g"/>
+                                            </items>
+                                        </tabBar>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cLR-dZ-HXG" id="QVL-0K-E9A"/>
+                            <outlet property="delegate" destination="cLR-dZ-HXG" id="Rwh-CE-gNG"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mif-mO-DZf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1920" y="-1416"/>
+        </scene>
+        <!--Bathroom Inventory-->
+        <scene sceneID="eay-01-vPp">
+            <objects>
+                <tableViewController title="Bathroom Inventory" id="Faa-L7-ZJq" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="cI1-11-zGa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <tabBar key="tableFooterView" contentMode="scaleToFill" id="lkG-VE-qhH">
+                            <rect key="frame" x="0.0" y="-3" width="600" height="49"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <items>
+                                <tabBarItem title="Food Calorie Calculator" id="wc3-xK-dAN"/>
+                                <tabBarItem title="Checklists" id="HWV-c6-Zbp" userLabel="Crisis Investment Calculator"/>
+                                <tabBarItem title="Preparations Checklist" id="vkS-PO-1d4"/>
+                            </items>
+                        </tabBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Wal-3s-dZJ">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wal-3s-dZJ" id="4Z7-ba-WKD">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Faa-L7-ZJq" id="wAX-Wm-jSc"/>
+                            <outlet property="delegate" destination="Faa-L7-ZJq" id="NSL-bY-1wb"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v3k-Di-xwq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2038" y="-745"/>
+        </scene>
+        <!--Home Preparation-->
+        <scene sceneID="X5c-Bs-Dti">
+            <objects>
+                <tableViewController title="Home Preparation" id="Ns5-Nf-ntm" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="gi8-n7-09I">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gXt-UL-ut1">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gXt-UL-ut1" id="1OI-Dp-3s5">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NGc-iN-Wcw">
+                                            <rect key="frame" x="0.0" y="-3" width="600" height="49"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <items>
+                                                <tabBarItem title="Food Calorie Calculator" id="JSh-1i-wie"/>
+                                                <tabBarItem title="Checklists" id="HoT-jh-OYb" userLabel="Crisis Investment Calculator"/>
+                                                <tabBarItem title="Preparations Checklist" id="bkZ-N4-3kd"/>
+                                            </items>
+                                        </tabBar>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Ns5-Nf-ntm" id="fF2-3w-SSf"/>
+                            <outlet property="delegate" destination="Ns5-Nf-ntm" id="geZ-EP-mYC"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14I-zS-6ix" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2122" y="-34"/>
+        </scene>
+        <!--Self Defense-->
+        <scene sceneID="yTn-ln-YGo">
+            <objects>
+                <tableViewController title="Self Defense" id="WuY-KM-tDt" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="vxZ-NU-uJN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="M2V-qq-S5B">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M2V-qq-S5B" id="RNV-UD-s0g">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FCT-VK-2st">
+                                            <rect key="frame" x="0.0" y="-3" width="600" height="49"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <items>
+                                                <tabBarItem title="Food Calorie Calculator" id="LSR-cd-CBH"/>
+                                                <tabBarItem title="Checklists" id="bfC-NJ-Tpc" userLabel="Crisis Investment Calculator"/>
+                                                <tabBarItem title="Preparations Checklist" id="giO-m8-YVb"/>
+                                            </items>
+                                        </tabBar>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="WuY-KM-tDt" id="nf0-m6-CsX"/>
+                            <outlet property="delegate" destination="WuY-KM-tDt" id="uml-ug-px4"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1yy-fp-I71" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1830" y="674"/>
         </scene>
         <!--Preparations Checklists-->
         <scene sceneID="a2t-ct-zb9">
@@ -108,18 +259,50 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
                                     <tabBarItem title="Food Calorie Calculator" id="vaV-dc-6gW"/>
-                                    <tabBarItem title="Crisis Investment Calculator" id="5eO-Tr-EPt" userLabel="Crisis Investment Calculator"/>
+                                    <tabBarItem title="Checklists" id="5eO-Tr-EPt" userLabel="Crisis Investment Calculator"/>
                                     <tabBarItem title="Preparations Checklist" id="New-w3-a7f"/>
-                                    <tabBarItem title="Danger Map" id="5Ex-o6-KMD"/>
                                 </items>
                             </tabBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="cLR-dZ-HXG" kind="show" id="RAn-Hu-Mx7"/>
+                        <segue destination="Faa-L7-ZJq" kind="show" id="gRg-bk-piZ"/>
+                        <segue destination="Ns5-Nf-ntm" kind="show" id="1Zz-Jg-Y0a"/>
+                        <segue destination="WuY-KM-tDt" kind="show" id="yfs-g2-ddO"/>
+                        <segue destination="5zl-L9-KPx" kind="show" id="oZ0-5T-9Y2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="foN-Ns-k41" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1203" y="-146"/>
+        </scene>
+        <!--CampingSurvivalGear-->
+        <scene sceneID="3ok-NN-3ok">
+            <objects>
+                <tableViewController title="CampingSurvivalGear" id="5zl-L9-KPx" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="SfO-Di-s2n">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="OnD-hE-lOV">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OnD-hE-lOV" id="J1O-Y0-iIP">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5zl-L9-KPx" id="9Rk-eS-BhQ"/>
+                            <outlet property="delegate" destination="5zl-L9-KPx" id="1ET-gh-aFV"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fwn-TY-fus" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1104" y="684"/>
         </scene>
         <!--Crisis Investment Calculator-->
         <scene sceneID="w7p-Mw-fTD">
@@ -138,9 +321,8 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
                                     <tabBarItem title="Food Calorie Calculator" id="jh4-Wy-oBn"/>
-                                    <tabBarItem title="Crisis Investment Calculator" id="PgG-gk-jkv" userLabel="Crisis Investment Calculator"/>
+                                    <tabBarItem title="Investments" id="PgG-gk-jkv" userLabel="Crisis Investment Calculator"/>
                                     <tabBarItem title="Preparations Checklist" id="7qB-Kd-F2t"/>
-                                    <tabBarItem title="Danger Map" id="Qfy-an-ZSr"/>
                                 </items>
                             </tabBar>
                         </subviews>
@@ -150,6 +332,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ia-UK-11l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="559" y="-146"/>
+        </scene>
+        <!--LandingView-->
+        <scene sceneID="3tk-CQ-OPq">
+            <objects>
+                <viewController title="LandingView" id="zFA-n7-RcR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hea-i0-bIf"/>
+                        <viewControllerLayoutGuide type="bottom" id="V0E-Xt-Vgh"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="7Be-Vm-9kQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="boU-mX-pkp">
+                                <rect key="frame" x="16" y="551" width="320" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="Food Calorie Calculator" id="5pn-qp-5wd"/>
+                                    <tabBarItem title="Investments" id="oDj-wn-3iR"/>
+                                    <tabBarItem title="Checklists" id="4P4-d0-oVi"/>
+                                </items>
+                            </tabBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4W-e6-ggI">
+                                <rect key="frame" x="22" y="20" width="308" height="91"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Welcome to Start Prepping.  Use these tools to help you prepare for any possible upcoming disaster. ">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="X4W-e6-ggI" secondAttribute="centerY" constant="234.5" id="H5D-pF-9WZ"/>
+                            <constraint firstAttribute="centerX" secondItem="X4W-e6-ggI" secondAttribute="centerX" constant="124" id="Y46-RQ-Z3p"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fbn-sB-u0h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-187" y="-1011"/>
         </scene>
     </scenes>
 </document>

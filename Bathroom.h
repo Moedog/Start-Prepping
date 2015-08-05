@@ -2,7 +2,7 @@
 //  Bathroom.h
 //  StartPrepping
 //
-//  Created by Mac User on 7/30/15.
+//  Created by Mac User on 8/4/15.
 //  Copyright (c) 2015 Big Nerd Ranch. All rights reserved.
 //
 
@@ -12,27 +12,27 @@
 
 @interface Bathroom : NSManagedObject
 
-@property (nonatomic, retain) Boolean * AntifungalItchCreams;
-@property (nonatomic, retain) Boolean * BirthControl;
-@property (nonatomic, retain) Boolean * ColdFluMedicine;
-@property (nonatomic, retain) Boolean * CoughSyrup;
-@property (nonatomic, retain) Boolean * Deodorant;
-@property (nonatomic, retain) Boolean * FeminineHygiene;
-@property (nonatomic, retain) Boolean * FirstAidKit;
-@property (nonatomic, retain) Boolean * Guazepads;
-@property (nonatomic, retain) Boolean * Handsoap;
-@property (nonatomic, retain) Boolean * Hydrogenperoxide;
-@property (nonatomic, retain) Boolean * Ibuprophen;
-@property (nonatomic, retain) Boolean * Lotion;
-@property (nonatomic, retain) Boolean * Mouthwash;
-@property (nonatomic, retain) Boolean * Razors;
-@property (nonatomic, retain) Boolean * RubbingAlcohol;
-@property (nonatomic, retain) Boolean * ShampooBodyWash;
-@property (nonatomic, retain) Boolean * ShavingCream;
-@property (nonatomic, retain) Boolean * SoreThroatSpray;
-@property (nonatomic, retain) Boolean * SunscreenLotion;
-@property (nonatomic, retain) Boolean * Toothbrushes;
-@property (nonatomic, retain) Boolean * Toothpaste;
-@property (nonatomic, retain) Boolean * Vitamins;
+@property (nonatomic, retain) NSNumber * antifungalItchCreams;
+@property (nonatomic, retain) NSNumber * birthcontrol;
+@property (nonatomic, retain) NSNumber * coldFluMedicine;
+@property (nonatomic, retain) NSNumber * coughsyrup;
+@property (nonatomic, retain) NSNumber * deodorant;
+@property (nonatomic, retain) NSNumber * femininehygiene;
+@property (nonatomic, retain) NSNumber * firstaidkit;
+@property (nonatomic, retain) NSNumber * guazepads;
+@property (nonatomic, retain) NSNumber * handsoap;
+@property (nonatomic, retain) NSNumber * hydrogenperoxide;
+@property (nonatomic, retain) NSNumber * ibuprophen;
+@property (nonatomic, retain) NSNumber * lotion;
+@property (nonatomic, retain) NSNumber * mouthwash;
+@property (nonatomic, retain) NSNumber * razors;
+@property (nonatomic, retain) NSNumber * rubbingalcohol;
+@property (nonatomic, retain) NSNumber * shampooBodyWash;
+@property (nonatomic, retain) NSNumber * shavingcream;
+@property (nonatomic, retain) NSNumber * sorethroatspray;
+@property (nonatomic, retain) NSNumber * sunscreenlotion;
+@property (nonatomic, retain) NSNumber * toothbrushes;
+@property (nonatomic, retain) NSNumber * toothpaste;
+@property (nonatomic, retain) NSNumber * vitamins;
 
 @end

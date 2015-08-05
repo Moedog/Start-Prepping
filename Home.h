@@ -2,7 +2,7 @@
 //  Home.h
 //  StartPrepping
 //
-//  Created by Mac User on 7/30/15.
+//  Created by Mac User on 8/4/15.
 //  Copyright (c) 2015 Big Nerd Ranch. All rights reserved.
 //
 
@@ -12,25 +12,25 @@
 
 @interface Home : NSManagedObject
 
-@property (nonatomic, retain) UNKNOWN_TYPE attribute;
-@property (nonatomic, retain) UNKNOWN_TYPE batteries;
-@property (nonatomic, retain) UNKNOWN_TYPE boardGames;
-@property (nonatomic, retain) UNKNOWN_TYPE candles;
-@property (nonatomic, retain) UNKNOWN_TYPE ductTape;
-@property (nonatomic, retain) UNKNOWN_TYPE electricFan;
-@property (nonatomic, retain) UNKNOWN_TYPE extensionCords;
-@property (nonatomic, retain) UNKNOWN_TYPE extraBlankets;
-@property (nonatomic, retain) UNKNOWN_TYPE gardenSeeds;
-@property (nonatomic, retain) UNKNOWN_TYPE gardenTools;
-@property (nonatomic, retain) UNKNOWN_TYPE generator;
-@property (nonatomic, retain) UNKNOWN_TYPE hamOrSatelliteRadio;
-@property (nonatomic, retain) UNKNOWN_TYPE playingCards;
-@property (nonatomic, retain) UNKNOWN_TYPE portableACUnit;
-@property (nonatomic, retain) UNKNOWN_TYPE powerTools;
-@property (nonatomic, retain) UNKNOWN_TYPE propaneTanks;
-@property (nonatomic, retain) UNKNOWN_TYPE spaceHeater;
-@property (nonatomic, retain) UNKNOWN_TYPE stationary;
-@property (nonatomic, retain) UNKNOWN_TYPE survivalRadio;
-@property (nonatomic, retain) UNKNOWN_TYPE toolKit;
+@property (nonatomic, retain) NSNumber * attribute;
+@property (nonatomic, retain) NSNumber * batteries;
+@property (nonatomic, retain) NSNumber * boardGames;
+@property (nonatomic, retain) NSNumber * candles;
+@property (nonatomic, retain) NSNumber * ductTape;
+@property (nonatomic, retain) NSNumber * electricFan;
+@property (nonatomic, retain) NSNumber * extensionCords;
+@property (nonatomic, retain) NSNumber * extraBlankets;
+@property (nonatomic, retain) NSNumber * gardenSeeds;
+@property (nonatomic, retain) NSNumber * gardenTools;
+@property (nonatomic, retain) NSNumber * generator;
+@property (nonatomic, retain) NSNumber * hamOrSatelliteRadio;
+@property (nonatomic, retain) NSNumber * playingCards;
+@property (nonatomic, retain) NSNumber * portableACUnit;
+@property (nonatomic, retain) NSNumber * powerTools;
+@property (nonatomic, retain) NSNumber * propaneTanks;
+@property (nonatomic, retain) NSNumber * spaceHeater;
+@property (nonatomic, retain) NSNumber * stationary;
+@property (nonatomic, retain) NSNumber * survivalRadio;
+@property (nonatomic, retain) NSNumber * toolKit;
 
 @end

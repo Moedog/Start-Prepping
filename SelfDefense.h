@@ -2,7 +2,7 @@
 //  SelfDefense.h
 //  StartPrepping
 //
-//  Created by Mac User on 7/30/15.
+//  Created by Mac User on 8/4/15.
 //  Copyright (c) 2015 Big Nerd Ranch. All rights reserved.
 //
 
@@ -12,19 +12,19 @@
 
 @interface SelfDefense : NSManagedObject
 
-@property (nonatomic, retain) Boolean * AmmoforAR15;
-@property (nonatomic, retain) Boolean * ammoforhandgun;
-@property (nonatomic, retain) Boolean * ar15;
-@property (nonatomic, retain) Boolean * brassknuckles;
-@property (nonatomic, retain) Boolean * bugoutvehicle;
-@property (nonatomic, retain) Boolean * bulletproofvest;
-@property (nonatomic, retain) Boolean * concealedFirearmsPermit;
-@property (nonatomic, retain) Boolean * handgun;
-@property (nonatomic, retain) Boolean * holstersOrCarryingCases;
-@property (nonatomic, retain) Boolean * macePepperSpray;
-@property (nonatomic, retain) Boolean * shotgun;
-@property (nonatomic, retain) Boolean * shotgunshells;
-@property (nonatomic, retain) Boolean * survivalknife;
-@property (nonatomic, retain) Boolean * tomahawk;
+@property (nonatomic, retain) NSNumber * ammoforAR15;
+@property (nonatomic, retain) NSNumber * ammoforhandgun;
+@property (nonatomic, retain) NSNumber * ar15;
+@property (nonatomic, retain) NSNumber * brassknuckles;
+@property (nonatomic, retain) NSNumber * bugoutvehicle;
+@property (nonatomic, retain) NSNumber * bulletproofvest;
+@property (nonatomic, retain) NSNumber * concealedFirearmsPermit;
+@property (nonatomic, retain) NSNumber * handgun;
+@property (nonatomic, retain) NSNumber * holstersOrCarryingCases;
+@property (nonatomic, retain) NSNumber * macePepperSpray;
+@property (nonatomic, retain) NSNumber * shotgun;
+@property (nonatomic, retain) NSNumber * shotgunshells;
+@property (nonatomic, retain) NSNumber * survivalknife;
+@property (nonatomic, retain) NSNumber * tomahawk;
 
 @end

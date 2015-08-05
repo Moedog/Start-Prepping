@@ -14,11 +14,11 @@
 		6305BF851B5AD5DD00F7CB0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6305BF841B5AD5DD00F7CB0A /* Images.xcassets */; };
 		6305BF881B5AD5DD00F7CB0A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6305BF861B5AD5DD00F7CB0A /* LaunchScreen.xib */; };
 		6305BF941B5AD5DD00F7CB0A /* StartPreppingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6305BF931B5AD5DD00F7CB0A /* StartPreppingTests.m */; };
-		639FC6101B6B162600999BBA /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 639FC60F1B6B162600999BBA /* Home.m */; };
-		639FC6131B6B162700999BBA /* Kitchen.m in Sources */ = {isa = PBXBuildFile; fileRef = 639FC6121B6B162700999BBA /* Kitchen.m */; };
-		639FC6161B6B162700999BBA /* SelfDefense.m in Sources */ = {isa = PBXBuildFile; fileRef = 639FC6151B6B162700999BBA /* SelfDefense.m */; };
-		639FC6191B6B162700999BBA /* Bathroom.m in Sources */ = {isa = PBXBuildFile; fileRef = 639FC6181B6B162700999BBA /* Bathroom.m */; };
-		639FC61C1B6B162700999BBA /* Camping.m in Sources */ = {isa = PBXBuildFile; fileRef = 639FC61B1B6B162700999BBA /* Camping.m */; };
+		635074771B718C2E00BF12CE /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 635074761B718C2E00BF12CE /* Home.m */; };
+		6350747A1B718C2F00BF12CE /* Camping.m in Sources */ = {isa = PBXBuildFile; fileRef = 635074791B718C2F00BF12CE /* Camping.m */; };
+		6350747D1B718C2F00BF12CE /* SelfDefense.m in Sources */ = {isa = PBXBuildFile; fileRef = 6350747C1B718C2F00BF12CE /* SelfDefense.m */; };
+		635074801B718C2F00BF12CE /* Kitchen.m in Sources */ = {isa = PBXBuildFile; fileRef = 6350747F1B718C2F00BF12CE /* Kitchen.m */; };
+		635074831B718C2F00BF12CE /* Bathroom.m in Sources */ = {isa = PBXBuildFile; fileRef = 635074821B718C2F00BF12CE /* Bathroom.m */; };
 		63D24F1C1B5F36C40000641B /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63D24F1A1B5F36C40000641B /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -46,16 +46,16 @@
 		6305BF8D1B5AD5DD00F7CB0A /* StartPreppingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StartPreppingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6305BF921B5AD5DD00F7CB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6305BF931B5AD5DD00F7CB0A /* StartPreppingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartPreppingTests.m; sourceTree = "<group>"; };
-		639FC60E1B6B162600999BBA /* Home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
-		639FC60F1B6B162600999BBA /* Home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
-		639FC6111B6B162700999BBA /* Kitchen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kitchen.h; sourceTree = "<group>"; };
-		639FC6121B6B162700999BBA /* Kitchen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kitchen.m; sourceTree = "<group>"; };
-		639FC6141B6B162700999BBA /* SelfDefense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfDefense.h; sourceTree = "<group>"; };
-		639FC6151B6B162700999BBA /* SelfDefense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfDefense.m; sourceTree = "<group>"; };
-		639FC6171B6B162700999BBA /* Bathroom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bathroom.h; sourceTree = "<group>"; };
-		639FC6181B6B162700999BBA /* Bathroom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bathroom.m; sourceTree = "<group>"; };
-		639FC61A1B6B162700999BBA /* Camping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camping.h; sourceTree = "<group>"; };
-		639FC61B1B6B162700999BBA /* Camping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camping.m; sourceTree = "<group>"; };
+		635074751B718C2E00BF12CE /* Home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
+		635074761B718C2E00BF12CE /* Home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
+		635074781B718C2F00BF12CE /* Camping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camping.h; sourceTree = "<group>"; };
+		635074791B718C2F00BF12CE /* Camping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camping.m; sourceTree = "<group>"; };
+		6350747B1B718C2F00BF12CE /* SelfDefense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfDefense.h; sourceTree = "<group>"; };
+		6350747C1B718C2F00BF12CE /* SelfDefense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfDefense.m; sourceTree = "<group>"; };
+		6350747E1B718C2F00BF12CE /* Kitchen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kitchen.h; sourceTree = "<group>"; };
+		6350747F1B718C2F00BF12CE /* Kitchen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kitchen.m; sourceTree = "<group>"; };
+		635074811B718C2F00BF12CE /* Bathroom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bathroom.h; sourceTree = "<group>"; };
+		635074821B718C2F00BF12CE /* Bathroom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bathroom.m; sourceTree = "<group>"; };
 		63D24F1B1B5F36C40000641B /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,16 +80,16 @@
 		6305BF6B1B5AD5DC00F7CB0A = {
 			isa = PBXGroup;
 			children = (
-				639FC61A1B6B162700999BBA /* Camping.h */,
-				639FC61B1B6B162700999BBA /* Camping.m */,
-				639FC6171B6B162700999BBA /* Bathroom.h */,
-				639FC6181B6B162700999BBA /* Bathroom.m */,
-				639FC6141B6B162700999BBA /* SelfDefense.h */,
-				639FC6151B6B162700999BBA /* SelfDefense.m */,
-				639FC6111B6B162700999BBA /* Kitchen.h */,
-				639FC6121B6B162700999BBA /* Kitchen.m */,
-				639FC60E1B6B162600999BBA /* Home.h */,
-				639FC60F1B6B162600999BBA /* Home.m */,
+				635074811B718C2F00BF12CE /* Bathroom.h */,
+				635074821B718C2F00BF12CE /* Bathroom.m */,
+				6350747E1B718C2F00BF12CE /* Kitchen.h */,
+				6350747F1B718C2F00BF12CE /* Kitchen.m */,
+				6350747B1B718C2F00BF12CE /* SelfDefense.h */,
+				6350747C1B718C2F00BF12CE /* SelfDefense.m */,
+				635074781B718C2F00BF12CE /* Camping.h */,
+				635074791B718C2F00BF12CE /* Camping.m */,
+				635074751B718C2E00BF12CE /* Home.h */,
+				635074761B718C2E00BF12CE /* Home.m */,
 				6305BF761B5AD5DD00F7CB0A /* StartPrepping */,
 				6305BF901B5AD5DD00F7CB0A /* StartPreppingTests */,
 				6305BF751B5AD5DD00F7CB0A /* Products */,
@@ -247,15 +247,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				639FC6101B6B162600999BBA /* Home.m in Sources */,
-				639FC6191B6B162700999BBA /* Bathroom.m in Sources */,
 				6305BF801B5AD5DD00F7CB0A /* ViewController.m in Sources */,
-				639FC6131B6B162700999BBA /* Kitchen.m in Sources */,
+				635074801B718C2F00BF12CE /* Kitchen.m in Sources */,
+				635074831B718C2F00BF12CE /* Bathroom.m in Sources */,
 				6305BF7D1B5AD5DD00F7CB0A /* AppDelegate.m in Sources */,
-				639FC61C1B6B162700999BBA /* Camping.m in Sources */,
 				6305BF7A1B5AD5DD00F7CB0A /* main.m in Sources */,
-				639FC6161B6B162700999BBA /* SelfDefense.m in Sources */,
+				6350747A1B718C2F00BF12CE /* Camping.m in Sources */,
 				63D24F1C1B5F36C40000641B /* Model.xcdatamodeld in Sources */,
+				6350747D1B718C2F00BF12CE /* SelfDefense.m in Sources */,
+				635074771B718C2E00BF12CE /* Home.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

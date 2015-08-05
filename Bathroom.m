@@ -2,7 +2,7 @@
 //  Bathroom.m
 //  StartPrepping
 //
-//  Created by Mac User on 7/30/15.
+//  Created by Mac User on 8/4/15.
 //  Copyright (c) 2015 Big Nerd Ranch. All rights reserved.
 //
 
@@ -11,27 +11,28 @@
 
 @implementation Bathroom
 
-@dynamic AntifungalItchCreams;
-@dynamic BirthControl;
-@dynamic ColdFluMedicine;
-@dynamic CoughSyrup;
-@dynamic Deodorant;
-@dynamic FeminineHygiene;
-@dynamic FirstAidKit;
-@dynamic Guazepads;
-@dynamic Handsoap;
-@dynamic Hydrogenperoxide;
-@dynamic Ibuprophen;
-@dynamic Lotion;
-@dynamic Mouthwash;
-@dynamic Razors;
-@dynamic RubbingAlcohol;
-@dynamic ShampooBodyWash;
-@dynamic ShavingCream;
-@dynamic SoreThroatSpray;
-@dynamic SunscreenLotion;
-@dynamic Toothbrushes;
-@dynamic Toothpaste;
-@dynamic Vitamins;
+@dynamic antifungalItchCreams;
+@dynamic birthcontrol;
+@dynamic coldFluMedicine;
+@dynamic coughsyrup;
+@dynamic deodorant;
+@dynamic femininehygiene;
+@dynamic firstaidkit;
+@dynamic guazepads;
+@dynamic handsoap;
+@dynamic hydrogenperoxide;
+@dynamic ibuprophen;
+@dynamic lotion;
+@dynamic mouthwash;
+@dynamic razors;
+@dynamic rubbingalcohol;
+@dynamic shampooBodyWash;
+@dynamic shavingcream;
+@dynamic sorethroatspray;
+@dynamic sunscreenlotion;
+@dynamic toothbrushes;
+@dynamic toothpaste;
+@dynamic vitamins;
 
 @end
+

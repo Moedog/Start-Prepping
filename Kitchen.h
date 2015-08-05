@@ -2,27 +2,24 @@
 //  Kitchen.h
 //  StartPrepping
 //
-//  Created by Mac User on 7/30/15.
+//  Created by Mac User on 8/4/15.
 //  Copyright (c) 2015 Big Nerd Ranch. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class Kitchen;
 
 @interface Kitchen : NSManagedObject
 
-@property (nonatomic, retain) UNKNOWN_TYPE cardboardboxes;
-@property (nonatomic, retain) UNKNOWN_TYPE cleaningrags;
-@property (nonatomic, retain) UNKNOWN_TYPE dishsoap;
-@property (nonatomic, retain) UNKNOWN_TYPE dishwashersoap;
-@property (nonatomic, retain) UNKNOWN_TYPE foilwrap;
-@property (nonatomic, retain) UNKNOWN_TYPE garbagebags;
-@property (nonatomic, retain) UNKNOWN_TYPE handsoap;
-@property (nonatomic, retain) UNKNOWN_TYPE plasticbags;
-@property (nonatomic, retain) UNKNOWN_TYPE saranwrap;
-@property (nonatomic, retain) Kitchen *relationship;
-@property (nonatomic, retain) NSManagedObject *relationship1;
+@property (nonatomic, retain) NSNumber * cardboardboxes;
+@property (nonatomic, retain) NSNumber * cleaningrags;
+@property (nonatomic, retain) NSNumber * dishsoap;
+@property (nonatomic, retain) NSNumber * dishwashersoap;
+@property (nonatomic, retain) NSNumber * foilwrap;
+@property (nonatomic, retain) NSNumber * garbagebags;
+@property (nonatomic, retain) NSNumber * handsoap;
+@property (nonatomic, retain) NSNumber * plasticbags;
+@property (nonatomic, retain) NSNumber * saranwrap;
 
 @end

@@ -2,34 +2,34 @@
 //  Camping.h
 //  StartPrepping
 //
-//  Created by Mac User on 7/30/15.
+//  Created by Mac User on 8/4/15.
 //  Copyright (c) 2015 Big Nerd Ranch. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+
 @interface Camping : NSManagedObject
 
-
-@property (nonatomic, retain) Boolean * AxeOrHatchet;
-@property (nonatomic, retain) Boolean * CampLantern;
-@property (nonatomic, retain) Boolean * CampStove;
-@property (nonatomic, retain) Boolean * Canteen;
-@property (nonatomic, retain) Boolean * Compass;
-@property (nonatomic, retain) Boolean * CookKit;
-@property (nonatomic, retain) Boolean * FirstAidKit;
-@property (nonatomic, retain) Boolean * Flashlights;
-@property (nonatomic, retain) Boolean * Matches;
-@property (nonatomic, retain) Boolean * Propane;
-@property (nonatomic, retain) Boolean * Raincoat;
-@property (nonatomic, retain) Boolean * SeasonalClothing;
-@property (nonatomic, retain) Boolean * SingleBurnerStove;
-@property (nonatomic, retain) Boolean * SleepingBags;
-@property (nonatomic, retain) Boolean * SurvivalKnife;
-@property (nonatomic, retain) Boolean * Tarps;
-@property (nonatomic, retain) Boolean * Tents;
-@property (nonatomic, retain) Boolean * ToiletPaper;
-@property (nonatomic, retain) Boolean * WaterPurification;
+@property (nonatomic, retain) NSNumber * axeOrHatchet;
+@property (nonatomic, retain) NSNumber * campLantern;
+@property (nonatomic, retain) NSNumber * campStove;
+@property (nonatomic, retain) NSNumber * canteen;
+@property (nonatomic, retain) NSNumber * compass;
+@property (nonatomic, retain) NSNumber * cookKit;
+@property (nonatomic, retain) NSNumber * firstAidKit;
+@property (nonatomic, retain) NSNumber * flashlights;
+@property (nonatomic, retain) NSNumber * matches;
+@property (nonatomic, retain) NSNumber * propane;
+@property (nonatomic, retain) NSNumber * raincoat;
+@property (nonatomic, retain) NSNumber * seasonalClothing;
+@property (nonatomic, retain) NSNumber * singleBurnerStove;
+@property (nonatomic, retain) NSNumber * sleepingBags;
+@property (nonatomic, retain) NSNumber * survivalKnife;
+@property (nonatomic, retain) NSNumber * tarps;
+@property (nonatomic, retain) NSNumber * tents;
+@property (nonatomic, retain) NSNumber * toiletPaper;
+@property (nonatomic, retain) NSNumber * waterPurification;
 
 @end
