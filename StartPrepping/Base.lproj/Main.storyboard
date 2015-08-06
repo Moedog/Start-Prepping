@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zFA-n7-RcR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BMO-8v-WFa">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Start Prepping-->
@@ -13,19 +14,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="1iO-99-x57" kind="show" id="V2A-v4-B9H"/>
-                        <segue destination="po5-WC-hrB" kind="show" id="Zhg-Hx-HIr"/>
-                        <segue destination="BYZ-38-t0r" kind="show" id="dYC-eB-KdB"/>
-                        <segue destination="zFA-n7-RcR" kind="show" id="4gV-zN-BkR"/>
+                        <segue destination="zFA-n7-RcR" kind="relationship" relationship="viewControllers" id="XAM-eW-dTD"/>
+                        <segue destination="po5-WC-hrB" kind="relationship" relationship="viewControllers" id="A6h-qd-NOO"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="0aT-jB-4ka"/>
+                        <segue destination="1iO-99-x57" kind="relationship" relationship="viewControllers" id="Q0C-YM-jY7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FMs-ss-nvu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="570" y="-1025"/>
+            <point key="canvasLocation" x="564" y="-1022"/>
         </scene>
         <!--Food Calorie Calculator-->
         <scene sceneID="tne-QT-ifu">
@@ -38,19 +40,11 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o6Z-g3-gB0">
-                                <rect key="frame" x="7" y="551" width="600" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <tabBarItem title="Food Calorie Calculator" id="Vgg-Yy-0d2"/>
-                                    <tabBarItem title="Calories" id="Lns-7D-BRL" userLabel="Crisis Investment Calculator"/>
-                                    <tabBarItem title="Preparations Checklist" id="AlE-82-fPA"/>
-                                </items>
-                            </tabBar>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Calorie Calculator" id="YRU-JD-hZh" propertyAccessControl="all">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -73,17 +67,6 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1vC-r2-BsY" id="1Bj-N1-5UU">
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BUr-yu-dZK">
-                                            <rect key="frame" x="0.0" y="-3" width="600" height="49"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            <items>
-                                                <tabBarItem title="Food Calorie Calculator" id="QcZ-pq-2fL"/>
-                                                <tabBarItem title="Checklists" id="FHx-0k-Kdr" userLabel="Crisis Investment Calculator"/>
-                                                <tabBarItem title="Preparations Checklist" id="ZmW-oP-Y5g"/>
-                                            </items>
-                                        </tabBar>
-                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -92,6 +75,7 @@
                             <outlet property="delegate" destination="cLR-dZ-HXG" id="Rwh-CE-gNG"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Food Calorie Calculator" id="eAj-wo-xCv"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mif-mO-DZf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -105,16 +89,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <tabBar key="tableFooterView" contentMode="scaleToFill" id="lkG-VE-qhH">
-                            <rect key="frame" x="0.0" y="-3" width="600" height="49"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            <items>
-                                <tabBarItem title="Food Calorie Calculator" id="wc3-xK-dAN"/>
-                                <tabBarItem title="Checklists" id="HWV-c6-Zbp" userLabel="Crisis Investment Calculator"/>
-                                <tabBarItem title="Preparations Checklist" id="vkS-PO-1d4"/>
-                            </items>
-                        </tabBar>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Wal-3s-dZJ">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -128,6 +102,7 @@
                             <outlet property="delegate" destination="Faa-L7-ZJq" id="NSL-bY-1wb"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Food Calorie Calculator" id="pxn-8X-U0w"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v3k-Di-xwq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -146,17 +121,6 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gXt-UL-ut1" id="1OI-Dp-3s5">
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NGc-iN-Wcw">
-                                            <rect key="frame" x="0.0" y="-3" width="600" height="49"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            <items>
-                                                <tabBarItem title="Food Calorie Calculator" id="JSh-1i-wie"/>
-                                                <tabBarItem title="Checklists" id="HoT-jh-OYb" userLabel="Crisis Investment Calculator"/>
-                                                <tabBarItem title="Preparations Checklist" id="bkZ-N4-3kd"/>
-                                            </items>
-                                        </tabBar>
-                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -165,6 +129,9 @@
                             <outlet property="delegate" destination="Ns5-Nf-ntm" id="geZ-EP-mYC"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Food Calorie Calculator" id="fnP-OX-69s">
+                        <inset key="imageInsets" minX="-5" minY="-5" maxX="-5" maxY="-5"/>
+                    </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14I-zS-6ix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -183,17 +150,6 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M2V-qq-S5B" id="RNV-UD-s0g">
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FCT-VK-2st">
-                                            <rect key="frame" x="0.0" y="-3" width="600" height="49"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            <items>
-                                                <tabBarItem title="Food Calorie Calculator" id="LSR-cd-CBH"/>
-                                                <tabBarItem title="Checklists" id="bfC-NJ-Tpc" userLabel="Crisis Investment Calculator"/>
-                                                <tabBarItem title="Preparations Checklist" id="giO-m8-YVb"/>
-                                            </items>
-                                        </tabBar>
-                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -202,6 +158,7 @@
                             <outlet property="delegate" destination="WuY-KM-tDt" id="uml-ug-px4"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Food Calorie Calculator" id="rOC-1E-bxN"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1yy-fp-I71" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -254,18 +211,13 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pOG-eR-8yt">
-                                <rect key="frame" x="0.0" y="552" width="600" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <tabBarItem title="Food Calorie Calculator" id="vaV-dc-6gW"/>
-                                    <tabBarItem title="Checklists" id="5eO-Tr-EPt" userLabel="Crisis Investment Calculator"/>
-                                    <tabBarItem title="Preparations Checklist" id="New-w3-a7f"/>
-                                </items>
-                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Checklists" id="d8D-dV-CfQ">
+                        <inset key="imageInsets" minX="-5" minY="-5" maxX="-5" maxY="-5"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
+                    </tabBarItem>
                     <connections>
                         <segue destination="cLR-dZ-HXG" kind="show" id="RAn-Hu-Mx7"/>
                         <segue destination="Faa-L7-ZJq" kind="show" id="gRg-bk-piZ"/>
@@ -299,6 +251,10 @@
                             <outlet property="delegate" destination="5zl-L9-KPx" id="1ET-gh-aFV"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Checklists" id="8mq-Xl-DDM">
+                        <inset key="imageInsets" minX="-5" minY="-5" maxX="-5" maxY="-5"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
+                    </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwn-TY-fus" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -315,19 +271,12 @@
                     <view key="view" contentMode="scaleToFill" id="hB2-CQ-2o3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r0f-7g-YGd">
-                                <rect key="frame" x="0.0" y="551" width="600" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <tabBarItem title="Food Calorie Calculator" id="jh4-Wy-oBn"/>
-                                    <tabBarItem title="Investments" id="PgG-gk-jkv" userLabel="Crisis Investment Calculator"/>
-                                    <tabBarItem title="Preparations Checklist" id="7qB-Kd-F2t"/>
-                                </items>
-                            </tabBar>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Investments" id="rKw-gJ-nXl">
+                        <inset key="imageInsets" minX="-5" minY="-5" maxX="-5" maxY="-5"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ia-UK-11l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -345,17 +294,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="boU-mX-pkp">
-                                <rect key="frame" x="16" y="551" width="320" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <tabBarItem title="Food Calorie Calculator" id="5pn-qp-5wd"/>
-                                    <tabBarItem title="Investments" id="oDj-wn-3iR"/>
-                                    <tabBarItem title="Checklists" id="4P4-d0-oVi"/>
-                                </items>
-                            </tabBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4W-e6-ggI">
-                                <rect key="frame" x="22" y="20" width="308" height="91"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4W-e6-ggI">
+                                <rect key="frame" x="16" y="20" width="568" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="KaT-AV-mnl"/>
+                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Welcome to Start Prepping.  Use these tools to help you prepare for any possible upcoming disaster. ">
                                         <attributes>
@@ -370,14 +313,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="X4W-e6-ggI" secondAttribute="centerY" constant="234.5" id="H5D-pF-9WZ"/>
-                            <constraint firstAttribute="centerX" secondItem="X4W-e6-ggI" secondAttribute="centerX" constant="124" id="Y46-RQ-Z3p"/>
+                            <constraint firstItem="X4W-e6-ggI" firstAttribute="trailing" secondItem="7Be-Vm-9kQ" secondAttribute="trailingMargin" id="Gxz-2m-dtU"/>
+                            <constraint firstItem="X4W-e6-ggI" firstAttribute="top" secondItem="hea-i0-bIf" secondAttribute="bottom" id="URg-Oq-p38"/>
+                            <constraint firstItem="X4W-e6-ggI" firstAttribute="leading" secondItem="7Be-Vm-9kQ" secondAttribute="leadingMargin" id="YPR-tm-9ur"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="uOV-3i-V8u">
+                        <inset key="imageInsets" minX="-5" minY="-5" maxX="-5" maxY="-5"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fbn-sB-u0h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-187" y="-1011"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
