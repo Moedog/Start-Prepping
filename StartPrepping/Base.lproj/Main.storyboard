@@ -20,8 +20,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="zFA-n7-RcR" kind="relationship" relationship="viewControllers" id="XAM-eW-dTD"/>
-                        <segue destination="po5-WC-hrB" kind="relationship" relationship="viewControllers" id="A6h-qd-NOO"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="0aT-jB-4ka"/>
+                        <segue destination="75C-hA-KYx" kind="relationship" relationship="viewControllers" id="A6h-qd-NOO"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="7Mx-aR-Xhf"/>
                         <segue destination="1iO-99-x57" kind="relationship" relationship="viewControllers" id="Q0C-YM-jY7"/>
                     </connections>
                 </tabBarController>
@@ -42,7 +42,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calorie Calculator" id="YRU-JD-hZh" propertyAccessControl="all">
+                    <tabBarItem key="tabBarItem" title="Calorie Calculator" id="YRU-JD-hZh">
+                        <inset key="imageInsets" minX="-5" minY="-5" maxX="-5" maxY="-5"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
                     </tabBarItem>
                 </viewController>
@@ -58,15 +59,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <switch key="tableFooterView" opaque="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="center" on="YES" id="gCM-q9-wy1">
-                            <rect key="frame" x="0.0" y="66" width="600" height="31"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </switch>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1vC-r2-BsY">
+                            <tableViewCell contentMode="left" selectionStyle="default" indentationWidth="10" id="1vC-r2-BsY">
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1vC-r2-BsY" id="1Bj-N1-5UU">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" tableViewCell="1vC-r2-BsY" id="1Bj-N1-5UU">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="trQ-Qj-qd2">
+                                            <rect key="frame" x="543" y="6" width="51" height="31"/>
+                                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="thumbTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </switch>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -75,11 +80,14 @@
                             <outlet property="delegate" destination="cLR-dZ-HXG" id="Rwh-CE-gNG"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Food Calorie Calculator" id="eAj-wo-xCv"/>
+                    <tabBarItem key="tabBarItem" title="Checklists" id="eAj-wo-xCv">
+                        <inset key="imageInsets" minX="-5" minY="-5" maxX="-5" maxY="-5"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
+                    </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mif-mO-DZf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1920" y="-1416"/>
+            <point key="canvasLocation" x="2752" y="-966"/>
         </scene>
         <!--Bathroom Inventory-->
         <scene sceneID="eay-01-vPp">
@@ -90,10 +98,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Wal-3s-dZJ">
+                            <tableViewCell contentMode="left" selectionStyle="default" indentationWidth="10" id="Mbx-Ut-IXE">
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wal-3s-dZJ" id="4Z7-ba-WKD">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" tableViewCell="Mbx-Ut-IXE" id="yaU-Te-7ku">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5o3-Qb-1ya">
+                                            <rect key="frame" x="543" y="6" width="51" height="31"/>
+                                            <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="thumbTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </switch>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -102,11 +117,14 @@
                             <outlet property="delegate" destination="Faa-L7-ZJq" id="NSL-bY-1wb"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Food Calorie Calculator" id="pxn-8X-U0w"/>
+                    <tabBarItem key="tabBarItem" title="Checklists" id="pxn-8X-U0w">
+                        <inset key="imageInsets" minX="-5" minY="-5" maxX="-5" maxY="-5"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
+                    </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v3k-Di-xwq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2038" y="-745"/>
+            <point key="canvasLocation" x="2794" y="-161"/>
         </scene>
         <!--Home Preparation-->
         <scene sceneID="X5c-Bs-Dti">
@@ -117,10 +135,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gXt-UL-ut1">
+                            <tableViewCell contentMode="left" selectionStyle="default" indentationWidth="10" id="oAy-sc-k0z">
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gXt-UL-ut1" id="1OI-Dp-3s5">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" tableViewCell="oAy-sc-k0z" id="lAx-3m-eRG">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="q7e-BF-XMv">
+                                            <rect key="frame" x="543" y="6" width="51" height="31"/>
+                                            <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="thumbTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </switch>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -129,18 +154,19 @@
                             <outlet property="delegate" destination="Ns5-Nf-ntm" id="geZ-EP-mYC"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Food Calorie Calculator" id="fnP-OX-69s">
+                    <tabBarItem key="tabBarItem" title="Checklists" id="fnP-OX-69s">
                         <inset key="imageInsets" minX="-5" minY="-5" maxX="-5" maxY="-5"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
                     </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14I-zS-6ix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2122" y="-34"/>
+            <point key="canvasLocation" x="2654" y="598"/>
         </scene>
-        <!--Self Defense-->
+        <!--Self-Defense-->
         <scene sceneID="yTn-ln-YGo">
             <objects>
-                <tableViewController title="Self Defense" id="WuY-KM-tDt" sceneMemberID="viewController">
+                <tableViewController title="Self-Defense" id="WuY-KM-tDt" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="vxZ-NU-uJN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -150,6 +176,13 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M2V-qq-S5B" id="RNV-UD-s0g">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zns-eE-UlD">
+                                            <rect key="frame" x="543" y="6" width="51" height="31"/>
+                                            <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="thumbTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </switch>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -158,7 +191,10 @@
                             <outlet property="delegate" destination="WuY-KM-tDt" id="uml-ug-px4"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Food Calorie Calculator" id="rOC-1E-bxN"/>
+                    <tabBarItem key="tabBarItem" title="Checklists" id="rOC-1E-bxN">
+                        <inset key="imageInsets" minX="-5" minY="-5" maxX="-5" maxY="-5"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
+                    </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1yy-fp-I71" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -177,63 +213,68 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QvC-8g-oh8">
-                                <rect key="frame" x="81" y="149" width="182" height="30"/>
+                                <rect key="frame" x="100" y="151" width="182" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Kitchen Inventory">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="cLR-dZ-HXG" kind="show" id="BLD-DY-oMF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMK-c7-dHu">
-                                <rect key="frame" x="81" y="198" width="178" height="30"/>
+                                <rect key="frame" x="100" y="200" width="178" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Bathroom Inventory">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Faa-L7-ZJq" kind="show" id="f06-zj-ygL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaV-fw-bN7">
-                                <rect key="frame" x="86" y="249" width="173" height="30"/>
+                                <rect key="frame" x="105" y="251" width="173" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Home Preparation">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Ns5-Nf-ntm" kind="show" id="dRr-9H-OIb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awa-Qy-g5p">
-                                <rect key="frame" x="104" y="306" width="136" height="30"/>
+                                <rect key="frame" x="123" y="308" width="136" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Self-Defense">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="WuY-KM-tDt" kind="show" id="Gzb-Pg-NoG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJG-fp-nMB">
-                                <rect key="frame" x="63" y="361" width="218" height="30"/>
+                                <rect key="frame" x="82" y="363" width="218" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Camping / Survival Gear">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="5zl-L9-KPx" kind="show" id="aI3-le-zyx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Checklists" id="d8D-dV-CfQ">
-                        <inset key="imageInsets" minX="-5" minY="-5" maxX="-5" maxY="-5"/>
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
-                    </tabBarItem>
-                    <connections>
-                        <segue destination="cLR-dZ-HXG" kind="show" id="RAn-Hu-Mx7"/>
-                        <segue destination="Faa-L7-ZJq" kind="show" id="gRg-bk-piZ"/>
-                        <segue destination="Ns5-Nf-ntm" kind="show" id="1Zz-Jg-Y0a"/>
-                        <segue destination="WuY-KM-tDt" kind="show" id="yfs-g2-ddO"/>
-                        <segue destination="5zl-L9-KPx" kind="show" id="oZ0-5T-9Y2"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="bfF-ln-bVd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="foN-Ns-k41" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1203" y="-146"/>
+            <point key="canvasLocation" x="2015" y="-146"/>
         </scene>
-        <!--CampingSurvivalGear-->
+        <!--Camping/Survival Gear-->
         <scene sceneID="3ok-NN-3ok">
             <objects>
-                <tableViewController title="CampingSurvivalGear" id="5zl-L9-KPx" sceneMemberID="viewController">
+                <tableViewController title="Camping/Survival Gear" id="5zl-L9-KPx" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="SfO-Di-s2n">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -243,6 +284,13 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OnD-hE-lOV" id="J1O-Y0-iIP">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tnK-wv-azC">
+                                            <rect key="frame" x="543" y="6" width="51" height="31"/>
+                                            <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="thumbTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </switch>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -294,13 +342,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4W-e6-ggI">
-                                <rect key="frame" x="16" y="20" width="568" height="62"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4W-e6-ggI">
+                                <rect key="frame" x="15" y="30" width="568" height="65"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="62" id="KaT-AV-mnl"/>
+                                    <constraint firstAttribute="height" constant="65" id="KaT-AV-mnl">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="65"/>
+                                    </constraint>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="Welcome to Start Prepping.  Use these tools to help you prepare for any possible upcoming disaster. ">
+                                    <fragment>
+                                        <string key="content">Welcome to Start Prepping.  Use these tools to help you prepare for any possible upcoming disaster.  Here, you can assess your situation and plan accordingly.  Possible scenarios include illness, injury, job loss, natural or man-made disasters, economic or financial instability, and social unrest...(and zombies!) </string>
                                         <attributes>
                                             <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue"/>
@@ -309,7 +360,15 @@
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="KaT-AV-mnl"/>
+                                    </mask>
+                                </variation>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StorageBins" translatesAutoresizingMaskIntoConstraints="NO" id="bUT-1V-5EH">
+                                <rect key="frame" x="0.0" y="216" width="454" height="335"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -327,6 +386,31 @@
             </objects>
             <point key="canvasLocation" x="-187" y="-1011"/>
         </scene>
+        <!--Checklists-->
+        <scene sceneID="dVc-GP-z2J">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="75C-hA-KYx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Checklists" id="d8D-dV-CfQ">
+                        <inset key="imageInsets" minX="-5" minY="-5" maxX="-5" maxY="-5"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hkb-HR-Ky6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="po5-WC-hrB" kind="relationship" relationship="rootViewController" id="lRa-DG-WTa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a1H-tV-ucu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1203" y="-146"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="StorageBins" width="620" height="400"/>
+    </resources>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
