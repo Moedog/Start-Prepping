@@ -8,37 +8,37 @@
         <!--Start Prepping-->
         <scene sceneID="9ZU-TR-2nh">
             <objects>
-                <tabBarController title="Start Prepping" id="BMO-8v-WFa" sceneMemberID="viewController">
+                <tabBarController title="Start Prepping" id="BMO-8v-WFa" colorLabel="IBBuiltInLabel-Red" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="Kfu-Bi-yx2">
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="Kfu-Bi-yx2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="zFA-n7-RcR" kind="relationship" relationship="viewControllers" id="XAM-eW-dTD"/>
-                        <segue destination="75C-hA-KYx" kind="relationship" relationship="viewControllers" id="A6h-qd-NOO"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="7Mx-aR-Xhf"/>
                         <segue destination="1iO-99-x57" kind="relationship" relationship="viewControllers" id="Q0C-YM-jY7"/>
+                        <segue destination="75C-hA-KYx" kind="relationship" relationship="viewControllers" id="A6h-qd-NOO"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FMs-ss-nvu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="564" y="-1022"/>
+            <point key="canvasLocation" x="92" y="-1038"/>
         </scene>
-        <!--Food Calorie Calculator-->
+        <!--Calorie Calculator-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Food Calorie Calculator" id="BYZ-38-t0r" customClass="ViewController" colorLabel="IBBuiltInLabel-Blue" sceneMemberID="viewController">
+                <viewController title="Calorie Calculator" id="BYZ-38-t0r" customClass="ViewController" colorLabel="IBBuiltInLabel-Blue" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -56,15 +56,21 @@
             <objects>
                 <tableViewController title="Kitchen Inventory" id="cLR-dZ-HXG" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="HmH-XZ-PcY">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="left" selectionStyle="default" indentationWidth="10" id="1vC-r2-BsY">
+                            <tableViewCell contentMode="left" selectionStyle="default" indentationWidth="10" id="1vC-r2-BsY" customClass="KitchenController">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" tableViewCell="1vC-r2-BsY" id="1Bj-N1-5UU">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugO-JM-ykA">
+                                            <rect key="frame" x="15" y="11" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="trQ-Qj-qd2">
                                             <rect key="frame" x="543" y="6" width="51" height="31"/>
                                             <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -73,6 +79,10 @@
                                         </switch>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="kitchenLabel" destination="ugO-JM-ykA" id="mZC-oe-dFF"/>
+                                    <outlet property="kitchenSwitch" destination="trQ-Qj-qd2" id="nEL-bq-ugV"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -94,7 +104,7 @@
             <objects>
                 <tableViewController title="Bathroom Inventory" id="Faa-L7-ZJq" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="cI1-11-zGa">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -131,7 +141,7 @@
             <objects>
                 <tableViewController title="Home Preparation" id="Ns5-Nf-ntm" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="gi8-n7-09I">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -168,7 +178,7 @@
             <objects>
                 <tableViewController title="Self-Defense" id="WuY-KM-tDt" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="vxZ-NU-uJN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -200,20 +210,20 @@
             </objects>
             <point key="canvasLocation" x="1830" y="674"/>
         </scene>
-        <!--Preparations Checklists-->
+        <!--Checklists-->
         <scene sceneID="a2t-ct-zb9">
             <objects>
-                <viewController title="Preparations Checklists" id="po5-WC-hrB" sceneMemberID="viewController">
+                <viewController title="Checklists" id="po5-WC-hrB" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qd9-py-IbF"/>
                         <viewControllerLayoutGuide type="bottom" id="qP0-jl-LIR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kNL-Xl-9Ga">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QvC-8g-oh8">
-                                <rect key="frame" x="100" y="151" width="182" height="30"/>
+                                <rect key="frame" x="93" y="81" width="182" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Kitchen Inventory">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -223,7 +233,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMK-c7-dHu">
-                                <rect key="frame" x="100" y="200" width="178" height="30"/>
+                                <rect key="frame" x="93" y="130" width="178" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Bathroom Inventory">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -233,7 +243,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaV-fw-bN7">
-                                <rect key="frame" x="105" y="251" width="173" height="30"/>
+                                <rect key="frame" x="98" y="181" width="173" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Home Preparation">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -243,7 +253,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awa-Qy-g5p">
-                                <rect key="frame" x="123" y="308" width="136" height="30"/>
+                                <rect key="frame" x="116" y="238" width="136" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Self-Defense">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -253,7 +263,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJG-fp-nMB">
-                                <rect key="frame" x="82" y="363" width="218" height="30"/>
+                                <rect key="frame" x="75" y="293" width="218" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Camping / Survival Gear">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -262,6 +272,9 @@
                                     <segue destination="5zl-L9-KPx" kind="show" id="aI3-le-zyx"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StorageBins" translatesAutoresizingMaskIntoConstraints="NO" id="uBY-0b-FDD">
+                                <rect key="frame" x="16" y="331" width="339" height="212"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -269,14 +282,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="foN-Ns-k41" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2015" y="-146"/>
+            <point key="canvasLocation" x="1923" y="-146"/>
         </scene>
         <!--Camping/Survival Gear-->
         <scene sceneID="3ok-NN-3ok">
             <objects>
                 <tableViewController title="Camping/Survival Gear" id="5zl-L9-KPx" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="SfO-Di-s2n">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -308,16 +321,16 @@
             </objects>
             <point key="canvasLocation" x="1104" y="684"/>
         </scene>
-        <!--Crisis Investment Calculator-->
+        <!--Investments-->
         <scene sceneID="w7p-Mw-fTD">
             <objects>
-                <viewController title="Crisis Investment Calculator" id="1iO-99-x57" sceneMemberID="viewController">
+                <viewController title="Investments" id="1iO-99-x57" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ya4-yc-YdJ"/>
                         <viewControllerLayoutGuide type="bottom" id="3Sk-AF-yJW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hB2-CQ-2o3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -330,16 +343,16 @@
             </objects>
             <point key="canvasLocation" x="559" y="-146"/>
         </scene>
-        <!--LandingView-->
+        <!--About-->
         <scene sceneID="3tk-CQ-OPq">
             <objects>
-                <viewController title="LandingView" id="zFA-n7-RcR" sceneMemberID="viewController">
+                <viewController title="About" id="zFA-n7-RcR" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hea-i0-bIf"/>
                         <viewControllerLayoutGuide type="bottom" id="V0E-Xt-Vgh"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="7Be-Vm-9kQ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4W-e6-ggI">
@@ -351,11 +364,11 @@
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">Welcome to Start Prepping.  Use these tools to help you prepare for any possible upcoming disaster.  Here, you can assess your situation and plan accordingly.  Possible scenarios include illness, injury, job loss, natural or man-made disasters, economic or financial instability, and social unrest...(and zombies!) </string>
+                                        <string key="content">Thank you for downloading Start Prepping.  Use these tools to help you prepare for any possible upcoming disaster.  Here, you can assess your situation and plan accordingly.  Possible scenarios include illness, injury, job loss, natural or man-made disasters, economic or financial instability, and social unrest.  (and zombies!)  Please note there may be updates coming in the future with additional information and features.</string>
                                         <attributes>
                                             <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -367,7 +380,7 @@
                                 </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StorageBins" translatesAutoresizingMaskIntoConstraints="NO" id="bUT-1V-5EH">
-                                <rect key="frame" x="0.0" y="216" width="454" height="335"/>
+                                <rect key="frame" x="0.0" y="250" width="449" height="301"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -377,14 +390,14 @@
                             <constraint firstItem="X4W-e6-ggI" firstAttribute="leading" secondItem="7Be-Vm-9kQ" secondAttribute="leadingMargin" id="YPR-tm-9ur"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="uOV-3i-V8u">
+                    <tabBarItem key="tabBarItem" title="About" id="uOV-3i-V8u">
                         <inset key="imageInsets" minX="-5" minY="-5" maxX="-5" maxY="-5"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fbn-sB-u0h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-187" y="-1011"/>
+            <point key="canvasLocation" x="929" y="-1074"/>
         </scene>
         <!--Checklists-->
         <scene sceneID="dVc-GP-z2J">
@@ -406,11 +419,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a1H-tV-ucu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1203" y="-146"/>
+            <point key="canvasLocation" x="1225" y="-146"/>
         </scene>
     </scenes>
     <resources>
         <image name="StorageBins" width="620" height="400"/>
     </resources>
-    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
 </document>

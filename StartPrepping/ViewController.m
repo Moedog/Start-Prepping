@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "KitchenController.h"
 
 @interface ViewController ()
 
@@ -19,6 +20,37 @@
     // Do any additional setup after loading the view, typically from a nib.
     
 self.view.backgroundColor = [UIColor whiteColor];
+    
+    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.frame];
+    
+    tableView.frame = self.view.frame;
+    tableView.dataSource = self;
+    
+    [self.view addSubview:tableView];
+}
+
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 7;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+        
+    KitchenController *cell = [tableView dequeueReusableCellWithIdentifier:@"Day"];
+    
+    cell.kitchenLabel.text = @"Monday";
+        
+        return cell;
+}
+    
+
+    
+    
+- (NSArray *)kitchenPreps {
+    return @[@"Kitchen Prep 1", @"Kitchen Prep 2", @"Kitchen Prep 3"];
+    
     
 }
 

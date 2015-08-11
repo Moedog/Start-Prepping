@@ -14,6 +14,7 @@
 		6305BF851B5AD5DD00F7CB0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6305BF841B5AD5DD00F7CB0A /* Images.xcassets */; };
 		6305BF881B5AD5DD00F7CB0A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6305BF861B5AD5DD00F7CB0A /* LaunchScreen.xib */; };
 		6305BF941B5AD5DD00F7CB0A /* StartPreppingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6305BF931B5AD5DD00F7CB0A /* StartPreppingTests.m */; };
+		6323F3D81B765E6E007CF54F /* KitchenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6323F3D71B765E6E007CF54F /* KitchenController.m */; };
 		635074771B718C2E00BF12CE /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 635074761B718C2E00BF12CE /* Home.m */; };
 		6350747A1B718C2F00BF12CE /* Camping.m in Sources */ = {isa = PBXBuildFile; fileRef = 635074791B718C2F00BF12CE /* Camping.m */; };
 		6350747D1B718C2F00BF12CE /* SelfDefense.m in Sources */ = {isa = PBXBuildFile; fileRef = 6350747C1B718C2F00BF12CE /* SelfDefense.m */; };
@@ -46,6 +47,8 @@
 		6305BF8D1B5AD5DD00F7CB0A /* StartPreppingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StartPreppingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6305BF921B5AD5DD00F7CB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6305BF931B5AD5DD00F7CB0A /* StartPreppingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartPreppingTests.m; sourceTree = "<group>"; };
+		6323F3D61B765E6E007CF54F /* KitchenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KitchenController.h; sourceTree = "<group>"; };
+		6323F3D71B765E6E007CF54F /* KitchenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KitchenController.m; sourceTree = "<group>"; };
 		635074751B718C2E00BF12CE /* Home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
 		635074761B718C2E00BF12CE /* Home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
 		635074781B718C2F00BF12CE /* Camping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camping.h; sourceTree = "<group>"; };
@@ -112,6 +115,8 @@
 				6305BF7C1B5AD5DD00F7CB0A /* AppDelegate.m */,
 				6305BF7E1B5AD5DD00F7CB0A /* ViewController.h */,
 				6305BF7F1B5AD5DD00F7CB0A /* ViewController.m */,
+				6323F3D61B765E6E007CF54F /* KitchenController.h */,
+				6323F3D71B765E6E007CF54F /* KitchenController.m */,
 				63D24F1A1B5F36C40000641B /* Model.xcdatamodeld */,
 				6305BF811B5AD5DD00F7CB0A /* Main.storyboard */,
 				6305BF841B5AD5DD00F7CB0A /* Images.xcassets */,
@@ -252,6 +257,7 @@
 				635074801B718C2F00BF12CE /* Kitchen.m in Sources */,
 				635074831B718C2F00BF12CE /* Bathroom.m in Sources */,
 				6305BF7D1B5AD5DD00F7CB0A /* AppDelegate.m in Sources */,
+				6323F3D81B765E6E007CF54F /* KitchenController.m in Sources */,
 				6305BF7A1B5AD5DD00F7CB0A /* main.m in Sources */,
 				6350747A1B718C2F00BF12CE /* Camping.m in Sources */,
 				63D24F1C1B5F36C40000641B /* Model.xcdatamodeld in Sources */,
