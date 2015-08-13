@@ -19,6 +19,13 @@
     // Do any additional setup after loading the view.
 }
 
+- (NSArray *)kitchenPreps {
+    return @[@"Kitchen Prep 1", @"Kitchen Prep 2", @"Kitchen Prep 3"];
+    
+}
+
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
