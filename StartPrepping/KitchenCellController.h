@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KitchenController : UITableViewCell
+@interface KitchenCellController : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *kitchenLabel;
 

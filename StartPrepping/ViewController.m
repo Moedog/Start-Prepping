@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "KitchenController.h"
+#import "KitchenCellController.h"
 
 @interface ViewController ()
 
@@ -29,28 +29,21 @@ self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:tableView];
 }
 
-
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 7;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
         
-    KitchenController *cell = [tableView dequeueReusableCellWithIdentifier:@"Day"];
+    KitchenCellController *cell = [tableView dequeueReusableCellWithIdentifier:@"Day"];
     
     cell.kitchenLabel.text = @"Monday";
         
         return cell;
 }
     
-
-    
-    
 - (NSArray *)kitchenPreps {
     return @[@"Kitchen Prep 1", @"Kitchen Prep 2", @"Kitchen Prep 3"];
-    
     
 }
 

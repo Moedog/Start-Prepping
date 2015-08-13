@@ -10,19 +10,19 @@
             <objects>
                 <tabBarController title="Start Prepping" id="BMO-8v-WFa" colorLabel="IBBuiltInLabel-Red" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="Kfu-Bi-yx2">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="Kfu-Bi-yx2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" cocoaTouchSystemColor="darkTextColor"/>
                     </tabBar>
                     <connections>
-                        <segue destination="zFA-n7-RcR" kind="relationship" relationship="viewControllers" id="XAM-eW-dTD"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="7Mx-aR-Xhf"/>
                         <segue destination="1iO-99-x57" kind="relationship" relationship="viewControllers" id="Q0C-YM-jY7"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="7Mx-aR-Xhf"/>
                         <segue destination="75C-hA-KYx" kind="relationship" relationship="viewControllers" id="A6h-qd-NOO"/>
+                        <segue destination="zFA-n7-RcR" kind="relationship" relationship="viewControllers" id="XAM-eW-dTD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FMs-ss-nvu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -76,6 +76,9 @@
                                             <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="thumbTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="switchChanged:" destination="1vC-r2-BsY" eventType="valueChanged" id="OX0-eE-QZL"/>
+                                            </connections>
                                         </switch>
                                     </subviews>
                                 </tableViewCellContentView>
@@ -171,7 +174,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14I-zS-6ix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2654" y="598"/>
+            <point key="canvasLocation" x="3466" y="598"/>
         </scene>
         <!--Self-Defense-->
         <scene sceneID="yTn-ln-YGo">
@@ -208,7 +211,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1yy-fp-I71" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1830" y="674"/>
+            <point key="canvasLocation" x="2642" y="674"/>
         </scene>
         <!--Checklists-->
         <scene sceneID="a2t-ct-zb9">
@@ -319,7 +322,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwn-TY-fus" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1104" y="684"/>
+            <point key="canvasLocation" x="1916" y="684"/>
         </scene>
         <!--Investments-->
         <scene sceneID="w7p-Mw-fTD">
@@ -332,6 +335,16 @@
                     <view key="view" contentMode="scaleToFill" id="hB2-CQ-2o3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bkm-DJ-k3g">
+                                <rect key="frame" x="90" y="28" width="194" height="29"/>
+                                <segments>
+                                    <segment title="Gold"/>
+                                    <segment title="Silver"/>
+                                    <segment title="Bitcoin"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Investments" id="rKw-gJ-nXl">
@@ -341,7 +354,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ia-UK-11l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="559" y="-146"/>
+            <point key="canvasLocation" x="566" y="-153"/>
         </scene>
         <!--About-->
         <scene sceneID="3tk-CQ-OPq">
@@ -425,5 +438,5 @@
     <resources>
         <image name="StorageBins" width="620" height="400"/>
     </resources>
-    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

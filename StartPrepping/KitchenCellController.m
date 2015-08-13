@@ -6,25 +6,19 @@
 //  Copyright (c) 2015 Big Nerd Ranch. All rights reserved.
 //
 
-#import "KitchenController.h"
+#import "KitchenCellController.h"
 
-@interface KitchenController ()
+@interface KitchenCellController ()
 
 @end
 
-@implementation KitchenController
+@implementation KitchenCellController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.frame];
-    
-    tableView.frame = self.view.frame;
-    tableView.dataSource = self;
-    
-    [self.view addSubview:tableView];
+- (IBAction)switchChanged:(id)sender {
+    NSLog(@"Switch Changed");
 }
+
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -45,10 +39,7 @@
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 /*
 #pragma mark - Navigation
