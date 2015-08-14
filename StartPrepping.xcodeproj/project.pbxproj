@@ -20,13 +20,14 @@
 		6350747D1B718C2F00BF12CE /* SelfDefense.m in Sources */ = {isa = PBXBuildFile; fileRef = 6350747C1B718C2F00BF12CE /* SelfDefense.m */; };
 		635074801B718C2F00BF12CE /* Kitchen.m in Sources */ = {isa = PBXBuildFile; fileRef = 6350747F1B718C2F00BF12CE /* Kitchen.m */; };
 		635074831B718C2F00BF12CE /* Bathroom.m in Sources */ = {isa = PBXBuildFile; fileRef = 635074821B718C2F00BF12CE /* Bathroom.m */; };
-		63811EE81B7BC340005E9191 /* KitchenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63811EE71B7BC340005E9191 /* KitchenViewController.m */; };
-		63811EEB1B7BC3C1005E9191 /* BathroomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63811EEA1B7BC3C1005E9191 /* BathroomViewController.m */; };
-		63811EEE1B7BC3F2005E9191 /* HomePrepsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63811EED1B7BC3F2005E9191 /* HomePrepsViewController.m */; };
-		63811EF11B7BC413005E9191 /* SelfDefenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63811EF01B7BC413005E9191 /* SelfDefenseViewController.m */; };
-		63811EF41B7BC4B3005E9191 /* CampingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63811EF31B7BC4B3005E9191 /* CampingViewController.m */; };
 		63811EF71B7C1BC3005E9191 /* CalorieCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63811EF61B7C1BC3005E9191 /* CalorieCalculatorViewController.m */; };
 		63811EFA1B7C1BDA005E9191 /* InvestmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63811EF91B7C1BDA005E9191 /* InvestmentsViewController.m */; };
+		63822FD61B7D781E00EF9101 /* KitchenTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63822FD51B7D781E00EF9101 /* KitchenTableViewController.m */; };
+		63822FD91B7D783A00EF9101 /* BathroomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63822FD81B7D783A00EF9101 /* BathroomTableViewController.m */; };
+		63822FDC1B7D786F00EF9101 /* SelfDefenseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63822FDB1B7D786F00EF9101 /* SelfDefenseTableViewController.m */; };
+		63822FDF1B7D788800EF9101 /* CampingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63822FDE1B7D788800EF9101 /* CampingTableViewController.m */; };
+		63822FE21B7D7AB100EF9101 /* HomePrepsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63822FE11B7D7AB100EF9101 /* HomePrepsTableViewController.m */; };
+		63822FE51B7D8A4900EF9101 /* ChecklistsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63822FE41B7D8A4900EF9101 /* ChecklistsViewController.m */; };
 		63D24F1C1B5F36C40000641B /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63D24F1A1B5F36C40000641B /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -66,20 +67,22 @@
 		6350747F1B718C2F00BF12CE /* Kitchen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kitchen.m; sourceTree = "<group>"; };
 		635074811B718C2F00BF12CE /* Bathroom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bathroom.h; sourceTree = "<group>"; };
 		635074821B718C2F00BF12CE /* Bathroom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bathroom.m; sourceTree = "<group>"; };
-		63811EE61B7BC340005E9191 /* KitchenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KitchenViewController.h; sourceTree = "<group>"; };
-		63811EE71B7BC340005E9191 /* KitchenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KitchenViewController.m; sourceTree = "<group>"; };
-		63811EE91B7BC3C1005E9191 /* BathroomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BathroomViewController.h; sourceTree = "<group>"; };
-		63811EEA1B7BC3C1005E9191 /* BathroomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BathroomViewController.m; sourceTree = "<group>"; };
-		63811EEC1B7BC3F2005E9191 /* HomePrepsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePrepsViewController.h; sourceTree = "<group>"; };
-		63811EED1B7BC3F2005E9191 /* HomePrepsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePrepsViewController.m; sourceTree = "<group>"; };
-		63811EEF1B7BC413005E9191 /* SelfDefenseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfDefenseViewController.h; sourceTree = "<group>"; };
-		63811EF01B7BC413005E9191 /* SelfDefenseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfDefenseViewController.m; sourceTree = "<group>"; };
-		63811EF21B7BC4B3005E9191 /* CampingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampingViewController.h; sourceTree = "<group>"; };
-		63811EF31B7BC4B3005E9191 /* CampingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampingViewController.m; sourceTree = "<group>"; };
 		63811EF51B7C1BC3005E9191 /* CalorieCalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalorieCalculatorViewController.h; sourceTree = "<group>"; };
 		63811EF61B7C1BC3005E9191 /* CalorieCalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalorieCalculatorViewController.m; sourceTree = "<group>"; };
 		63811EF81B7C1BDA005E9191 /* InvestmentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvestmentsViewController.h; sourceTree = "<group>"; };
 		63811EF91B7C1BDA005E9191 /* InvestmentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvestmentsViewController.m; sourceTree = "<group>"; };
+		63822FD41B7D781E00EF9101 /* KitchenTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KitchenTableViewController.h; sourceTree = "<group>"; };
+		63822FD51B7D781E00EF9101 /* KitchenTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KitchenTableViewController.m; sourceTree = "<group>"; };
+		63822FD71B7D783A00EF9101 /* BathroomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BathroomTableViewController.h; sourceTree = "<group>"; };
+		63822FD81B7D783A00EF9101 /* BathroomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BathroomTableViewController.m; sourceTree = "<group>"; };
+		63822FDA1B7D786F00EF9101 /* SelfDefenseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfDefenseTableViewController.h; sourceTree = "<group>"; };
+		63822FDB1B7D786F00EF9101 /* SelfDefenseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfDefenseTableViewController.m; sourceTree = "<group>"; };
+		63822FDD1B7D788800EF9101 /* CampingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampingTableViewController.h; sourceTree = "<group>"; };
+		63822FDE1B7D788800EF9101 /* CampingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampingTableViewController.m; sourceTree = "<group>"; };
+		63822FE01B7D7AB100EF9101 /* HomePrepsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePrepsTableViewController.h; sourceTree = "<group>"; };
+		63822FE11B7D7AB100EF9101 /* HomePrepsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePrepsTableViewController.m; sourceTree = "<group>"; };
+		63822FE31B7D8A4900EF9101 /* ChecklistsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChecklistsViewController.h; sourceTree = "<group>"; };
+		63822FE41B7D8A4900EF9101 /* ChecklistsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChecklistsViewController.m; sourceTree = "<group>"; };
 		63D24F1B1B5F36C40000641B /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,20 +139,22 @@
 				6305BF7C1B5AD5DD00F7CB0A /* AppDelegate.m */,
 				6305BF7E1B5AD5DD00F7CB0A /* ViewController.h */,
 				6305BF7F1B5AD5DD00F7CB0A /* ViewController.m */,
+				63822FE31B7D8A4900EF9101 /* ChecklistsViewController.h */,
+				63822FE41B7D8A4900EF9101 /* ChecklistsViewController.m */,
+				63822FDD1B7D788800EF9101 /* CampingTableViewController.h */,
+				63822FDE1B7D788800EF9101 /* CampingTableViewController.m */,
+				63822FDA1B7D786F00EF9101 /* SelfDefenseTableViewController.h */,
+				63822FDB1B7D786F00EF9101 /* SelfDefenseTableViewController.m */,
+				63822FE01B7D7AB100EF9101 /* HomePrepsTableViewController.h */,
+				63822FE11B7D7AB100EF9101 /* HomePrepsTableViewController.m */,
+				63822FD71B7D783A00EF9101 /* BathroomTableViewController.h */,
+				63822FD81B7D783A00EF9101 /* BathroomTableViewController.m */,
+				63822FD41B7D781E00EF9101 /* KitchenTableViewController.h */,
+				63822FD51B7D781E00EF9101 /* KitchenTableViewController.m */,
 				63811EF81B7C1BDA005E9191 /* InvestmentsViewController.h */,
 				63811EF91B7C1BDA005E9191 /* InvestmentsViewController.m */,
 				63811EF51B7C1BC3005E9191 /* CalorieCalculatorViewController.h */,
 				63811EF61B7C1BC3005E9191 /* CalorieCalculatorViewController.m */,
-				63811EF21B7BC4B3005E9191 /* CampingViewController.h */,
-				63811EF31B7BC4B3005E9191 /* CampingViewController.m */,
-				63811EEF1B7BC413005E9191 /* SelfDefenseViewController.h */,
-				63811EF01B7BC413005E9191 /* SelfDefenseViewController.m */,
-				63811EEC1B7BC3F2005E9191 /* HomePrepsViewController.h */,
-				63811EED1B7BC3F2005E9191 /* HomePrepsViewController.m */,
-				63811EE91B7BC3C1005E9191 /* BathroomViewController.h */,
-				63811EEA1B7BC3C1005E9191 /* BathroomViewController.m */,
-				63811EE61B7BC340005E9191 /* KitchenViewController.h */,
-				63811EE71B7BC340005E9191 /* KitchenViewController.m */,
 				6323F3D61B765E6E007CF54F /* KitchenCellController.h */,
 				6323F3D71B765E6E007CF54F /* KitchenCellController.m */,
 				63D24F1A1B5F36C40000641B /* Model.xcdatamodeld */,
@@ -288,23 +293,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63822FDC1B7D786F00EF9101 /* SelfDefenseTableViewController.m in Sources */,
 				6305BF801B5AD5DD00F7CB0A /* ViewController.m in Sources */,
 				63811EFA1B7C1BDA005E9191 /* InvestmentsViewController.m in Sources */,
-				63811EEE1B7BC3F2005E9191 /* HomePrepsViewController.m in Sources */,
 				635074801B718C2F00BF12CE /* Kitchen.m in Sources */,
+				63822FD61B7D781E00EF9101 /* KitchenTableViewController.m in Sources */,
 				635074831B718C2F00BF12CE /* Bathroom.m in Sources */,
 				6305BF7D1B5AD5DD00F7CB0A /* AppDelegate.m in Sources */,
-				63811EF41B7BC4B3005E9191 /* CampingViewController.m in Sources */,
+				63822FD91B7D783A00EF9101 /* BathroomTableViewController.m in Sources */,
 				6323F3D81B765E6E007CF54F /* KitchenCellController.m in Sources */,
 				6305BF7A1B5AD5DD00F7CB0A /* main.m in Sources */,
-				63811EEB1B7BC3C1005E9191 /* BathroomViewController.m in Sources */,
 				6350747A1B718C2F00BF12CE /* Camping.m in Sources */,
-				63811EF11B7BC413005E9191 /* SelfDefenseViewController.m in Sources */,
 				63D24F1C1B5F36C40000641B /* Model.xcdatamodeld in Sources */,
+				63822FDF1B7D788800EF9101 /* CampingTableViewController.m in Sources */,
 				63811EF71B7C1BC3005E9191 /* CalorieCalculatorViewController.m in Sources */,
-				63811EE81B7BC340005E9191 /* KitchenViewController.m in Sources */,
 				6350747D1B718C2F00BF12CE /* SelfDefense.m in Sources */,
 				635074771B718C2E00BF12CE /* Home.m in Sources */,
+				63822FE21B7D7AB100EF9101 /* HomePrepsTableViewController.m in Sources */,
+				63822FE51B7D8A4900EF9101 /* ChecklistsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

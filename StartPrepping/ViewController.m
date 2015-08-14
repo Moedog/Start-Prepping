@@ -42,10 +42,6 @@ self.view.backgroundColor = [UIColor whiteColor];
         return cell;
 }
     
-- (NSArray *)kitchenPreps {
-    return @[@"Kitchen Prep 1", @"Kitchen Prep 2", @"Kitchen Prep 3"];
-    
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -16,7 +16,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="selectedImageTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="selectedImageTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="75C-hA-KYx" kind="relationship" relationship="viewControllers" id="A6h-qd-NOO"/>
@@ -42,7 +42,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calorie Calculator" image="Food" selectedImage="tabbarImageBlank" id="YRU-JD-hZh"/>
+                    <tabBarItem key="tabBarItem" title="Calorie Calculator" image="Food" id="YRU-JD-hZh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,13 +51,13 @@
         <!--Kitchen Inventory-->
         <scene sceneID="4ZG-Ai-LjF">
             <objects>
-                <tableViewController title="Kitchen Inventory" id="cLR-dZ-HXG" sceneMemberID="viewController">
+                <tableViewController title="Kitchen Inventory" id="cLR-dZ-HXG" customClass="KitchenTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="HmH-XZ-PcY">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="left" selectionStyle="default" indentationWidth="10" id="1vC-r2-BsY" customClass="KitchenController">
+                            <tableViewCell contentMode="left" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" id="1vC-r2-BsY" customClass="KitchenCellController">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" tableViewCell="1vC-r2-BsY" id="1Bj-N1-5UU">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -65,10 +65,10 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugO-JM-ykA">
                                             <rect key="frame" x="15" y="11" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="trQ-Qj-qd2">
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="right" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="trQ-Qj-qd2">
                                             <rect key="frame" x="543" y="6" width="51" height="31"/>
                                             <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -78,6 +78,10 @@
                                             </connections>
                                         </switch>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="centerY" secondItem="trQ-Qj-qd2" secondAttribute="centerY" id="Bav-j2-9ea"/>
+                                        <constraint firstItem="trQ-Qj-qd2" firstAttribute="trailing" secondItem="1Bj-N1-5UU" secondAttribute="trailingMargin" id="ir4-4B-19K"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="kitchenLabel" destination="ugO-JM-ykA" id="mZC-oe-dFF"/>
@@ -102,23 +106,49 @@
         <!--Bathroom Inventory-->
         <scene sceneID="eay-01-vPp">
             <objects>
-                <tableViewController title="Bathroom Inventory" id="Faa-L7-ZJq" sceneMemberID="viewController">
+                <tableViewController title="Bathroom Inventory" id="Faa-L7-ZJq" customClass="BathroomTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="cI1-11-zGa">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="left" selectionStyle="default" indentationWidth="10" id="Mbx-Ut-IXE">
+                            <tableViewCell contentMode="left" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" id="Mbx-Ut-IXE" customClass="KitchenCellController">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" tableViewCell="Mbx-Ut-IXE" id="yaU-Te-7ku">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5o3-Qb-1ya">
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5o3-Qb-1ya">
                                             <rect key="frame" x="543" y="6" width="51" height="31"/>
                                             <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="thumbTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </switch>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5N5-KI-RMF">
+                                            <rect key="frame" x="8" y="11" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="centerY" secondItem="5o3-Qb-1ya" secondAttribute="centerY" id="3Rj-nT-6lZ"/>
+                                        <constraint firstItem="5N5-KI-RMF" firstAttribute="centerY" secondItem="5o3-Qb-1ya" secondAttribute="centerY" id="4oB-Y4-u7a"/>
+                                        <constraint firstItem="5o3-Qb-1ya" firstAttribute="centerY" secondItem="5N5-KI-RMF" secondAttribute="centerY" id="ERB-29-lZq"/>
+                                        <constraint firstItem="5o3-Qb-1ya" firstAttribute="trailing" secondItem="yaU-Te-7ku" secondAttribute="trailingMargin" id="Wje-Nu-x6a"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="5o3-Qb-1ya" secondAttribute="trailing" constant="-7" id="aL3-Nu-xR6"/>
+                                        <constraint firstItem="5N5-KI-RMF" firstAttribute="leading" secondItem="yaU-Te-7ku" secondAttribute="leadingMargin" id="ca7-B7-mlF"/>
+                                        <constraint firstItem="5o3-Qb-1ya" firstAttribute="trailing" secondItem="yaU-Te-7ku" secondAttribute="trailingMargin" id="gUx-OO-hGB"/>
+                                        <constraint firstAttribute="centerY" secondItem="5o3-Qb-1ya" secondAttribute="centerY" id="vQI-TM-MzA"/>
+                                        <constraint firstItem="5o3-Qb-1ya" firstAttribute="centerY" secondItem="yaU-Te-7ku" secondAttribute="centerY" id="wCl-89-Z1Z"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="3Rj-nT-6lZ"/>
+                                            <exclude reference="ERB-29-lZq"/>
+                                            <exclude reference="aL3-Nu-xR6"/>
+                                            <exclude reference="gUx-OO-hGB"/>
+                                            <exclude reference="wCl-89-Z1Z"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -139,23 +169,36 @@
         <!--Home Preparation-->
         <scene sceneID="X5c-Bs-Dti">
             <objects>
-                <tableViewController title="Home Preparation" id="Ns5-Nf-ntm" sceneMemberID="viewController">
+                <tableViewController title="Home Preparation" id="Ns5-Nf-ntm" customClass="HomePrepsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="gi8-n7-09I">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="left" selectionStyle="default" indentationWidth="10" id="oAy-sc-k0z">
+                            <tableViewCell contentMode="left" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" id="oAy-sc-k0z" customClass="KitchenCellController">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" tableViewCell="oAy-sc-k0z" id="lAx-3m-eRG">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="q7e-BF-XMv">
-                                            <rect key="frame" x="543" y="6" width="51" height="31"/>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="q7e-BF-XMv">
+                                            <rect key="frame" x="550" y="6" width="51" height="31"/>
                                             <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="thumbTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </switch>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnb-au-yMi">
+                                            <rect key="frame" x="8" y="11" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="q7e-BF-XMv" secondAttribute="trailing" constant="-7" id="1n5-BZ-SLg"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="q7e-BF-XMv" secondAttribute="trailing" constant="-7" id="IDg-o5-HEz"/>
+                                        <constraint firstItem="q7e-BF-XMv" firstAttribute="centerY" secondItem="bnb-au-yMi" secondAttribute="centerY" id="J7v-10-xT2"/>
+                                        <constraint firstAttribute="centerY" secondItem="q7e-BF-XMv" secondAttribute="centerY" id="mRn-Ds-9ZN"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="q7e-BF-XMv" secondAttribute="trailing" constant="-7" id="qfo-Er-SRh"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -176,23 +219,36 @@
         <!--Self-Defense-->
         <scene sceneID="yTn-ln-YGo">
             <objects>
-                <tableViewController title="Self-Defense" id="WuY-KM-tDt" sceneMemberID="viewController">
+                <tableViewController title="Self-Defense" id="WuY-KM-tDt" customClass="SelfDefenseTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="vxZ-NU-uJN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="M2V-qq-S5B">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" id="M2V-qq-S5B" customClass="KitchenCellController">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M2V-qq-S5B" id="RNV-UD-s0g">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zns-eE-UlD">
-                                            <rect key="frame" x="543" y="6" width="51" height="31"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doP-1J-rXt">
+                                            <rect key="frame" x="8" y="11" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zns-eE-UlD">
+                                            <rect key="frame" x="550" y="6" width="51" height="31"/>
                                             <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="thumbTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </switch>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="centerY" secondItem="zns-eE-UlD" secondAttribute="centerY" id="0zk-fS-UA0"/>
+                                        <constraint firstItem="zns-eE-UlD" firstAttribute="centerY" secondItem="doP-1J-rXt" secondAttribute="centerY" id="COq-7a-xC5"/>
+                                        <constraint firstItem="zns-eE-UlD" firstAttribute="centerY" secondItem="RNV-UD-s0g" secondAttribute="centerY" id="FHk-CA-RoS"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="zns-eE-UlD" secondAttribute="trailing" constant="-7" id="Wg2-ud-HzS"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="zns-eE-UlD" secondAttribute="trailing" constant="-7" id="lBi-hc-mQH"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -208,12 +264,13 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1yy-fp-I71" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2642" y="674"/>
+            <point key="canvasLocation" x="2632" y="672"/>
         </scene>
         <!--Checklists-->
         <scene sceneID="a2t-ct-zb9">
             <objects>
-                <viewController title="Checklists" id="po5-WC-hrB" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="foN-Ns-k41" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="Checklists" id="po5-WC-hrB" customClass="ChecklistsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qd9-py-IbF"/>
                         <viewControllerLayoutGuide type="bottom" id="qP0-jl-LIR"/>
@@ -280,30 +337,42 @@
                     </view>
                     <navigationItem key="navigationItem" id="bfF-ln-bVd"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="foN-Ns-k41" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1923" y="-146"/>
         </scene>
         <!--Camping/Survival Gear-->
         <scene sceneID="3ok-NN-3ok">
             <objects>
-                <tableViewController title="Camping/Survival Gear" id="5zl-L9-KPx" sceneMemberID="viewController">
+                <tableViewController title="Camping/Survival Gear" id="5zl-L9-KPx" customClass="CampingTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="SfO-Di-s2n">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="OnD-hE-lOV">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" id="OnD-hE-lOV" customClass="KitchenCellController">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OnD-hE-lOV" id="J1O-Y0-iIP">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tnK-wv-azC">
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tnK-wv-azC">
                                             <rect key="frame" x="543" y="6" width="51" height="31"/>
                                             <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="thumbTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </switch>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xC5-CE-l3K">
+                                            <rect key="frame" x="8" y="11" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="centerY" secondItem="tnK-wv-azC" secondAttribute="centerY" id="GR5-vB-N5n"/>
+                                        <constraint firstAttribute="centerY" secondItem="tnK-wv-azC" secondAttribute="centerY" id="SZl-Dx-jxk"/>
+                                        <constraint firstItem="tnK-wv-azC" firstAttribute="trailing" secondItem="J1O-Y0-iIP" secondAttribute="trailingMargin" id="WBO-Ej-ual"/>
+                                        <constraint firstItem="tnK-wv-azC" firstAttribute="trailing" secondItem="J1O-Y0-iIP" secondAttribute="trailingMargin" id="jB8-S9-keT"/>
+                                        <constraint firstItem="tnK-wv-azC" firstAttribute="trailing" secondItem="J1O-Y0-iIP" secondAttribute="trailingMargin" id="o7M-Lp-fQa"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -324,7 +393,7 @@
         <!--Investments-->
         <scene sceneID="w7p-Mw-fTD">
             <objects>
-                <viewController title="Investments" id="1iO-99-x57" sceneMemberID="viewController">
+                <viewController title="Investments" id="1iO-99-x57" customClass="InvestmentsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ya4-yc-YdJ"/>
                         <viewControllerLayoutGuide type="bottom" id="3Sk-AF-yJW"/>
@@ -364,8 +433,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4W-e6-ggI">
-                                <rect key="frame" x="15" y="30" width="568" height="65"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4W-e6-ggI">
+                                <rect key="frame" x="16" y="20" width="568" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="KaT-AV-mnl">
                                         <variation key="heightClass=regular-widthClass=regular" constant="65"/>
@@ -375,7 +444,7 @@
                                     <fragment>
                                         <string key="content">Thank you for downloading Start Prepping.  Use these tools to help you prepare for any possible upcoming disaster.  Here, you can assess your situation and plan accordingly.  Possible scenarios include illness, injury, job loss, natural or man-made disasters, economic or financial instability, and social unrest.  (and zombies!)  Please note there may be updates coming in the future with additional information and features.</string>
                                         <attributes>
-                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
@@ -407,10 +476,10 @@
             </objects>
             <point key="canvasLocation" x="929" y="-1074"/>
         </scene>
-        <!--Checklists-->
+        <!--ChecklistNavigationController-->
         <scene sceneID="dVc-GP-z2J">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="75C-hA-KYx" sceneMemberID="viewController">
+                <navigationController title="ChecklistNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="75C-hA-KYx" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Checklists" image="Checklists" id="d8D-dV-CfQ">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
@@ -435,7 +504,6 @@
         <image name="Food" width="22" height="22"/>
         <image name="Investments" width="22" height="22"/>
         <image name="StorageBins" width="620" height="400"/>
-        <image name="tabbarImageBlank" width="22" height="22"/>
     </resources>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
