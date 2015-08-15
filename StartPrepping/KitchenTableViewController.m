@@ -44,8 +44,8 @@
 }
 
 - (NSArray *)kitchenPreps {
-    return @[@"Kitchen Prep 1", @"Kitchen Prep 2", @"Kitchen Prep 3", @"Kitchen Prep4",
-             @"Kitchen Prep5"];
+    return @[@"Kitchen Prep 1", @"Kitchen Prep 2", @"Kitchen Prep 3", @"Kitchen Prep 4",
+             @"Kitchen Prep 5"];
     
 }
 

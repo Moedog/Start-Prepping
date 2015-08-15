@@ -10,10 +10,12 @@
 #import "KitchenCellController.h"
 
 @interface ViewController ()
+@property (strong) NSArray *kitchenPreps;
 
 @end
 
 @implementation ViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];

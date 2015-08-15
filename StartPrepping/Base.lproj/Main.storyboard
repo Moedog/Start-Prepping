@@ -62,12 +62,6 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" tableViewCell="1vC-r2-BsY" id="1Bj-N1-5UU">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugO-JM-ykA">
-                                            <rect key="frame" x="15" y="11" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="right" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="trQ-Qj-qd2">
                                             <rect key="frame" x="543" y="6" width="51" height="31"/>
                                             <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -77,6 +71,12 @@
                                                 <action selector="switchChanged:" destination="1vC-r2-BsY" eventType="valueChanged" id="OX0-eE-QZL"/>
                                             </connections>
                                         </switch>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugO-JM-ykA">
+                                            <rect key="frame" x="15" y="11" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="centerY" secondItem="trQ-Qj-qd2" secondAttribute="centerY" id="Bav-j2-9ea"/>
@@ -84,7 +84,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="kitchenLabel" destination="ugO-JM-ykA" id="mZC-oe-dFF"/>
+                                    <outlet property="kitchenLabel" destination="ugO-JM-ykA" id="4OH-He-uAv"/>
                                     <outlet property="kitchenSwitch" destination="trQ-Qj-qd2" id="nEL-bq-ugV"/>
                                 </connections>
                             </tableViewCell>
@@ -112,7 +112,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="left" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" id="Mbx-Ut-IXE" customClass="KitchenCellController">
+                            <tableViewCell contentMode="left" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" id="Mbx-Ut-IXE" customClass="BathroomCellController">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" tableViewCell="Mbx-Ut-IXE" id="yaU-Te-7ku">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -150,6 +150,10 @@
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="bathroomLabel" destination="5N5-KI-RMF" id="WMY-PF-HwA"/>
+                                    <outlet property="bathroomSwitch" destination="5o3-Qb-1ya" id="BJ5-59-lB4"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -175,7 +179,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="left" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" id="oAy-sc-k0z" customClass="KitchenCellController">
+                            <tableViewCell contentMode="left" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" id="oAy-sc-k0z" customClass="HomePrepsCellController">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" tableViewCell="oAy-sc-k0z" id="lAx-3m-eRG">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -200,6 +204,10 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="q7e-BF-XMv" secondAttribute="trailing" constant="-7" id="qfo-Er-SRh"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="homeLabel" destination="bnb-au-yMi" id="ylv-I0-t9o"/>
+                                    <outlet property="homeSwitch" destination="q7e-BF-XMv" id="h8u-jz-uIV"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -225,7 +233,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" id="M2V-qq-S5B" customClass="KitchenCellController">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" id="M2V-qq-S5B" customClass="SelfDefenseCellController">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M2V-qq-S5B" id="RNV-UD-s0g">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -250,6 +258,10 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="zns-eE-UlD" secondAttribute="trailing" constant="-7" id="lBi-hc-mQH"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="defenseLabel" destination="doP-1J-rXt" id="OcD-de-iRx"/>
+                                    <outlet property="defenseSwitch" destination="zns-eE-UlD" id="VS2-CZ-j9a"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -269,7 +281,6 @@
         <!--Checklists-->
         <scene sceneID="a2t-ct-zb9">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="foN-Ns-k41" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Checklists" id="po5-WC-hrB" customClass="ChecklistsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qd9-py-IbF"/>
@@ -337,6 +348,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="bfF-ln-bVd"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="foN-Ns-k41" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1923" y="-146"/>
         </scene>
@@ -349,7 +361,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" id="OnD-hE-lOV" customClass="KitchenCellController">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" id="OnD-hE-lOV" customClass="CampingCellController">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OnD-hE-lOV" id="J1O-Y0-iIP">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -374,6 +386,10 @@
                                         <constraint firstItem="tnK-wv-azC" firstAttribute="trailing" secondItem="J1O-Y0-iIP" secondAttribute="trailingMargin" id="o7M-Lp-fQa"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="campingLabel" destination="xC5-CE-l3K" id="Z23-Rj-Pse"/>
+                                    <outlet property="campingSwitch" destination="tnK-wv-azC" id="fAs-Pn-b5u"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
