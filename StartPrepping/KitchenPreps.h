@@ -11,7 +11,7 @@
 @interface KitchenPreps : NSObject
 
 @property (strong) NSString *prepsInKitchen;
-@property (strong) BOOL enabled;
+@property (assign) BOOL enabled;
 
 + (instancetype)prepsInKitchen: (NSString *)prepsInKitchen enabled:(BOOL)enabled;
 

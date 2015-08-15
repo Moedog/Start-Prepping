@@ -7,8 +7,11 @@
 //
 
 #import "KitchenTableViewController.h"
+#import "KitchenCellController.h"
+#import "KitchenPreps.h"
 
 @interface KitchenTableViewController ()
+@property (strong, nonatomic) NSArray *kitchen;
 
 @end
 
@@ -22,12 +25,27 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self.kitchen = @[
+                     [KitchenPreps prepsInKitchen:@"Dish Soap" enabled:YES],
+                     [KitchenPreps prepsInKitchen:@"Hand Soap" enabled:YES],
+                     [KitchenPreps prepsInKitchen:@"Dishwasher Soap" enabled:YES],
+                     [KitchenPreps prepsInKitchen:@"Foilwrap" enabled:YES],
+                     [KitchenPreps prepsInKitchen:@"Saranwrap" enabled:YES],
+                     [KitchenPreps prepsInKitchen:@"Garbage Bags" enabled:YES],
+                     [KitchenPreps prepsInKitchen:@"Plastic Bags" enabled:YES],
+                     [KitchenPreps prepsInKitchen:@"Cleaning Rags"enabled:YES],
+                     [KitchenPreps prepsInKitchen:@"Cardboard Boxes" enabled:YES]];
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
 
 #pragma mark - Table view data source
 
@@ -40,20 +58,18 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 5;
-}
-
-- (NSArray *)kitchenPreps {
-    return @[@"Kitchen Prep 1", @"Kitchen Prep 2", @"Kitchen Prep 3", @"Kitchen Prep 4",
-             @"Kitchen Prep 5"];
-    
+    return self.kitchen.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SwitchCell" forIndexPath:indexPath];
+    KitchenCellController *cell = [tableView dequeueReusableCellWithIdentifier:@"SwitchCell"];
+               
+    KitchenPreps *prepsInKitchen = self.kitchen[indexPath.row];
+                             
+    cell.kitchenLabel.text = prepsInKitchen.prepsInKitchen;
     
-    // Configure the cell...
+    cell.kitchenSwitch.enabled = prepsInKitchen.enabled;
     
     return cell;
 }

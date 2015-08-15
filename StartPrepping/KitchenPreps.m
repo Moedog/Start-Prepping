@@ -10,4 +10,14 @@
 
 @implementation KitchenPreps
 
++ (instancetype)prepsInKitchen: (NSString *)prepsInKitchen enabled:(BOOL)enabled {
+    KitchenPreps *kitchen = [KitchenPreps new];
+    kitchen.prepsInKitchen = prepsInKitchen;
+    kitchen.enabled = enabled;
+    
+    return kitchen;
+    
+    
+}
+
 @end

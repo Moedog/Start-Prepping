@@ -156,30 +156,12 @@
 				6305BF7F1B5AD5DD00F7CB0A /* ViewController.m */,
 				63822FE31B7D8A4900EF9101 /* ChecklistsViewController.h */,
 				63822FE41B7D8A4900EF9101 /* ChecklistsViewController.m */,
-				63822FDD1B7D788800EF9101 /* CampingTableViewController.h */,
-				63822FDE1B7D788800EF9101 /* CampingTableViewController.m */,
-				63822FDA1B7D786F00EF9101 /* SelfDefenseTableViewController.h */,
-				63822FDB1B7D786F00EF9101 /* SelfDefenseTableViewController.m */,
-				63822FE01B7D7AB100EF9101 /* HomePrepsTableViewController.h */,
-				63822FE11B7D7AB100EF9101 /* HomePrepsTableViewController.m */,
-				63822FD71B7D783A00EF9101 /* BathroomTableViewController.h */,
-				63822FD81B7D783A00EF9101 /* BathroomTableViewController.m */,
-				63822FD41B7D781E00EF9101 /* KitchenTableViewController.h */,
-				63822FD51B7D781E00EF9101 /* KitchenTableViewController.m */,
-				63811EF81B7C1BDA005E9191 /* InvestmentsViewController.h */,
-				63811EF91B7C1BDA005E9191 /* InvestmentsViewController.m */,
 				63811EF51B7C1BC3005E9191 /* CalorieCalculatorViewController.h */,
 				63811EF61B7C1BC3005E9191 /* CalorieCalculatorViewController.m */,
-				6323F3D61B765E6E007CF54F /* KitchenCellController.h */,
-				6323F3D71B765E6E007CF54F /* KitchenCellController.m */,
-				6352C7A01B7F94C7003B6250 /* CampingCellController.h */,
-				6352C7A11B7F94C7003B6250 /* CampingCellController.m */,
-				6352C79D1B7F94AC003B6250 /* SelfDefenseCellController.h */,
-				6352C79E1B7F94AC003B6250 /* SelfDefenseCellController.m */,
-				6352C79A1B7F9479003B6250 /* HomePrepsCellController.h */,
-				6352C79B1B7F9479003B6250 /* HomePrepsCellController.m */,
-				6352C7971B7F9454003B6250 /* BathroomCellController.h */,
-				6352C7981B7F9454003B6250 /* BathroomCellController.m */,
+				63811EF81B7C1BDA005E9191 /* InvestmentsViewController.h */,
+				63811EF91B7C1BDA005E9191 /* InvestmentsViewController.m */,
+				6352C7A61B7FBE59003B6250 /* TableViewControllers */,
+				6352C7A71B7FBE9B003B6250 /* CellControllers */,
 				6352C7A31B7FB1DA003B6250 /* KitchenPreps.h */,
 				6352C7A41B7FB1DA003B6250 /* KitchenPreps.m */,
 				63D24F1A1B5F36C40000641B /* Model.xcdatamodeld */,
@@ -215,6 +197,40 @@
 				6305BF921B5AD5DD00F7CB0A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6352C7A61B7FBE59003B6250 /* TableViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				63822FDD1B7D788800EF9101 /* CampingTableViewController.h */,
+				63822FDE1B7D788800EF9101 /* CampingTableViewController.m */,
+				63822FDA1B7D786F00EF9101 /* SelfDefenseTableViewController.h */,
+				63822FDB1B7D786F00EF9101 /* SelfDefenseTableViewController.m */,
+				63822FE01B7D7AB100EF9101 /* HomePrepsTableViewController.h */,
+				63822FE11B7D7AB100EF9101 /* HomePrepsTableViewController.m */,
+				63822FD71B7D783A00EF9101 /* BathroomTableViewController.h */,
+				63822FD81B7D783A00EF9101 /* BathroomTableViewController.m */,
+				63822FD41B7D781E00EF9101 /* KitchenTableViewController.h */,
+				63822FD51B7D781E00EF9101 /* KitchenTableViewController.m */,
+			);
+			name = TableViewControllers;
+			sourceTree = "<group>";
+		};
+		6352C7A71B7FBE9B003B6250 /* CellControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6323F3D61B765E6E007CF54F /* KitchenCellController.h */,
+				6323F3D71B765E6E007CF54F /* KitchenCellController.m */,
+				6352C7A01B7F94C7003B6250 /* CampingCellController.h */,
+				6352C7A11B7F94C7003B6250 /* CampingCellController.m */,
+				6352C79D1B7F94AC003B6250 /* SelfDefenseCellController.h */,
+				6352C79E1B7F94AC003B6250 /* SelfDefenseCellController.m */,
+				6352C79A1B7F9479003B6250 /* HomePrepsCellController.h */,
+				6352C79B1B7F9479003B6250 /* HomePrepsCellController.m */,
+				6352C7971B7F9454003B6250 /* BathroomCellController.h */,
+				6352C7981B7F9454003B6250 /* BathroomCellController.m */,
+			);
+			name = CellControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
