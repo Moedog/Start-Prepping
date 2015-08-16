@@ -16,25 +16,25 @@
 }
 
 
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    UITableViewCell *cell = [UITableViewCell new];
-    
-    cell.textLabel.text = [self bathroomPreps] [indexPath.row];
-    
-    return cell;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self bathroomPreps].count;
-}
-
-- (NSArray *)bathroomPreps {
-    return @[@"Bathroom Prep 1", @"Bathroom Prep 2", @"Bathroom Prep 3"];
-    
-    
-}
+//
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    
+//    UITableViewCell *cell = [UITableViewCell new];
+//    
+//    cell.textLabel.text = [self bathroomPreps] [indexPath.row];
+//    
+//    return cell;
+//}
+//
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+//    return [self bathroomPreps].count;
+//}
+//
+//- (NSArray *)bathroomPreps {
+//    return @[@"Bathroom Prep 1", @"Bathroom Prep 2", @"Bathroom Prep 3"];
+//    
+//    
+//}
 
 
 //- (void)awakeFromNib {

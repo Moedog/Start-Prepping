@@ -7,8 +7,11 @@
 //
 
 #import "BathroomTableViewController.h"
+#import "BathroomCellController.h"
+#import "BathroomPreps.h"
 
 @interface BathroomTableViewController ()
+@property (strong, nonatomic) NSArray *bathroom;
 
 @end
 
@@ -22,6 +25,31 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self.bathroom = @[
+                     [BathroomPreps prepsInBathroom:@"Antifungal/Itch Cream" enabled:YES],
+                     [BathroomPreps prepsInBathroom:@"Birth Control" enabled:YES],
+                     [BathroomPreps prepsInBathroom:@"Cold/Flu Medicine" enabled:YES],
+                     [BathroomPreps prepsInBathroom:@"Cough Syrup" enabled:YES],
+                     [BathroomPreps prepsInBathroom:@"Deodorant" enabled:YES],
+                     [BathroomPreps prepsInBathroom:@"Feminine Hygiene" enabled:YES],
+                     [BathroomPreps prepsInBathroom:@"First Aid Kit" enabled:YES],
+                     [BathroomPreps prepsInBathroom:@"Guaze Pads"enabled:YES],
+                     [BathroomPreps prepsInBathroom:@"Hand Soap" enabled:YES],
+                     [BathroomPreps prepsInBathroom:@"Hydrogen Peroxide" enabled:YES],
+                     [BathroomPreps prepsInBathroom:@"Ibuprophen" enabled:YES],
+                     [BathroomPreps prepsInBathroom:@"Lotion" enabled:YES],
+                     [BathroomPreps prepsInBathroom:@"Mouthwash" enabled:YES],
+                     [BathroomPreps prepsInBathroom:@"Razors" enabled:YES],
+                     [BathroomPreps prepsInBathroom:@"Rubbing Alcohol" enabled:YES],
+                     [BathroomPreps prepsInBathroom:@"Shampoo/Body Wash" enabled:YES],
+                     [BathroomPreps prepsInBathroom:@"Shaving Cream" enabled:YES],
+                     [BathroomPreps prepsInBathroom:@"Sore Throat Spray" enabled:YES],
+                     [BathroomPreps prepsInBathroom:@"Sunscreen Lotion" enabled:YES],
+                     [BathroomPreps prepsInBathroom:@"Toothbrushes" enabled:YES],
+                     [BathroomPreps prepsInBathroom:@"Toothpaste" enabled:YES],
+                     [BathroomPreps prepsInBathroom:@"Vitamins" enabled: YES]];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,14 +68,18 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 5;
+    return self.bathroom.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SwitchCell" forIndexPath:indexPath];
+    BathroomCellController *cell = [tableView dequeueReusableCellWithIdentifier:@"SwitchCell" forIndexPath:indexPath];
     
-    // Configure the cell...
+    BathroomPreps *prepsInBathroom = self.bathroom[indexPath.row];
+    
+    cell.bathroomLabel.text = prepsInBathroom.prepsInBathroom;
+    
+    cell.bathroomSwitch.enabled = prepsInBathroom.enabled;
     
     return cell;
 }

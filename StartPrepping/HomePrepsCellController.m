@@ -16,25 +16,25 @@
 }
 
 
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    UITableViewCell *cell = [UITableViewCell new];
-    
-    cell.textLabel.text = [self homePreps] [indexPath.row];
-    
-    return cell;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self homePreps].count;
-}
-
-- (NSArray *)homePreps {
-    return @[@"Home Prep 1", @"Home Prep 2", @"Home Prep 3"];
-    
-    
-}
+//
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    
+//    UITableViewCell *cell = [UITableViewCell new];
+//    
+//    cell.textLabel.text = [self homePreps] [indexPath.row];
+//    
+//    return cell;
+//}
+//
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+//    return [self homePreps].count;
+//}
+//
+//- (NSArray *)homePreps {
+//    return @[@"Home Prep 1", @"Home Prep 2", @"Home Prep 3"];
+//    
+//    
+//}
 
 
 

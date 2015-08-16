@@ -19,25 +19,25 @@
 }
 
 
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    UITableViewCell *cell = [UITableViewCell new];
-    
-    cell.textLabel.text = [self kitchenPreps] [indexPath.row];
-    
-    return cell;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self kitchenPreps].count;
-}
-
-- (NSArray *)kitchenPreps {
-    return @[@"Kitchen Prep 1", @"Kitchen Prep 2", @"Kitchen Prep 3"];
-    
-    
-}
+//
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    
+//    UITableViewCell *cell = [UITableViewCell new];
+//    
+//    cell.textLabel.text = [self kitchenPreps] [indexPath.row];
+//    
+//    return cell;
+//}
+//
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+//    return [self kitchenPreps].count;
+//}
+//
+//- (NSArray *)kitchenPreps {
+//    return @[@"Kitchen Prep 1", @"Kitchen Prep 2", @"Kitchen Prep 3"];
+//    
+//    
+//}
 
 
 

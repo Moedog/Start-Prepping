@@ -16,25 +16,25 @@
 }
 
 
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    UITableViewCell *cell = [UITableViewCell new];
-    
-    cell.textLabel.text = [self defensePreps] [indexPath.row];
-    
-    return cell;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self defensePreps].count;
-}
-
-- (NSArray *)defensePreps {
-    return @[@"Defense Prep 1", @"Defense Prep 2", @"Defense Prep 3"];
-    
-    
-}
+//
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    
+//    UITableViewCell *cell = [UITableViewCell new];
+//    
+//    cell.textLabel.text = [self defensePreps] [indexPath.row];
+//    
+//    return cell;
+//}
+//
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+//    return [self defensePreps].count;
+//}
+//
+//- (NSArray *)defensePreps {
+//    return @[@"Defense Prep 1", @"Defense Prep 2", @"Defense Prep 3"];
+//    
+//    
+//}
 
 
 

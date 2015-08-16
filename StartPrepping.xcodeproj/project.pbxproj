@@ -33,6 +33,7 @@
 		63822FDF1B7D788800EF9101 /* CampingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63822FDE1B7D788800EF9101 /* CampingTableViewController.m */; };
 		63822FE21B7D7AB100EF9101 /* HomePrepsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63822FE11B7D7AB100EF9101 /* HomePrepsTableViewController.m */; };
 		63822FE51B7D8A4900EF9101 /* ChecklistsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63822FE41B7D8A4900EF9101 /* ChecklistsViewController.m */; };
+		63A7E8E11B80682D00F77C47 /* BathroomPreps.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A7E8E01B80682D00F77C47 /* BathroomPreps.m */; };
 		63D24F1C1B5F36C40000641B /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63D24F1A1B5F36C40000641B /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +99,8 @@
 		63822FE11B7D7AB100EF9101 /* HomePrepsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePrepsTableViewController.m; sourceTree = "<group>"; };
 		63822FE31B7D8A4900EF9101 /* ChecklistsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChecklistsViewController.h; sourceTree = "<group>"; };
 		63822FE41B7D8A4900EF9101 /* ChecklistsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChecklistsViewController.m; sourceTree = "<group>"; };
+		63A7E8DF1B80682D00F77C47 /* BathroomPreps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BathroomPreps.h; sourceTree = "<group>"; };
+		63A7E8E01B80682D00F77C47 /* BathroomPreps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BathroomPreps.m; sourceTree = "<group>"; };
 		63D24F1B1B5F36C40000641B /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,6 +167,8 @@
 				6352C7A71B7FBE9B003B6250 /* CellControllers */,
 				6352C7A31B7FB1DA003B6250 /* KitchenPreps.h */,
 				6352C7A41B7FB1DA003B6250 /* KitchenPreps.m */,
+				63A7E8DF1B80682D00F77C47 /* BathroomPreps.h */,
+				63A7E8E01B80682D00F77C47 /* BathroomPreps.m */,
 				63D24F1A1B5F36C40000641B /* Model.xcdatamodeld */,
 				6305BF811B5AD5DD00F7CB0A /* Main.storyboard */,
 				6305BF841B5AD5DD00F7CB0A /* Images.xcassets */,
@@ -334,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63A7E8E11B80682D00F77C47 /* BathroomPreps.m in Sources */,
 				6352C79F1B7F94AC003B6250 /* SelfDefenseCellController.m in Sources */,
 				63822FDC1B7D786F00EF9101 /* SelfDefenseTableViewController.m in Sources */,
 				6305BF801B5AD5DD00F7CB0A /* ViewController.m in Sources */,

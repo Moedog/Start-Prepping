@@ -18,25 +18,25 @@
 }
 
 
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    UITableViewCell *cell = [UITableViewCell new];
-    
-    cell.textLabel.text = [self campingPreps] [indexPath.row];
-    
-    return cell;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self campingPreps].count;
-}
-
-- (NSArray *)campingPreps {
-    return @[@"Camping Prep 1", @"Camping Prep 2", @"Camping Prep 3"];
-    
-    
-}
+//
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    
+//    UITableViewCell *cell = [UITableViewCell new];
+//    
+//    cell.textLabel.text = [self campingPreps] [indexPath.row];
+//    
+//    return cell;
+//}
+//
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+//    return [self campingPreps].count;
+//}
+//
+//- (NSArray *)campingPreps {
+//    return @[@"Camping Prep 1", @"Camping Prep 2", @"Camping Prep 3"];
+//    
+//    
+//}
 
 
 
