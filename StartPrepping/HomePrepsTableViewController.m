@@ -7,8 +7,11 @@
 //
 
 #import "HomePrepsTableViewController.h"
+#import "HomePrepsCellController.h"
+#import "HomePreps.h"
 
 @interface HomePrepsTableViewController ()
+@property (strong, nonatomic) NSArray *home;
 
 @end
 
@@ -22,6 +25,30 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self.home = @[
+                      [HomePreps prepsInHome:@"Attribute" enabled:YES],
+                      [HomePreps prepsInHome:@"Batteries" enabled:YES],
+                      [HomePreps prepsInHome:@"Board Games" enabled:YES],
+                      [HomePreps prepsInHome:@"Candles" enabled:YES],
+                      [HomePreps prepsInHome:@"Duct Tape" enabled:YES],
+                      [HomePreps prepsInHome:@"Electric Fans" enabled:YES],
+                      [HomePreps prepsInHome:@"Extension Cords" enabled:YES],
+                      [HomePreps prepsInHome:@"Extra Blankets"enabled:YES],
+                      [HomePreps prepsInHome:@"Garden Seeds" enabled:YES],
+                      [HomePreps prepsInHome:@"Garden Tools" enabled:YES],
+                      [HomePreps prepsInHome:@"Generator" enabled:YES],
+                      [HomePreps prepsInHome:@"Ham/Satellite Radio" enabled:YES],
+                      [HomePreps prepsInHome:@"Playing Cards" enabled:YES],
+                      [HomePreps prepsInHome:@"Portable AC Unit" enabled:YES],
+                      [HomePreps prepsInHome:@"Power Tools" enabled:YES],
+                      [HomePreps prepsInHome:@"Propane Tanks" enabled:YES],
+                      [HomePreps prepsInHome:@"Space Heater" enabled:YES],
+                      [HomePreps prepsInHome:@"Stationary" enabled:YES],
+                      [HomePreps prepsInHome:@"Survival Radio" enabled:YES],
+                      [HomePreps prepsInHome:@"Tool Kit" enabled:YES]];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,14 +67,18 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 5;
+    return self.home.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SwitchCell" forIndexPath:indexPath];
+    HomePrepsCellController *cell = [tableView dequeueReusableCellWithIdentifier:@"SwitchCell" forIndexPath:indexPath];
     
-    // Configure the cell...
+    HomePreps *prepsInHome = self.home[indexPath.row];
+    
+    cell.homeLabel.text = prepsInHome.prepsInHome;
+    
+    cell.homeSwitch.enabled = prepsInHome.enabled;
     
     return cell;
 }

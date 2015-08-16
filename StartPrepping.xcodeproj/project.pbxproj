@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6302180B1B80F631007BA2D7 /* HomePreps.m in Sources */ = {isa = PBXBuildFile; fileRef = 6302180A1B80F631007BA2D7 /* HomePreps.m */; };
 		6305BF7A1B5AD5DD00F7CB0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6305BF791B5AD5DD00F7CB0A /* main.m */; };
 		6305BF7D1B5AD5DD00F7CB0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6305BF7C1B5AD5DD00F7CB0A /* AppDelegate.m */; };
 		6305BF801B5AD5DD00F7CB0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6305BF7F1B5AD5DD00F7CB0A /* ViewController.m */; };
@@ -48,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		630218091B80F631007BA2D7 /* HomePreps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePreps.h; sourceTree = "<group>"; };
+		6302180A1B80F631007BA2D7 /* HomePreps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePreps.m; sourceTree = "<group>"; };
 		6305BF741B5AD5DD00F7CB0A /* StartPrepping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StartPrepping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6305BF781B5AD5DD00F7CB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6305BF791B5AD5DD00F7CB0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -167,6 +170,8 @@
 				6352C7A71B7FBE9B003B6250 /* CellControllers */,
 				6352C7A31B7FB1DA003B6250 /* KitchenPreps.h */,
 				6352C7A41B7FB1DA003B6250 /* KitchenPreps.m */,
+				630218091B80F631007BA2D7 /* HomePreps.h */,
+				6302180A1B80F631007BA2D7 /* HomePreps.m */,
 				63A7E8DF1B80682D00F77C47 /* BathroomPreps.h */,
 				63A7E8E01B80682D00F77C47 /* BathroomPreps.m */,
 				63D24F1A1B5F36C40000641B /* Model.xcdatamodeld */,
@@ -353,6 +358,7 @@
 				63822FD91B7D783A00EF9101 /* BathroomTableViewController.m in Sources */,
 				6352C7A51B7FB1DA003B6250 /* KitchenPreps.m in Sources */,
 				6323F3D81B765E6E007CF54F /* KitchenCellController.m in Sources */,
+				6302180B1B80F631007BA2D7 /* HomePreps.m in Sources */,
 				6305BF7A1B5AD5DD00F7CB0A /* main.m in Sources */,
 				6350747A1B718C2F00BF12CE /* Camping.m in Sources */,
 				63D24F1C1B5F36C40000641B /* Model.xcdatamodeld in Sources */,
