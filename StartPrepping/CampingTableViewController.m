@@ -7,8 +7,11 @@
 //
 
 #import "CampingTableViewController.h"
+#import "CampingCellController.h"
+#import "CampingPreps.h"
 
 @interface CampingTableViewController ()
+@property (strong, nonatomic) NSArray *camping;
 
 @end
 
@@ -22,6 +25,30 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self.camping = @[
+                     
+                     [CampingPreps prepsInCamping:@"Axe/Hatchet" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Camp Lantern" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Camp Stove" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Canteen" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Compass" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Cook Kit" enabled:YES],
+                     [CampingPreps prepsInCamping:@"First Aid Kit" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Flashlights"enabled:YES],
+                     [CampingPreps prepsInCamping:@"Matches" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Propane" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Raincoat" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Seasonal Clothing" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Single Burner Stove" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Sleeping Bags" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Survival Knife" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Tarps" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Tents" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Toilet Paper" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Water Purification" enabled:YES]];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,14 +67,18 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 5;
+    return self.camping.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SwitchCell" forIndexPath:indexPath];
+    CampingCellController *cell = [tableView dequeueReusableCellWithIdentifier:@"SwitchCell" forIndexPath:indexPath];
     
-    // Configure the cell...
+    CampingPreps *prepsInCamping = self.camping[indexPath.row];
+    
+    cell.campingLabel.text = prepsInCamping.prepsInCamping;
+    
+    cell.campingSwitch.enabled = prepsInCamping.enabled;
     
     return cell;
 }

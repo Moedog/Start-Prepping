@@ -7,8 +7,12 @@
 //
 
 #import "SelfDefenseTableViewController.h"
+#import "SelfDefenseCellController.h"
+#import "DefensePreps.h"
+
 
 @interface SelfDefenseTableViewController ()
+@property (strong, nonatomic) NSArray *defense;
 
 @end
 
@@ -22,6 +26,25 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self.defense = @[
+                     
+                     [DefensePreps prepsInDefense:@"Handgun (9mm or .40cal)" enabled:YES],
+                     [DefensePreps prepsInDefense:@"Ammo For Handgun" enabled:YES],
+                     [DefensePreps prepsInDefense:@"Shotgun" enabled:YES],
+                     [DefensePreps prepsInDefense:@"Shotgun Shells" enabled:YES],
+                     [DefensePreps prepsInDefense:@"AR-15" enabled:YES],
+                     [DefensePreps prepsInDefense:@"Ammo For AR-15" enabled:YES],
+                     [DefensePreps prepsInDefense:@"Concealed Firearms Permit" enabled:YES],
+                     [DefensePreps prepsInDefense:@"Brass Knuckles"enabled:YES],
+                     [DefensePreps prepsInDefense:@"Bugout Vehicle" enabled:YES],
+                     [DefensePreps prepsInDefense:@"Bulletproof Vest" enabled:YES],
+                     [DefensePreps prepsInDefense:@"Holsters Or Carrying Cases" enabled:YES],
+                     [DefensePreps prepsInDefense:@"Mace/Pepper Spray" enabled:YES],
+                     [DefensePreps prepsInDefense:@"Survival Knife" enabled:YES],
+                     [DefensePreps prepsInDefense:@"Tomahawk" enabled:YES]];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,14 +63,18 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 5;
+    return self.defense.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SwitchCell" forIndexPath:indexPath];
+    SelfDefenseCellController *cell = [tableView dequeueReusableCellWithIdentifier:@"SwitchCell" forIndexPath:indexPath];
     
-    // Configure the cell...
+    DefensePreps *prepsInDefense = self.defense[indexPath.row];
+    
+    cell.defenseLabel.text = prepsInDefense.prepsInDefense;
+    
+    cell.defenseSwitch.enabled = prepsInDefense.enabled;
     
     return cell;
 }

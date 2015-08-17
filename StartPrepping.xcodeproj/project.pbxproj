@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6302180B1B80F631007BA2D7 /* HomePreps.m in Sources */ = {isa = PBXBuildFile; fileRef = 6302180A1B80F631007BA2D7 /* HomePreps.m */; };
+		6302180E1B816F06007BA2D7 /* DefensePreps.m in Sources */ = {isa = PBXBuildFile; fileRef = 6302180D1B816F06007BA2D7 /* DefensePreps.m */; };
+		630218111B81781A007BA2D7 /* CampingPreps.m in Sources */ = {isa = PBXBuildFile; fileRef = 630218101B81781A007BA2D7 /* CampingPreps.m */; };
 		6305BF7A1B5AD5DD00F7CB0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6305BF791B5AD5DD00F7CB0A /* main.m */; };
 		6305BF7D1B5AD5DD00F7CB0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6305BF7C1B5AD5DD00F7CB0A /* AppDelegate.m */; };
 		6305BF801B5AD5DD00F7CB0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6305BF7F1B5AD5DD00F7CB0A /* ViewController.m */; };
@@ -51,6 +53,10 @@
 /* Begin PBXFileReference section */
 		630218091B80F631007BA2D7 /* HomePreps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePreps.h; sourceTree = "<group>"; };
 		6302180A1B80F631007BA2D7 /* HomePreps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePreps.m; sourceTree = "<group>"; };
+		6302180C1B816F06007BA2D7 /* DefensePreps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefensePreps.h; sourceTree = "<group>"; };
+		6302180D1B816F06007BA2D7 /* DefensePreps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefensePreps.m; sourceTree = "<group>"; };
+		6302180F1B81781A007BA2D7 /* CampingPreps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampingPreps.h; sourceTree = "<group>"; };
+		630218101B81781A007BA2D7 /* CampingPreps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampingPreps.m; sourceTree = "<group>"; };
 		6305BF741B5AD5DD00F7CB0A /* StartPrepping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StartPrepping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6305BF781B5AD5DD00F7CB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6305BF791B5AD5DD00F7CB0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -125,6 +131,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		630218121B8184C8007BA2D7 /* PrepsFiles */ = {
+			isa = PBXGroup;
+			children = (
+				6352C7A31B7FB1DA003B6250 /* KitchenPreps.h */,
+				6352C7A41B7FB1DA003B6250 /* KitchenPreps.m */,
+				6302180F1B81781A007BA2D7 /* CampingPreps.h */,
+				630218101B81781A007BA2D7 /* CampingPreps.m */,
+				6302180C1B816F06007BA2D7 /* DefensePreps.h */,
+				6302180D1B816F06007BA2D7 /* DefensePreps.m */,
+				630218091B80F631007BA2D7 /* HomePreps.h */,
+				6302180A1B80F631007BA2D7 /* HomePreps.m */,
+				63A7E8DF1B80682D00F77C47 /* BathroomPreps.h */,
+				63A7E8E01B80682D00F77C47 /* BathroomPreps.m */,
+			);
+			name = PrepsFiles;
+			sourceTree = "<group>";
+		};
 		6305BF6B1B5AD5DC00F7CB0A = {
 			isa = PBXGroup;
 			children = (
@@ -168,12 +191,7 @@
 				63811EF91B7C1BDA005E9191 /* InvestmentsViewController.m */,
 				6352C7A61B7FBE59003B6250 /* TableViewControllers */,
 				6352C7A71B7FBE9B003B6250 /* CellControllers */,
-				6352C7A31B7FB1DA003B6250 /* KitchenPreps.h */,
-				6352C7A41B7FB1DA003B6250 /* KitchenPreps.m */,
-				630218091B80F631007BA2D7 /* HomePreps.h */,
-				6302180A1B80F631007BA2D7 /* HomePreps.m */,
-				63A7E8DF1B80682D00F77C47 /* BathroomPreps.h */,
-				63A7E8E01B80682D00F77C47 /* BathroomPreps.m */,
+				630218121B8184C8007BA2D7 /* PrepsFiles */,
 				63D24F1A1B5F36C40000641B /* Model.xcdatamodeld */,
 				6305BF811B5AD5DD00F7CB0A /* Main.storyboard */,
 				6305BF841B5AD5DD00F7CB0A /* Images.xcassets */,
@@ -359,11 +377,13 @@
 				6352C7A51B7FB1DA003B6250 /* KitchenPreps.m in Sources */,
 				6323F3D81B765E6E007CF54F /* KitchenCellController.m in Sources */,
 				6302180B1B80F631007BA2D7 /* HomePreps.m in Sources */,
+				6302180E1B816F06007BA2D7 /* DefensePreps.m in Sources */,
 				6305BF7A1B5AD5DD00F7CB0A /* main.m in Sources */,
 				6350747A1B718C2F00BF12CE /* Camping.m in Sources */,
 				63D24F1C1B5F36C40000641B /* Model.xcdatamodeld in Sources */,
 				6352C7A21B7F94C7003B6250 /* CampingCellController.m in Sources */,
 				63822FDF1B7D788800EF9101 /* CampingTableViewController.m in Sources */,
+				630218111B81781A007BA2D7 /* CampingPreps.m in Sources */,
 				63811EF71B7C1BC3005E9191 /* CalorieCalculatorViewController.m in Sources */,
 				6350747D1B718C2F00BF12CE /* SelfDefense.m in Sources */,
 				635074771B718C2E00BF12CE /* Home.m in Sources */,
