@@ -42,7 +42,7 @@
                      [DefensePreps prepsInDefense:@"Holsters Or Carrying Cases" enabled:YES],
                      [DefensePreps prepsInDefense:@"Mace/Pepper Spray" enabled:YES],
                      [DefensePreps prepsInDefense:@"Survival Knife" enabled:YES],
-                     [DefensePreps prepsInDefense:@"Tomahawk" enabled:YES]];
+                     [DefensePreps prepsInDefense:@"Edged Weapons" enabled:YES]];
     
     
 }

@@ -27,15 +27,28 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     self.kitchen = @[
-                     [KitchenPreps prepsInKitchen:@"Dish Soap" enabled:YES],
-                     [KitchenPreps prepsInKitchen:@"Hand Soap" enabled:YES],
-                     [KitchenPreps prepsInKitchen:@"Dishwasher Soap" enabled:YES],
-                     [KitchenPreps prepsInKitchen:@"Foilwrap" enabled:YES],
-                     [KitchenPreps prepsInKitchen:@"Saranwrap" enabled:YES],
-                     [KitchenPreps prepsInKitchen:@"Garbage Bags" enabled:YES],
-                     [KitchenPreps prepsInKitchen:@"Plastic Bags" enabled:YES],
+                     
+                     [KitchenPreps prepsInKitchen:@"Bottled Water" enabled:YES],
+                     [KitchenPreps prepsInKitchen:@"Brillo Pads" enabled:YES],
+                     [KitchenPreps prepsInKitchen:@"Cardboard Boxes" enabled:YES],
                      [KitchenPreps prepsInKitchen:@"Cleaning Rags"enabled:YES],
-                     [KitchenPreps prepsInKitchen:@"Cardboard Boxes" enabled:YES]];
+                     [KitchenPreps prepsInKitchen:@"Dish Soap" enabled:YES],
+                     [KitchenPreps prepsInKitchen:@"Dishwasher Soap" enabled:YES],
+                     
+                     
+                     [KitchenPreps prepsInKitchen:@"Foilwrap" enabled:YES],
+                     [KitchenPreps prepsInKitchen:@"Food Spices" enabled:YES],
+                     [KitchenPreps prepsInKitchen:@"Food Storage Bags" enabled:YES],
+                     [KitchenPreps prepsInKitchen:@"Garbage Bags" enabled:YES],
+                     [KitchenPreps prepsInKitchen:@"Hand Soap" enabled:YES],
+                     [KitchenPreps prepsInKitchen:@"Paper Towels" enabled:YES],
+                     [KitchenPreps prepsInKitchen:@"Paper/Plastic Plates" enabled:YES],
+                     [KitchenPreps prepsInKitchen:@"Plastic Silverware" enabled:YES],
+                     [KitchenPreps prepsInKitchen:@"Saranwrap" enabled:YES]];
+                     
+                     
+    
+    
 
 }
 

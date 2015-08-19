@@ -2,7 +2,7 @@
 //  Bathroom.h
 //  StartPrepping
 //
-//  Created by Mac User on 8/4/15.
+//  Created by Mac User on 8/18/15.
 //  Copyright (c) 2015 Big Nerd Ranch. All rights reserved.
 //
 
@@ -34,5 +34,10 @@
 @property (nonatomic, retain) NSNumber * toothbrushes;
 @property (nonatomic, retain) NSNumber * toothpaste;
 @property (nonatomic, retain) NSNumber * vitamins;
+@property (nonatomic, retain) NSNumber * extraTowels;
+@property (nonatomic, retain) NSNumber * toiletPaper;
+@property (nonatomic, retain) NSNumber * antibacterialOintment;
+@property (nonatomic, retain) NSNumber * bugspray;
+@property (nonatomic, retain) NSString * notes;
 
 @end

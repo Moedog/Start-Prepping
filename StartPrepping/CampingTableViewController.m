@@ -28,24 +28,40 @@
     
     self.camping = @[
                      
+                     [CampingPreps prepsInCamping:@"Appropriate Footware" enabled:YES],
                      [CampingPreps prepsInCamping:@"Axe/Hatchet" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Blankets" enabled:YES],
                      [CampingPreps prepsInCamping:@"Camp Lantern" enabled:YES],
                      [CampingPreps prepsInCamping:@"Camp Stove" enabled:YES],
                      [CampingPreps prepsInCamping:@"Canteen" enabled:YES],
                      [CampingPreps prepsInCamping:@"Compass" enabled:YES],
                      [CampingPreps prepsInCamping:@"Cook Kit" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Cooler" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Fire Extinguisher" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Firestarters" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Fishing/Hunting Equipment" enabled:YES],
+                     
+                     
                      [CampingPreps prepsInCamping:@"First Aid Kit" enabled:YES],
                      [CampingPreps prepsInCamping:@"Flashlights"enabled:YES],
+                     [CampingPreps prepsInCamping:@"Hiking or Bugout Pack" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Lawn Chairs" enabled:YES],
                      [CampingPreps prepsInCamping:@"Matches" enabled:YES],
                      [CampingPreps prepsInCamping:@"Propane" enabled:YES],
                      [CampingPreps prepsInCamping:@"Raincoat" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Rope" enabled:YES],
                      [CampingPreps prepsInCamping:@"Seasonal Clothing" enabled:YES],
                      [CampingPreps prepsInCamping:@"Single Burner Stove" enabled:YES],
                      [CampingPreps prepsInCamping:@"Sleeping Bags" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Small Bungee Cords" enabled:YES],
                      [CampingPreps prepsInCamping:@"Survival Knife" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Survival Radio" enabled:YES],
                      [CampingPreps prepsInCamping:@"Tarps" enabled:YES],
                      [CampingPreps prepsInCamping:@"Tents" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Table" enabled:YES],
                      [CampingPreps prepsInCamping:@"Toilet Paper" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Tomahawk" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Water Containers" enabled:YES],
                      [CampingPreps prepsInCamping:@"Water Purification" enabled:YES]];
     
     

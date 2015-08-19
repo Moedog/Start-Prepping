@@ -28,10 +28,14 @@
     
     self.bathroom = @[
                       [BathroomPreps prepsInBathroom:@"Antifungal/Itch Cream" enabled:YES],
+                      [BathroomPreps prepsInBathroom:@"Antibacterial Ointment" enabled:YES],
                       [BathroomPreps prepsInBathroom:@"Birth Control" enabled:YES],
+                      [BathroomPreps prepsInBathroom:@"Bug Spray" enabled:YES],
                       [BathroomPreps prepsInBathroom:@"Cold/Flu Medicine" enabled:YES],
                       [BathroomPreps prepsInBathroom:@"Cough Syrup" enabled:YES],
                       [BathroomPreps prepsInBathroom:@"Deodorant" enabled:YES],
+                      [BathroomPreps prepsInBathroom:@"Extra Towels" enabled:YES],
+                      
                       [BathroomPreps prepsInBathroom:@"Feminine Hygiene" enabled:YES],
                       [BathroomPreps prepsInBathroom:@"First Aid Kit" enabled:YES],
                       [BathroomPreps prepsInBathroom:@"Guaze Pads"enabled:YES],
@@ -46,6 +50,7 @@
                       [BathroomPreps prepsInBathroom:@"Shaving Cream" enabled:YES],
                       [BathroomPreps prepsInBathroom:@"Sore Throat Spray" enabled:YES],
                       [BathroomPreps prepsInBathroom:@"Sunscreen Lotion" enabled:YES],
+                      [BathroomPreps prepsInBathroom:@"Toilet Paper" enabled:YES],
                       [BathroomPreps prepsInBathroom:@"Toothbrushes" enabled:YES],
                       [BathroomPreps prepsInBathroom:@"Toothpaste" enabled:YES],
                       [BathroomPreps prepsInBathroom:@"Vitamins" enabled: YES]];

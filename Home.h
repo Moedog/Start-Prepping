@@ -2,7 +2,7 @@
 //  Home.h
 //  StartPrepping
 //
-//  Created by Mac User on 8/4/15.
+//  Created by Mac User on 8/18/15.
 //  Copyright (c) 2015 Big Nerd Ranch. All rights reserved.
 //
 
@@ -12,7 +12,6 @@
 
 @interface Home : NSManagedObject
 
-@property (nonatomic, retain) NSNumber * attribute;
 @property (nonatomic, retain) NSNumber * batteries;
 @property (nonatomic, retain) NSNumber * boardGames;
 @property (nonatomic, retain) NSNumber * candles;
@@ -30,7 +29,15 @@
 @property (nonatomic, retain) NSNumber * propaneTanks;
 @property (nonatomic, retain) NSNumber * spaceHeater;
 @property (nonatomic, retain) NSNumber * stationary;
-@property (nonatomic, retain) NSNumber * survivalRadio;
 @property (nonatomic, retain) NSNumber * toolKit;
+@property (nonatomic, retain) NSNumber * fireExtinguisher;
+@property (nonatomic, retain) NSNumber * spareCash;
+@property (nonatomic, retain) NSNumber * workGloves;
+@property (nonatomic, retain) NSNumber * tissues;
+@property (nonatomic, retain) NSNumber * fiveGallonWaterContainers;
+@property (nonatomic, retain) NSNumber * fiveGalGasCans;
+@property (nonatomic, retain) NSNumber * lightbulbs;
+@property (nonatomic, retain) NSNumber * portableWaterHeater;
+@property (nonatomic, retain) NSString * notes;
 
 @end

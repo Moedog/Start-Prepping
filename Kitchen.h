@@ -2,7 +2,7 @@
 //  Kitchen.h
 //  StartPrepping
 //
-//  Created by Mac User on 8/4/15.
+//  Created by Mac User on 8/18/15.
 //  Copyright (c) 2015 Big Nerd Ranch. All rights reserved.
 //
 
@@ -19,7 +19,15 @@
 @property (nonatomic, retain) NSNumber * foilwrap;
 @property (nonatomic, retain) NSNumber * garbagebags;
 @property (nonatomic, retain) NSNumber * handsoap;
-@property (nonatomic, retain) NSNumber * plasticbags;
 @property (nonatomic, retain) NSNumber * saranwrap;
+@property (nonatomic, retain) NSNumber * brilloPads;
+@property (nonatomic, retain) NSNumber * foodSpices;
+@property (nonatomic, retain) NSNumber * bottledWater;
+@property (nonatomic, retain) NSNumber * paperOrPlasticPlates;
+@property (nonatomic, retain) NSNumber * plasticSilverware;
+@property (nonatomic, retain) NSNumber * foodStorageBags;
+@property (nonatomic, retain) NSNumber * fullPantry;
+@property (nonatomic, retain) NSNumber * paperTowels;
+@property (nonatomic, retain) NSString * notes;
 
 @end

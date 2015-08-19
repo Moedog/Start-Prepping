@@ -2,7 +2,7 @@
 //  SelfDefense.h
 //  StartPrepping
 //
-//  Created by Mac User on 8/4/15.
+//  Created by Mac User on 8/18/15.
 //  Copyright (c) 2015 Big Nerd Ranch. All rights reserved.
 //
 
@@ -25,6 +25,7 @@
 @property (nonatomic, retain) NSNumber * shotgun;
 @property (nonatomic, retain) NSNumber * shotgunshells;
 @property (nonatomic, retain) NSNumber * survivalknife;
-@property (nonatomic, retain) NSNumber * tomahawk;
+@property (nonatomic, retain) NSNumber * edgedWeapons;
+@property (nonatomic, retain) NSString * notes;
 
 @end
