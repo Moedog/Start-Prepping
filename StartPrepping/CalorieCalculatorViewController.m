@@ -8,12 +8,16 @@
 
 #import "CalorieCalculatorViewController.h"
 
-@interface CalorieCalculatorViewController () <UIPickerViewDataSource, UIPickerViewDelegate>
+@interface CalorieCalculatorViewController ()
+
+NSArray * self.numberAdults;
 
 @property (nonatomic, strong) UILabel *numberAdults;
 @property (nonatomic, strong) UILabel *caloriesAdults;
 @property (nonatomic, strong) UILabel *numberChildren;
 @property (nonatomic, strong) UILabel *caloriesChildren;
+
+
 
 @end
 
@@ -31,48 +35,46 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UILabel *numberAdults = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, 30)];
-    numberAdults.textAlignment = NSTextAlignmentCenter;
-    numberAdults.font = [UIFont boldSystemFontOfSize:20];
-    [self.view addSubview:numberAdults];
+//    UILabel *numberAdults = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, 30)];
+//    numberAdults.textAlignment = NSTextAlignmentCenter;
+//    numberAdults.font = [UIFont boldSystemFontOfSize:20];
+//    [self.view addSubview:numberAdults];
+//    
+//    self.numberAdults = numberAdults;
+//    
+//    UIPickerView *picker = [UIPickerView new];
+//    picker.frame = CGRectMake(0, (self.view.frame.size.height - picker.frame.size.height) / 2, picker.frame.size.width, picker.frame.size.height);
+//    picker.delegate = self;
+//    picker.dataSource = self;
+//    [self.view addSubview:picker];
+//    
+//
+    numberAdults = @[@"Item 1", @"Item 2", @"Item 3", @"Item 4", @"Item 5", @"Item 6"];
     
-    self.numberAdults = numberAdults;
-    
-    UIPickerView *picker = [UIPickerView new];
-    picker.frame = CGRectMake(0, (self.view.frame.size.height - picker.frame.size.height) / 2, picker.frame.size.width, picker.frame.size.height);
-    picker.delegate = self;
-    picker.dataSource = self;
-    [self.view addSubview:picker];
+    self.numberAdults.dataSource = self;
+    self.numberAdults.delegate = self;
     
 }
 
-- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
-    
-    self.numberAdults.text = [NSString stringWithFormat:@"%@ %@ %@", [self data][0][[pickerView selectedRowInComponent:0]], [self data][1][[pickerView selectedRowInComponent:1]], [self data][2][[pickerView selectedRowInComponent:2]]];
-    
-}
+//- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+//    
+//    self.numberAdults.text = [NSString stringWithFormat:@"%@ %@ %@", [self data][0][[pickerView selectedRowInComponent:0]], [self data][1][[pickerView selectedRowInComponent:1]], [self data][2][[pickerView selectedRowInComponent:2]]];
+//    
+//}
+//
+//- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+//    return self.data[component][row];
+//}
+//
+//- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+//    return [self.data count];
+//}
+//
+//- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+//    return [self.data[component] count];
+//}
 
-- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-    return self.data[component][row];
-}
 
-- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
-    return [self.data count];
-}
-
-- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-    return [self.data[component] count];
-}
-
-- (NSArray *)data {
-    
-    return @[
-             [self numberAdults],
-             [self caloriesAdults],
-             [self numberChildren],
-             [self caloriesChildren]];
-    
-}
 
 - (NSArray *)numberAdults {
     
@@ -141,6 +143,21 @@
     // Dispose of any resources that can be recreated.
 }
 
+// The number of columns of data
+- (int)numberOfComponentsInPickerView:(UIPickerView *)numberAdults
+{
+    return 1;
+}
+
+// The number of rows of data
+- (int)pickerView:(UIPickerView *)numberAdults numberOfRowsInComponent:(NSInteger)component
+{
+    return numberAdults.count;
+}
+
+@end
+
+
 /*
 #pragma mark - Navigation
 
@@ -151,4 +168,3 @@
 }
 */
 
-@end
