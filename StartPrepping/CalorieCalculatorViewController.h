@@ -15,4 +15,11 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *numberChildren;
 @property (weak, nonatomic) IBOutlet UIPickerView *caloriesChildren;
 
+@property (strong, readonly) NSArray * numberOfAdults;
+@property (strong, readonly) NSArray * caloriesOfAdults;
+@property (strong, readonly) NSArray * numberOfChildren;
+@property (strong, readonly) NSArray * caloriesOfChildren;
+
+@property (readonly) NSUInteger count;
+
 @end
