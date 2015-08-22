@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BMO-8v-WFa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BMO-8v-WFa">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -38,7 +38,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Data To Find Food Calorie Requirements" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3n-kn-TsD">
@@ -51,20 +51,20 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Adults" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5MV-Ha-pS8">
-                                <rect key="frame" x="163" y="72" width="135" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Adults" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5MV-Ha-pS8">
+                                <rect key="frame" x="10" y="56" width="135" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average Calories Per Day Per Adult" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMp-R4-Mfy">
-                                <rect key="frame" x="306" y="73" width="134" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories Per Day Per Adult" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMp-R4-Mfy">
+                                <rect key="frame" x="179" y="57" width="134" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Number of Children" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jn6-8Q-6By">
-                                <rect key="frame" x="6" y="239" width="157" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Number of Children" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jn6-8Q-6By">
+                                <rect key="frame" x="15" y="250" width="157" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="J9y-bb-zT7"/>
                                 </constraints>
@@ -72,8 +72,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Calories Per Day Per Child" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bj6-xD-dfa">
-                                <rect key="frame" x="192" y="239" width="144" height="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Calories Per Day Per Child" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bj6-xD-dfa">
+                                <rect key="frame" x="210" y="240" width="144" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="9bW-4o-fo4"/>
                                     <constraint firstAttribute="width" constant="144" id="aoO-ch-bhX"/>
@@ -82,56 +82,65 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkY-qd-9hM">
-                                <rect key="frame" x="161" y="451" width="87" height="30"/>
-                                <state key="normal" title="CALCULATE">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <pickerView contentMode="scaleToFill" restorationIdentifier="caloriesAdults" translatesAutoresizingMaskIntoConstraints="NO" id="Zm8-h9-Qfo">
-                                <rect key="frame" x="306" y="114" width="134" height="162"/>
+                                <rect key="frame" x="179" y="44" width="134" height="162"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="162" id="XwL-XB-ZBH"/>
                                     <constraint firstAttribute="width" constant="134" id="k39-Hy-tmU"/>
                                 </constraints>
                             </pickerView>
-                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="numberChildren" translatesAutoresizingMaskIntoConstraints="NO" id="nWv-VG-IT8">
-                                <rect key="frame" x="156" y="281" width="144" height="162"/>
+                            <pickerView contentMode="scaleToFill" restorationIdentifier="numberChildren" translatesAutoresizingMaskIntoConstraints="NO" id="nWv-VG-IT8">
+                                <rect key="frame" x="35" y="194" width="134" height="162"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="144" id="EJL-Xs-PzT"/>
+                                    <constraint firstAttribute="width" constant="134" id="EJL-Xs-PzT"/>
                                 </constraints>
                             </pickerView>
-                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="caloriesChildren" translatesAutoresizingMaskIntoConstraints="NO" id="UHD-m7-e7V">
-                                <rect key="frame" x="317" y="281" width="156" height="162"/>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" restorationIdentifier="caloriesChildren" translatesAutoresizingMaskIntoConstraints="NO" id="UHD-m7-e7V">
+                                <rect key="frame" x="210" y="194" width="134" height="162"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="156" id="nix-Qc-VFO"/>
+                                    <constraint firstAttribute="width" constant="134" id="nix-Qc-VFO"/>
                                 </constraints>
                             </pickerView>
                             <pickerView contentMode="scaleToFill" restorationIdentifier="numberAdults" translatesAutoresizingMaskIntoConstraints="NO" id="YzJ-Y3-udb">
-                                <rect key="frame" x="160" y="114" width="134" height="162"/>
+                                <rect key="frame" x="7" y="44" width="134" height="162"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="134" id="74N-J9-s1R"/>
                                     <constraint firstAttribute="height" constant="162" id="7Et-Mf-hsW"/>
                                 </constraints>
                             </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkY-qd-9hM">
+                                <rect key="frame" x="144" y="375" width="87" height="30"/>
+                                <state key="normal" title="CALCULATE">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Zm8-h9-Qfo" firstAttribute="top" secondItem="AMp-R4-Mfy" secondAttribute="bottom" id="11e-X0-cuC"/>
-                            <constraint firstItem="YzJ-Y3-udb" firstAttribute="top" secondItem="5MV-Ha-pS8" secondAttribute="bottom" constant="1" id="6An-94-4zM"/>
+                            <constraint firstItem="Zm8-h9-Qfo" firstAttribute="top" secondItem="AMp-R4-Mfy" secondAttribute="bottom" constant="-54" id="11e-X0-cuC"/>
+                            <constraint firstItem="Bj6-xD-dfa" firstAttribute="leading" secondItem="jn6-8Q-6By" secondAttribute="trailing" constant="38" id="21d-fV-L3z"/>
+                            <constraint firstItem="YzJ-Y3-udb" firstAttribute="top" secondItem="5MV-Ha-pS8" secondAttribute="bottom" constant="-53" id="6An-94-4zM"/>
                             <constraint firstItem="5MV-Ha-pS8" firstAttribute="height" secondItem="AMp-R4-Mfy" secondAttribute="height" id="6Ug-zQ-Dsi"/>
+                            <constraint firstItem="UHD-m7-e7V" firstAttribute="leading" secondItem="Bj6-xD-dfa" secondAttribute="leading" id="9wZ-Ms-h7U"/>
                             <constraint firstItem="I3n-kn-TsD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="9" id="ARQ-0w-tCD"/>
-                            <constraint firstAttribute="centerY" secondItem="YzJ-Y3-udb" secondAttribute="centerY" constant="81" id="UaU-Qp-pf9"/>
-                            <constraint firstAttribute="centerX" secondItem="YzJ-Y3-udb" secondAttribute="centerX" constant="73" id="e7u-XJ-tgA"/>
+                            <constraint firstItem="nWv-VG-IT8" firstAttribute="top" secondItem="YzJ-Y3-udb" secondAttribute="bottom" constant="-12" id="LBe-rU-9qD"/>
+                            <constraint firstAttribute="centerY" secondItem="YzJ-Y3-udb" secondAttribute="centerY" constant="134.5" id="UaU-Qp-pf9"/>
+                            <constraint firstAttribute="centerX" secondItem="YzJ-Y3-udb" secondAttribute="centerX" constant="86" id="e7u-XJ-tgA"/>
                             <constraint firstItem="AMp-R4-Mfy" firstAttribute="centerX" secondItem="Zm8-h9-Qfo" secondAttribute="centerX" id="heZ-Pv-xST"/>
                             <constraint firstItem="AMp-R4-Mfy" firstAttribute="width" secondItem="Zm8-h9-Qfo" secondAttribute="width" id="hfE-wc-O0q"/>
-                            <constraint firstAttribute="centerY" secondItem="Zm8-h9-Qfo" secondAttribute="centerY" constant="81" id="l8W-1A-pX8"/>
+                            <constraint firstAttribute="centerY" secondItem="Zm8-h9-Qfo" secondAttribute="centerY" constant="134.5" id="l8W-1A-pX8"/>
                             <constraint firstItem="5MV-Ha-pS8" firstAttribute="centerX" secondItem="YzJ-Y3-udb" secondAttribute="centerX" constant="3" id="pjJ-IZ-iAd"/>
+                            <constraint firstItem="jn6-8Q-6By" firstAttribute="top" secondItem="YzJ-Y3-udb" secondAttribute="bottom" constant="44" id="q2Q-5I-Vnu"/>
+                            <constraint firstItem="UHD-m7-e7V" firstAttribute="top" secondItem="Zm8-h9-Qfo" secondAttribute="bottom" constant="-12" id="rLw-0h-BOG"/>
                             <constraint firstItem="I3n-kn-TsD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="swc-hi-cfX"/>
-                            <constraint firstAttribute="centerX" secondItem="Zm8-h9-Qfo" secondAttribute="centerX" constant="-73" id="x3h-82-MsF"/>
+                            <constraint firstItem="nWv-VG-IT8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="19" id="sxM-Ma-9HK"/>
+                            <constraint firstAttribute="centerX" secondItem="Zm8-h9-Qfo" secondAttribute="centerX" constant="-86" id="x3h-82-MsF"/>
+                            <constraint firstItem="jn6-8Q-6By" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-1" id="x5a-bm-gjb"/>
+                            <constraint firstItem="Bj6-xD-dfa" firstAttribute="top" secondItem="Zm8-h9-Qfo" secondAttribute="bottom" constant="34" id="xBX-77-10d"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Calorie Calculator" image="Food" id="YRU-JD-hZh"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="caloriesAdults" destination="Zm8-h9-Qfo" id="DbN-jj-U9o"/>
                         <outlet property="caloriesChildren" destination="UHD-m7-e7V" id="2wB-tP-mUb"/>
@@ -292,7 +301,7 @@
                                             <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="thumbTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </switch>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnb-au-yMi">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnb-au-yMi">
                                             <rect key="frame" x="8" y="11" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -300,6 +309,7 @@
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="bnb-au-yMi" firstAttribute="leading" secondItem="lAx-3m-eRG" secondAttribute="leadingMargin" id="1YI-N3-8ld"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="q7e-BF-XMv" secondAttribute="trailing" constant="-7" id="1n5-BZ-SLg"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="q7e-BF-XMv" secondAttribute="trailing" constant="-7" id="IDg-o5-HEz"/>
                                         <constraint firstItem="q7e-BF-XMv" firstAttribute="centerY" secondItem="bnb-au-yMi" secondAttribute="centerY" id="J7v-10-xT2"/>
@@ -341,7 +351,7 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M2V-qq-S5B" id="RNV-UD-s0g">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doP-1J-rXt">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doP-1J-rXt">
                                             <rect key="frame" x="8" y="0.0" width="377" height="43"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -359,6 +369,7 @@
                                         <constraint firstItem="zns-eE-UlD" firstAttribute="centerY" secondItem="RNV-UD-s0g" secondAttribute="centerY" id="FHk-CA-RoS"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="zns-eE-UlD" secondAttribute="trailing" constant="-7" id="Wg2-ud-HzS"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="zns-eE-UlD" secondAttribute="trailing" constant="-7" id="lBi-hc-mQH"/>
+                                        <constraint firstItem="doP-1J-rXt" firstAttribute="leading" secondItem="RNV-UD-s0g" secondAttribute="leadingMargin" id="rVh-BT-0PU"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

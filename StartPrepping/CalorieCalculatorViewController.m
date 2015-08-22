@@ -23,6 +23,13 @@
     self.numberChildren.dataSource = self;
     self.numberChildren.delegate = self;
     
+    self.caloriesAdults.dataSource = self;
+    self.caloriesAdults.delegate = self;
+    
+    self.caloriesChildren.dataSource = self;
+    self.caloriesChildren.delegate = self;
+    
+    
 }
 
 - (NSArray *)numberOfAdults {
@@ -102,8 +109,12 @@
         return self.numberOfAdults.count;
     } else if (pickerView == self.numberChildren) {
         return self.numberOfChildren.count;
+    } else if (pickerView == self.caloriesAdults) {
+        return self.caloriesOfAdults.count;
+    } else if (pickerView == self.caloriesChildren) {
+        return self.caloriesOfChildren.count;
     } else {
-        return 0;
+        return 3;
     }
 }
 
@@ -113,14 +124,15 @@
         return self.numberOfAdults[row];
     } else if (pickerView == self.numberChildren) {
         return self.numberOfChildren[row];
+    } else if (pickerView == self.caloriesAdults) {
+        return self.caloriesOfAdults[row];
+    } else if (pickerView == self.caloriesChildren) {
+        return self.caloriesOfChildren[row];
     } else {
-        return 0;
+        return @"";
     }
 }
 
-
-
-@end
 
 
 /*
@@ -132,4 +144,8 @@
     // Pass the selected object to the new view controller.
 }
 */
-
+@end
+    
+    
+    
+    
