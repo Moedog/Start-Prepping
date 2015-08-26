@@ -95,12 +95,6 @@
                                     <constraint firstAttribute="width" constant="134" id="EJL-Xs-PzT"/>
                                 </constraints>
                             </pickerView>
-                            <pickerView contentMode="scaleToFill" misplaced="YES" restorationIdentifier="caloriesChildren" translatesAutoresizingMaskIntoConstraints="NO" id="UHD-m7-e7V">
-                                <rect key="frame" x="210" y="194" width="134" height="162"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="134" id="nix-Qc-VFO"/>
-                                </constraints>
-                            </pickerView>
                             <pickerView contentMode="scaleToFill" restorationIdentifier="numberAdults" translatesAutoresizingMaskIntoConstraints="NO" id="YzJ-Y3-udb">
                                 <rect key="frame" x="7" y="44" width="134" height="162"/>
                                 <constraints>
@@ -109,11 +103,27 @@
                                 </constraints>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkY-qd-9hM">
-                                <rect key="frame" x="144" y="375" width="87" height="30"/>
+                                <rect key="frame" x="117" y="447" width="87" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="CALCULATE">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="calculateCalories:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ePV-r5-WYk"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0K-EA-20l">
+                                <rect key="frame" x="10" y="409" width="294" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" restorationIdentifier="caloriesChildren" translatesAutoresizingMaskIntoConstraints="NO" id="UHD-m7-e7V">
+                                <rect key="frame" x="210" y="194" width="134" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="nix-Qc-VFO"/>
+                                </constraints>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -142,6 +152,7 @@
                     <tabBarItem key="tabBarItem" title="Calorie Calculator" image="Food" id="YRU-JD-hZh"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="answerLabel" destination="B0K-EA-20l" id="Cop-TN-mWG"/>
                         <outlet property="caloriesAdults" destination="Zm8-h9-Qfo" id="DbN-jj-U9o"/>
                         <outlet property="caloriesChildren" destination="UHD-m7-e7V" id="2wB-tP-mUb"/>
                         <outlet property="numberAdults" destination="YzJ-Y3-udb" id="es5-W8-vrp"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14F27" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Bathroom" representedClassName="Bathroom" syncable="YES">
         <attribute name="antibacterialOintment" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="antifungalItchCreams" optional="YES" attributeType="Boolean" syncable="YES"/>
@@ -86,6 +86,7 @@
         <attribute name="portableWaterHeater" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="powerTools" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="propaneTanks" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="sewingKit" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="spaceHeater" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="spareCash" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="stationary" optional="YES" attributeType="Boolean" syncable="YES"/>
@@ -132,7 +133,7 @@
     <elements>
         <element name="Bathroom" positionX="0" positionY="99" width="128" height="450"/>
         <element name="Camping" positionX="54" positionY="144" width="128" height="540"/>
-        <element name="Home" positionX="27" positionY="135" width="128" height="450"/>
+        <element name="Home" positionX="27" positionY="135" width="128" height="465"/>
         <element name="Kitchen" positionX="-36" positionY="36" width="128" height="300"/>
         <element name="SelfDefense" positionX="9" positionY="189" width="128" height="270"/>
     </elements>

@@ -50,6 +50,7 @@
                       [HomePreps prepsInHome:@"Portable Water Heater" enabled:YES],
                       [HomePreps prepsInHome:@"Power Tools" enabled:YES],
                       [HomePreps prepsInHome:@"Propane Tanks" enabled:YES],
+                      [HomePreps prepsInHome:@"Sewing Kit" enabled:YES],
                       [HomePreps prepsInHome:@"Space Heater" enabled:YES],
                       [HomePreps prepsInHome:@"Spare Cash ($500 min.)" enabled:YES],
                       [HomePreps prepsInHome:@"Stationary" enabled:YES],

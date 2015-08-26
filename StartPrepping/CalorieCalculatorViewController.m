@@ -9,6 +9,7 @@
 #import "CalorieCalculatorViewController.h"
 
 @interface CalorieCalculatorViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *answerLabel;
 
 @end
 
@@ -29,7 +30,15 @@
     self.caloriesChildren.dataSource = self;
     self.caloriesChildren.delegate = self;
     
+//    self.calculate.dataSource = self;
+//    self.calculate.delegate = self;
     
+    
+}
+- (IBAction)calculateCalories:(id)sender {
+    NSInteger caloriesPerMonth = [self caloriesPerMonth];
+    NSInteger answer = [self calculateEquation];
+    self.answerLabel.text = [NSString stringWithFormat:@"You require %ld calories for your family every day OR %ld calories per month.", (long)answer, (long)caloriesPerMonth];
 }
 
 - (NSArray *)numberOfAdults {
@@ -51,7 +60,7 @@
              @"15"];
 }
 
-- (NSArray *)caloriesofAdults {
+- (NSArray *)caloriesOfAdults {
     return @[@"1000",
              @"1500",
              @"2000",
@@ -131,10 +140,24 @@
     } else {
         return @"";
     }
+    
+   
+ 
+  
 }
 
 
+-(NSInteger) calculateEquation {
+    self.answerLabel.calculateEquation = numberAdults * caloriesAdults * numberChildren * caloriesChildren
+    
+    return answer;
+}
 
+-(NSInteger) caloriesPerMonth {
+    self.answerLabel.caloriesPerMonth = numberAdults * caloriesAdults * numberChildren * caloriesChildren * 30;
+    
+    return caloriesPerMonth;
+}
 /*
 #pragma mark - Navigation
 

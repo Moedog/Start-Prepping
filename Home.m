@@ -2,7 +2,7 @@
 //  Home.m
 //  StartPrepping
 //
-//  Created by Mac User on 8/18/15.
+//  Created by Mac User on 8/24/15.
 //  Copyright (c) 2015 Big Nerd Ranch. All rights reserved.
 //
 
@@ -18,25 +18,26 @@
 @dynamic electricFan;
 @dynamic extensionCords;
 @dynamic extraBlankets;
+@dynamic fireExtinguisher;
+@dynamic fiveGalGasCans;
+@dynamic fiveGallonWaterContainers;
 @dynamic gardenSeeds;
 @dynamic gardenTools;
 @dynamic generator;
 @dynamic hamOrSatelliteRadio;
+@dynamic lightbulbs;
+@dynamic notes;
 @dynamic playingCards;
 @dynamic portableACUnit;
+@dynamic portableWaterHeater;
 @dynamic powerTools;
 @dynamic propaneTanks;
 @dynamic spaceHeater;
-@dynamic stationary;
-@dynamic toolKit;
-@dynamic fireExtinguisher;
 @dynamic spareCash;
-@dynamic workGloves;
+@dynamic stationary;
 @dynamic tissues;
-@dynamic fiveGallonWaterContainers;
-@dynamic fiveGalGasCans;
-@dynamic lightbulbs;
-@dynamic portableWaterHeater;
-@dynamic notes;
+@dynamic toolKit;
+@dynamic workGloves;
+@dynamic sewingKit;
 
 @end

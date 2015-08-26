@@ -22,4 +22,8 @@
 
 @property (readonly) NSUInteger count;
 
+@property (weak, readonly) NSUInteger * calculate;
+
 @end
+
+

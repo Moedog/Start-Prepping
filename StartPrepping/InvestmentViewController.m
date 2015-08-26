@@ -1,18 +1,30 @@
 //
-//  InvestmentsViewController.m
+//  InvestmentViewController.m
 //  StartPrepping
 //
-//  Created by Mac User on 8/12/15.
+//  Created by Mac User on 8/24/15.
 //  Copyright (c) 2015 Big Nerd Ranch. All rights reserved.
 //
 
-#import "InvestmentsViewController.h"
+#import "InvestmentViewController.h"
 
-@interface InvestmentsViewController ()
+@interface InvestmentViewController ()
+
+//-(IBAction)switchcontrol:(id)sender {
+//    if (control.selectedSegmentIndex == 0) {
+//        label.text = ;
+//        button.hidden = NO;
+//    }
+//    if (control.selectedSegmentIndex == 1) {
+//        label.text = ;
+//        button.hidden = YES;
+//    }
+//}
+
 
 @end
 
-@implementation InvestmentsViewController
+@implementation InvestmentViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
