@@ -41,6 +41,18 @@
     self.answerLabel.text = [NSString stringWithFormat:@"You require %ld calories for your family every day OR %ld calories per month.", (long)answer, (long)caloriesPerMonth];
 }
 
+- (NSArray *)data {
+    
+    return @[
+             [self numberOfAdults],
+             [self caloriesOfAdults],
+             [self numberOfChildren],
+             [self caloriesOfChildren]
+             ];
+    
+}
+
+
 - (NSArray *)numberOfAdults {
     
     return @[@"1",
@@ -147,8 +159,9 @@
 }
 
 
+
 -(NSInteger) calculateEquation {
-    self.answerLabel.calculateEquation = numberAdults * caloriesAdults * numberChildren * caloriesChildren
+    NSInteger product =
     
     return answer;
 }

@@ -22,7 +22,7 @@
 
 @property (readonly) NSUInteger count;
 
-@property (weak, readonly) NSUInteger * calculate;
+@property (weak, readonly) NSArray * data;
 
 @end
 
