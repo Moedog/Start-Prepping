@@ -36,9 +36,9 @@
     
 }
 - (IBAction)calculateCalories:(id)sender {
-    NSInteger caloriesPerMonth = [self caloriesPerMonth];
-    NSInteger answer = [self calculateEquation];
-    self.answerLabel.text = [NSString stringWithFormat:@"You require %ld calories for your family every day OR %ld calories per month.", (long)answer, (long)caloriesPerMonth];
+    NSInteger product = (self.adults * self.caloriesForAdults) + (self.children * self.caloriesForChildren);
+    NSInteger caloriesPerMonth = product * 30;
+    self.answerLabel.text = [NSString stringWithFormat:@"You require %ld calories for your family every day OR %ld calories per month.", (long)product, (long)caloriesPerMonth];
 }
 
 - (NSArray *)data {
@@ -55,63 +55,23 @@
 
 - (NSArray *)numberOfAdults {
     
-    return @[@"1",
-             @"2",
-             @"3",
-             @"4",
-             @"5",
-             @"6",
-             @"7",
-             @"8",
-             @"9",
-             @"10",
-             @"11",
-             @"12",
-             @"13",
-             @"14",
-             @"15"];
+    return @[@"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"10", @"11", @"12",
+             @"13", @"14", @"15"];
 }
 
 - (NSArray *)caloriesOfAdults {
-    return @[@"1000",
-             @"1500",
-             @"2000",
-             @"2500",
-             @"3000",
-             @"3500",
-             @"4000",
-             @"4500",
-             @"5000",
-             @"5500",
-             @"6000"];
+    return @[@"1000", @"1500", @"2000", @"2500", @"3000", @"3500", @"4000", @"4500",
+             @"5000", @"5500", @"6000"];
 }
 
 - (NSArray *)numberOfChildren  {
-    return @[@"1",
-             @"2",
-             @"3",
-             @"4",
-             @"5",
-             @"6",
-             @"7",
-             @"8",
-             @"9",
-             @"10",
-             @"11",
-             @"12",
-             @"13",
-             @"14",
-             @"15"];
+    return @[@"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"10", @"11",
+             @"12", @"13", @"14", @"15"];
 }
 
 
 - (NSArray *)caloriesOfChildren  {
-    return @[@"500",
-             @"1000",
-             @"1500",
-             @"2000",
-             @"2500",
-             @"3000"];
+    return @[@"500", @"1000", @"1500", @"2000", @"2500", @"3000"];
 }
     
 
@@ -120,8 +80,27 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    if (pickerView == self.numberAdults) {
+        NSString *newAdults = self.numberOfAdults[[pickerView selectedRowInComponent:0]];
+        self.adults = [newAdults intValue];
+    }
+    else if (pickerView == self.caloriesAdults) {
+        NSString *newAdultCalories = self.caloriesOfAdults[[pickerView selectedRowInComponent:0]];
+        self.caloriesForAdults = [newAdultCalories intValue];
+    }
+    else if (pickerView == self.numberChildren) {
+        NSString *newChildren = self.numberOfChildren[[pickerView selectedRowInComponent:0]];
+        self.children = [newChildren intValue];
+    }
+    else if (pickerView == self.caloriesChildren) {
+        NSString *newChildrenCalories = self.caloriesOfChildren[[pickerView selectedRowInComponent:0]];
+        self.caloriesForChildren = [newChildrenCalories intValue];
+    }
+}
 
-- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+
+-(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
     return 1;
 }
 
@@ -153,23 +132,7 @@
         return @"";
     }
     
-   
- 
-  
-}
 
-
-
--(NSInteger) calculateEquation {
-    NSInteger product =
-    
-    return answer;
-}
-
--(NSInteger) caloriesPerMonth {
-    self.answerLabel.caloriesPerMonth = numberAdults * caloriesAdults * numberChildren * caloriesChildren * 30;
-    
-    return caloriesPerMonth;
 }
 /*
 #pragma mark - Navigation

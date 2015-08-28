@@ -20,6 +20,13 @@
 @property (strong, readonly) NSArray * numberOfChildren;
 @property (strong, readonly) NSArray * caloriesOfChildren;
 
+@property (assign, nonatomic) NSInteger adults;
+@property (assign, nonatomic) NSInteger children;
+@property (assign, nonatomic) NSInteger caloriesForAdults;
+@property (assign, nonatomic) NSInteger caloriesForChildren;
+
+
+
 @property (readonly) NSUInteger count;
 
 @property (weak, readonly) NSArray * data;
