@@ -34,6 +34,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self currencyChanged:self.currencySegment];
     // Do any additional setup after loading the view.
 }
 
@@ -62,7 +63,7 @@
  // BITCOIN
     }else if (self.currencySegment.selectedSegmentIndex == 2) {
         self.currentValueLabel.text = @"BITCOIN - Curent Value:";
-        self.currencyAmount.text = @"Amount of Bitcoin To Purchase (oz.)";
+        self.currencyAmount.text = @"Amount of Bitcoin To Purchase";
         self.currencyDollars.text = @"Amount of Dollars To Invest";
         self.valueInCurrency.text = @"That amount is currently worth @%d bitcoin.";
         self.valueInDollars.text = @"That amount is currently worth @%d dollars.";
