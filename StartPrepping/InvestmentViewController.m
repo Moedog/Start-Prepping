@@ -10,17 +10,23 @@
 
 @interface InvestmentViewController ()
 
-//-(IBAction)switchcontrol:(id)sender {
-//    if (control.selectedSegmentIndex == 0) {
-//        label.text = ;
-//        button.hidden = NO;
-//    }
-//    if (control.selectedSegmentIndex == 1) {
-//        label.text = ;
-//        button.hidden = YES;
-//    }
-//}
+// Example GOLD - Current Value:
+@property (weak, nonatomic) IBOutlet UILabel *currentValueLabel;
 
+// Segmented View Controller
+@property (weak, nonatomic) IBOutlet UISegmentedControl *currencySegment;
+
+// Example Amount of Gold To Purchase
+@property (weak, nonatomic) IBOutlet UILabel *currencyAmount;
+
+// Example Amount of Dollars To Invest
+@property (weak, nonatomic) IBOutlet UILabel *currencyDollars;
+
+// Example Calculate Currency Value
+@property (weak, nonatomic) IBOutlet UILabel *valueInCurrency;
+
+// Example Calculate Value In Dollars
+@property (weak, nonatomic) IBOutlet UILabel *valueInDollars;
 
 @end
 
@@ -35,6 +41,36 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+// The following method determins the selection and text fields of the Segmented View Controller (Gold,Silver,or Bitcoin)
+
+//  GOLD
+- (IBAction)currencyChanged:(id)sender {
+    if (self.currencySegment.selectedSegmentIndex == 0) {
+        self.currentValueLabel.text = @"GOLD - Current Value:";
+        self.currencyAmount.text = @"Amount of Gold To Purchase (oz.)";
+        self.currencyDollars.text = @"Amount of Dollars To Invest";
+        self.valueInCurrency.text = @"That amount is currently worth @%d oz. in gold.";
+        self.valueInDollars.text = @"That amount is currently worth @%d dollars.";
+// SILVER
+    }else if (self.currencySegment.selectedSegmentIndex == 1) {
+        self.currentValueLabel.text = @"SILVER - Current Value:";
+        self.currencyAmount.text = @"Amount of Silver To Purchase (oz.)";
+        self.currencyDollars.text = @"Amount of Dollars To Invest";
+        self.valueInCurrency.text = @"That amount is currently worth @%d oz. in silver.";
+        self.valueInDollars.text = @"That amount is currently worth @%d dollars.";
+ // BITCOIN
+    }else if (self.currencySegment.selectedSegmentIndex == 2) {
+        self.currentValueLabel.text = @"BITCOIN - Curent Value:";
+        self.currencyAmount.text = @"Amount of Bitcoin To Purchase (oz.)";
+        self.currencyDollars.text = @"Amount of Dollars To Invest";
+        self.valueInCurrency.text = @"That amount is currently worth @%d bitcoin.";
+        self.valueInDollars.text = @"That amount is currently worth @%d dollars.";
+        }
+}
+
+
+
 
 /*
 #pragma mark - Navigation

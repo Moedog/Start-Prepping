@@ -36,6 +36,18 @@
     
 }
 - (IBAction)calculateCalories:(id)sender {
+    NSString *newAdults = self.numberOfAdults[[self.numberAdults selectedRowInComponent:0]];
+    self.adults = [newAdults intValue];
+    
+    NSString *newAdultCalories = self.caloriesOfAdults[[self.caloriesAdults selectedRowInComponent:0]];
+    self.caloriesForAdults = [newAdultCalories intValue];
+    
+    NSString *newChildren = self.numberOfChildren[[self.numberChildren selectedRowInComponent:0]];
+    self.children = [newChildren intValue];
+    
+    NSString *newChildrenCalories = self.caloriesOfChildren[[self.caloriesChildren selectedRowInComponent:0]];
+    self.caloriesForChildren = [newChildrenCalories intValue];
+    
     NSInteger product = (self.adults * self.caloriesForAdults) + (self.children * self.caloriesForChildren);
     NSInteger caloriesPerMonth = product * 30;
     self.answerLabel.text = [NSString stringWithFormat:@"You require %ld calories for your family every day OR %ld calories per month.", (long)product, (long)caloriesPerMonth];
@@ -80,24 +92,26 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
-    if (pickerView == self.numberAdults) {
-        NSString *newAdults = self.numberOfAdults[[pickerView selectedRowInComponent:0]];
-        self.adults = [newAdults intValue];
-    }
-    else if (pickerView == self.caloriesAdults) {
-        NSString *newAdultCalories = self.caloriesOfAdults[[pickerView selectedRowInComponent:0]];
-        self.caloriesForAdults = [newAdultCalories intValue];
-    }
-    else if (pickerView == self.numberChildren) {
-        NSString *newChildren = self.numberOfChildren[[pickerView selectedRowInComponent:0]];
-        self.children = [newChildren intValue];
-    }
-    else if (pickerView == self.caloriesChildren) {
-        NSString *newChildrenCalories = self.caloriesOfChildren[[pickerView selectedRowInComponent:0]];
-        self.caloriesForChildren = [newChildrenCalories intValue];
-    }
-}
+//-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+//    if (pickerView == self.numberAdults) {
+//        NSString *newAdults = self.numberOfAdults[[pickerView selectedRowInComponent:0]];
+//        self.adults = [newAdults intValue];
+//    }
+//    else if (pickerView == self.caloriesAdults) {
+//        NSString *newAdultCalories = self.caloriesOfAdults[[pickerView selectedRowInComponent:0]];
+//        self.caloriesForAdults = [newAdultCalories intValue];
+//    }
+//    else if (pickerView == self.numberChildren) {
+//        NSString *newChildren = self.numberOfChildren[[pickerView selectedRowInComponent:0]];
+//        self.children = [newChildren intValue];
+//    }
+//    else if (pickerView == self.caloriesChildren) {
+//        NSString *newChildrenCalories = self.caloriesOfChildren[[pickerView selectedRowInComponent:0]];
+//        self.caloriesForChildren = [newChildrenCalories intValue];
+//    }
+//}
+
+
 
 
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
