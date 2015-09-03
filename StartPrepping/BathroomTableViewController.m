@@ -13,6 +13,35 @@
 @interface BathroomTableViewController ()
 @property (strong, nonatomic) NSArray *bathroom;
 
+@property (assign, nonatomic) NSNumber *antifungalItchCream;
+@property (assign, nonatomic) NSNumber *antibacterialOintment;
+@property (assign, nonatomic) NSNumber *birthControl;
+@property (assign, nonatomic) NSNumber *bugSpray;
+@property (assign, nonatomic) NSNumber *coldFluMedicine;
+@property (assign, nonatomic) NSNumber *coughSyrup;
+@property (assign, nonatomic) NSNumber *deodorant;
+@property (assign, nonatomic) NSNumber *extraTowels;
+@property (assign, nonatomic) NSNumber *feminineHygiene;
+@property (assign, nonatomic) NSNumber *firstAidKit;
+@property (assign, nonatomic) NSNumber *guazePads;
+@property (assign, nonatomic) NSNumber *handSoap;
+@property (assign, nonatomic) NSNumber *hydrogenPeroxide;
+
+
+@property (assign, nonatomic) NSNumber *ibuprophen;
+@property (assign, nonatomic) NSNumber *lotion;
+@property (assign, nonatomic) NSNumber *mouthwash;
+@property (assign, nonatomic) NSNumber *razors;
+@property (assign, nonatomic) NSNumber *rubbingAlcohol;
+@property (assign, nonatomic) NSNumber *shampooBodyWash;
+@property (assign, nonatomic) NSNumber *shavingCream;
+@property (assign, nonatomic) NSNumber *soreThroatSpray;
+@property (assign, nonatomic) NSNumber *sunscreenLotion;
+@property (assign, nonatomic) NSNumber *toiletPaper;
+@property (assign, nonatomic) NSNumber *toothbrushes;
+@property (assign, nonatomic) NSNumber *toothpaste;
+@property (assign, nonatomic) NSNumber *vitamins;
+
 @end
 
 @implementation BathroomTableViewController

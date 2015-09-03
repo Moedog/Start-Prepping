@@ -13,9 +13,28 @@
 @interface KitchenTableViewController ()
 @property (strong, nonatomic) NSArray *kitchen;
 
+@property (assign, nonatomic) NSNumber *bottledWater;
+@property (assign, nonatomic) NSNumber *brilloPads;
+@property (assign, nonatomic) NSNumber *cardboardBoxes;
+@property (assign, nonatomic) NSNumber *cleaningRags;
+@property (assign, nonatomic) NSNumber *dishsoap;
+@property (assign, nonatomic) NSNumber *dishwasherSoap;
+@property (assign, nonatomic) NSNumber *foilwrap;
+@property (assign, nonatomic) NSNumber *foodSpices;
+@property (assign, nonatomic) NSNumber *foodStorageBags;
+@property (assign, nonatomic) NSNumber *garbageBags;
+@property (assign, nonatomic) NSNumber *handSoap;
+@property (assign, nonatomic) NSNumber *paperTowels;
+@property (assign, nonatomic) NSNumber *paperOrPlasticPlates;
+@property (assign, nonatomic) NSNumber *plasticSilverware;
+@property (assign, nonatomic) NSNumber *saranwrap;
+
+
 @end
 
 @implementation KitchenTableViewController
+- (IBAction)saveKitchen:(id)sender {
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

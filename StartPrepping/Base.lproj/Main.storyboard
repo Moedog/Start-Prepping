@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BMO-8v-WFa">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -171,29 +170,17 @@
             <objects>
                 <tableViewController title="Kitchen Inventory" id="cLR-dZ-HXG" customClass="KitchenTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="HmH-XZ-PcY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.73676759839999995" blue="0.53666089640000003" alpha="1" colorSpace="calibratedRGB"/>
-                        <view key="tableFooterView" contentMode="scaleToFill" id="pyL-97-U7J">
-                            <rect key="frame" x="0.0" y="130" width="320" height="44"/>
+                        <textView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="D84-M2-hFm">
+                            <rect key="frame" x="0.0" y="130" width="320" height="128"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bil-t4-AUH">
-                                    <rect key="frame" x="456" y="6" width="78" height="30"/>
-                                    <state key="normal" title="SAVE">
-                                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                    </state>
-                                </button>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qAe-gh-9bM">
-                                    <rect key="frame" x="15" y="8" width="417" height="30"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </textField>
-                            </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </view>
+                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
                         <prototypes>
                             <tableViewCell contentMode="left" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" id="1vC-r2-BsY" customClass="KitchenCellController">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
@@ -239,6 +226,15 @@
                         <inset key="imageInsets" minX="-5" minY="-5" maxX="-5" maxY="-5"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
                     </tabBarItem>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="zLl-rX-yYA">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="7HF-4C-jyY">
+                            <connections>
+                                <action selector="saveKitchen:" destination="cLR-dZ-HXG" id="l5C-bS-LUm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mif-mO-DZf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -757,7 +753,6 @@
         <!--Investments-->
         <scene sceneID="Wwr-yW-2xJ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fx5-1j-rEU" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M2C-hf-RMU" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Investments" image="Investments" id="rKw-gJ-nXl">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
@@ -773,6 +768,7 @@
                         <segue destination="1iO-99-x57" kind="relationship" relationship="rootViewController" id="Ct1-zW-JHj"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fx5-1j-rEU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="386" y="-146"/>
         </scene>
