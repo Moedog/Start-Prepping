@@ -14,9 +14,27 @@
 @interface SelfDefenseTableViewController ()
 @property (strong, nonatomic) NSArray *defense;
 
+@property (assign, nonatomic) BOOL *handgun;
+@property (assign, nonatomic) BOOL *ammoForHandgun;
+@property (assign, nonatomic) BOOL *shotgun;
+@property (assign, nonatomic) BOOL *shotgunShells;
+@property (assign, nonatomic) BOOL *AR15;
+@property (assign, nonatomic) BOOL *ammoForAR15;
+@property (assign, nonatomic) BOOL *concealedFirearmsPermit;
+@property (assign, nonatomic) BOOL *brassKnuckles;
+@property (assign, nonatomic) BOOL *bugoutVehicle;
+@property (assign, nonatomic) BOOL *bulletproofVest;
+@property (assign, nonatomic) BOOL *holstersOrCarryingCases;
+@property (assign, nonatomic) BOOL *MaceOrPepperSpray;
+@property (assign, nonatomic) BOOL *survivalKnife;
+@property (assign, nonatomic) BOOL *edgedWeapons;
+
+
 @end
 
 @implementation SelfDefenseTableViewController
+- (IBAction)defenseSave:(id)sender {
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

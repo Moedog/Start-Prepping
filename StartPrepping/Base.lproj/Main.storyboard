@@ -17,7 +17,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="selectedImageTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="75C-hA-KYx" kind="relationship" relationship="viewControllers" id="A6h-qd-NOO"/>
@@ -49,19 +49,19 @@
                                     <constraint firstAttribute="width" constant="357" id="YpR-vP-xhx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Adults" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5MV-Ha-pS8">
                                 <rect key="frame" x="10" y="56" width="135" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories Per Day Per Adult" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMp-R4-Mfy">
                                 <rect key="frame" x="179" y="57" width="134" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Number of Children" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jn6-8Q-6By">
@@ -70,7 +70,7 @@
                                     <constraint firstAttribute="height" constant="28" id="J9y-bb-zT7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Calories Per Day Per Child" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bj6-xD-dfa">
@@ -80,11 +80,13 @@
                                     <constraint firstAttribute="width" constant="144" id="aoO-ch-bhX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" restorationIdentifier="caloriesAdults" translatesAutoresizingMaskIntoConstraints="NO" id="Zm8-h9-Qfo">
                                 <rect key="frame" x="179" y="44" width="134" height="162"/>
+                                <color key="backgroundColor" red="1" green="0.73676759839999995" blue="0.53666089640000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="162" id="XwL-XB-ZBH"/>
                                     <constraint firstAttribute="width" constant="134" id="k39-Hy-tmU"/>
@@ -92,12 +94,16 @@
                             </pickerView>
                             <pickerView contentMode="scaleToFill" misplaced="YES" restorationIdentifier="numberChildren" translatesAutoresizingMaskIntoConstraints="NO" id="nWv-VG-IT8">
                                 <rect key="frame" x="35" y="194" width="134" height="162"/>
+                                <color key="backgroundColor" red="1" green="0.73676759839999995" blue="0.53666089640000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="134" id="EJL-Xs-PzT"/>
                                 </constraints>
                             </pickerView>
                             <pickerView contentMode="scaleToFill" restorationIdentifier="numberAdults" translatesAutoresizingMaskIntoConstraints="NO" id="YzJ-Y3-udb">
                                 <rect key="frame" x="7" y="44" width="134" height="162"/>
+                                <color key="backgroundColor" red="1" green="0.73676759839999995" blue="0.53666089640000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="134" id="74N-J9-s1R"/>
                                     <constraint firstAttribute="height" constant="162" id="7Et-Mf-hsW"/>
@@ -107,6 +113,7 @@
                                 <rect key="frame" x="144" y="464" width="87" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="CALCULATE">
+                                    <color key="titleColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -115,6 +122,8 @@
                             </button>
                             <pickerView contentMode="scaleToFill" misplaced="YES" restorationIdentifier="caloriesChildren" translatesAutoresizingMaskIntoConstraints="NO" id="UHD-m7-e7V">
                                 <rect key="frame" x="210" y="194" width="134" height="162"/>
+                                <color key="backgroundColor" red="1" green="0.73676759839999995" blue="0.53666089640000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="134" id="nix-Qc-VFO"/>
                                 </constraints>
@@ -122,7 +131,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tn-0C-CFT">
                                 <rect key="frame" x="50" y="480" width="263" height="86"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -177,7 +186,7 @@
                         <textView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="D84-M2-hFm">
                             <rect key="frame" x="0.0" y="130" width="320" height="128"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+                            <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         </textView>
@@ -191,9 +200,9 @@
                                     <subviews>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="trQ-Qj-qd2">
                                             <rect key="frame" x="543" y="6" width="51" height="31"/>
-                                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="thumbTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="onTintColor" red="0.33319523358585856" green="0.1714141779670513" blue="0.06346954360846277" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="thumbTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
                                                 <action selector="switchChanged:" destination="1vC-r2-BsY" eventType="valueChanged" id="OX0-eE-QZL"/>
                                             </connections>
@@ -201,7 +210,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugO-JM-ykA">
                                             <rect key="frame" x="15" y="0.0" width="270" height="43"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -222,13 +231,10 @@
                             <outlet property="delegate" destination="cLR-dZ-HXG" id="Rwh-CE-gNG"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Checklists" id="eAj-wo-xCv">
-                        <inset key="imageInsets" minX="-5" minY="-5" maxX="-5" maxY="-5"/>
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
-                    </tabBarItem>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Title" id="zLl-rX-yYA">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="7HF-4C-jyY">
+                            <color key="tintColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="saveKitchen:" destination="cLR-dZ-HXG" id="l5C-bS-LUm"/>
                             </connections>
@@ -244,30 +250,40 @@
         <scene sceneID="eay-01-vPp">
             <objects>
                 <tableViewController title="Bathroom Inventory" id="Faa-L7-ZJq" customClass="BathroomTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="cI1-11-zGa">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="cI1-11-zGa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <textView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="Bep-be-BMl">
+                            <rect key="frame" x="0.0" y="130" width="320" height="128"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+                            <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
                         <prototypes>
                             <tableViewCell contentMode="left" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" id="Mbx-Ut-IXE" customClass="BathroomCellController">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" tableViewCell="Mbx-Ut-IXE" id="yaU-Te-7ku">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5o3-Qb-1ya">
                                             <rect key="frame" x="543" y="6" width="51" height="31"/>
-                                            <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="thumbTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="onTintColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="thumbTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </switch>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5N5-KI-RMF">
                                             <rect key="frame" x="8" y="0.0" width="314" height="43"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" red="1" green="0.73676759839999995" blue="0.53666089640000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="centerY" secondItem="5o3-Qb-1ya" secondAttribute="centerY" id="3Rj-nT-6lZ"/>
                                         <constraint firstItem="5N5-KI-RMF" firstAttribute="centerY" secondItem="5o3-Qb-1ya" secondAttribute="centerY" id="4oB-Y4-u7a"/>
@@ -300,10 +316,14 @@
                             <outlet property="delegate" destination="Faa-L7-ZJq" id="NSL-bY-1wb"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Checklists" id="pxn-8X-U0w">
-                        <inset key="imageInsets" minX="-5" minY="-5" maxX="-5" maxY="-5"/>
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" title="Title" id="RtC-fa-tMM">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="nGh-WR-hFO">
+                            <color key="tintColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="bathroomSave:" destination="Faa-L7-ZJq" id="rVq-xB-AtA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v3k-Di-xwq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -317,6 +337,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <textView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="0mh-r0-ncj">
+                            <rect key="frame" x="0.0" y="130" width="320" height="128"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+                            <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
                         <prototypes>
                             <tableViewCell contentMode="left" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" id="oAy-sc-k0z" customClass="HomePrepsCellController">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
@@ -327,16 +355,18 @@
                                     <subviews>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="q7e-BF-XMv">
                                             <rect key="frame" x="550" y="6" width="51" height="31"/>
-                                            <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="thumbTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="onTintColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="thumbTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </switch>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnb-au-yMi">
                                             <rect key="frame" x="8" y="11" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" red="1" green="0.73676759839999995" blue="0.53666089640000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="bnb-au-yMi" firstAttribute="leading" secondItem="lAx-3m-eRG" secondAttribute="leadingMargin" id="1YI-N3-8ld"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="q7e-BF-XMv" secondAttribute="trailing" constant="-7" id="1n5-BZ-SLg"/>
@@ -357,10 +387,14 @@
                             <outlet property="delegate" destination="Ns5-Nf-ntm" id="geZ-EP-mYC"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" systemItem="downloads" id="fnP-OX-69s">
-                        <inset key="imageInsets" minX="-5" minY="-5" maxX="-5" maxY="-5"/>
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" title="Title" id="tke-S7-EAR">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="4V0-qZ-dVh">
+                            <color key="tintColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="saveHome:" destination="Ns5-Nf-ntm" id="03J-8G-HZ4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14I-zS-6ix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -374,6 +408,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <textView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="vVi-0y-mg5">
+                            <rect key="frame" x="0.0" y="130" width="320" height="128"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+                            <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" id="M2V-qq-S5B" customClass="SelfDefenseCellController">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
@@ -385,15 +427,17 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doP-1J-rXt">
                                             <rect key="frame" x="8" y="0.0" width="377" height="43"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zns-eE-UlD">
                                             <rect key="frame" x="550" y="6" width="51" height="31"/>
-                                            <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="thumbTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="onTintColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="thumbTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </switch>
                                     </subviews>
+                                    <color key="backgroundColor" red="1" green="0.73676759839999995" blue="0.53666089640000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="centerY" secondItem="zns-eE-UlD" secondAttribute="centerY" id="0zk-fS-UA0"/>
                                         <constraint firstItem="zns-eE-UlD" firstAttribute="centerY" secondItem="doP-1J-rXt" secondAttribute="centerY" id="COq-7a-xC5"/>
@@ -414,10 +458,14 @@
                             <outlet property="delegate" destination="WuY-KM-tDt" id="uml-ug-px4"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" systemItem="search" id="rOC-1E-bxN">
-                        <inset key="imageInsets" minX="-5" minY="-5" maxX="-5" maxY="-5"/>
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" title="Title" id="sHo-Ra-JtQ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Are-xQ-VzX">
+                            <color key="tintColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="defenseSave:" destination="WuY-KM-tDt" id="UCi-ne-UYc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1yy-fp-I71" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -439,6 +487,7 @@
                                 <rect key="frame" x="93" y="81" width="182" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Kitchen Inventory">
+                                    <color key="titleColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -449,6 +498,7 @@
                                 <rect key="frame" x="93" y="130" width="178" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Bathroom Inventory">
+                                    <color key="titleColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -459,6 +509,7 @@
                                 <rect key="frame" x="98" y="181" width="173" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Home Preparation">
+                                    <color key="titleColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -469,6 +520,7 @@
                                 <rect key="frame" x="116" y="238" width="136" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Self-Defense">
+                                    <color key="titleColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -479,6 +531,7 @@
                                 <rect key="frame" x="75" y="293" width="218" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Camping / Survival Gear">
+                                    <color key="titleColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -507,6 +560,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <textView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="YLN-Ue-kuB">
+                            <rect key="frame" x="0.0" y="130" width="320" height="128"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+                            <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" id="OnD-hE-lOV" customClass="CampingCellController">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
@@ -517,16 +578,18 @@
                                     <subviews>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tnK-wv-azC">
                                             <rect key="frame" x="543" y="6" width="51" height="31"/>
-                                            <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="thumbTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="onTintColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="thumbTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </switch>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xC5-CE-l3K">
                                             <rect key="frame" x="8" y="0.0" width="365" height="43"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" red="1" green="0.73676759839999995" blue="0.53666089640000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="centerY" secondItem="tnK-wv-azC" secondAttribute="centerY" id="GR5-vB-N5n"/>
                                         <constraint firstAttribute="centerY" secondItem="tnK-wv-azC" secondAttribute="centerY" id="SZl-Dx-jxk"/>
@@ -546,10 +609,14 @@
                             <outlet property="delegate" destination="5zl-L9-KPx" id="1ET-gh-aFV"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" systemItem="recents" id="8mq-Xl-DDM">
-                        <inset key="imageInsets" minX="-5" minY="-5" maxX="-5" maxY="-5"/>
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" title="Title" id="m1h-Lv-j6P">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Oov-79-qYH">
+                            <color key="tintColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="campingSave:" destination="5zl-L9-KPx" id="2MG-7H-0sl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwn-TY-fus" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -573,19 +640,19 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculate Exchange Values" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEV-5q-h4n">
                                         <rect key="frame" x="0.0" y="0.0" width="304" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOLD-Current Value:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQh-8Y-sCN">
                                         <rect key="frame" x="0.0" y="31" width="304" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount of Gold To Purchase (oz.)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gS-fw-C6n">
                                         <rect key="frame" x="0.0" y="62" width="304" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AcT-qM-Xgg">
@@ -598,18 +665,20 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yw-XZ-FiS">
                                         <rect key="frame" x="0.0" y="133" width="304" height="30"/>
-                                        <state key="normal" title="CALCULATE"/>
+                                        <state key="normal" title="CALCULATE">
+                                            <color key="titleColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngy-SV-di9">
                                         <rect key="frame" x="0.0" y="173" width="304" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount of Dollars To Invest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTQ-pZ-DMw">
                                         <rect key="frame" x="0.0" y="204" width="304" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="itY-VY-byB">
@@ -622,12 +691,14 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2K-Hg-Vof">
                                         <rect key="frame" x="0.0" y="275" width="304" height="30"/>
-                                        <state key="normal" title="CALCULATE"/>
+                                        <state key="normal" title="CALCULATE">
+                                            <color key="titleColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4F-ac-XBs">
                                         <rect key="frame" x="0.0" y="315" width="304" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -653,6 +724,7 @@
                                 <segment title="Silver"/>
                                 <segment title="Bitcoin"/>
                             </segments>
+                            <color key="tintColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="currencyChanged:" destination="1iO-99-x57" eventType="valueChanged" id="Am1-yD-cEP"/>
                             </connections>
@@ -685,7 +757,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4W-e6-ggI">
-                                <rect key="frame" x="16" y="20" width="568" height="119"/>
+                                <rect key="frame" x="16" y="0.0" width="294" height="251"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="KaT-AV-mnl">
                                         <variation key="heightClass=regular-widthClass=regular" constant="65"/>
@@ -695,9 +767,9 @@
                                     <fragment>
                                         <string key="content">Thank you for downloading Start Prepping.  Use these tools to help you prepare for any possible upcoming disaster.  Here, you can assess your situation and plan accordingly.  Possible scenarios include illness, injury, job loss, natural or man-made disasters, economic or financial instability, and social unrest.  (and zombies!)  Please note there may be updates coming in the future with additional information and features.</string>
                                         <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>

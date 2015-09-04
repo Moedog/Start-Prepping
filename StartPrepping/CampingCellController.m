@@ -13,9 +13,9 @@
 
 
 
-- (IBAction)switchChanged:(id)sender {
-    NSLog(@"Switch Changed");
-}
+//- (IBAction)switchChanged:(id)sender {
+//    NSLog(@"Switch Changed");
+//}
 
 
 //

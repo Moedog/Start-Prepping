@@ -13,27 +13,34 @@
 @interface KitchenTableViewController ()
 @property (strong, nonatomic) NSArray *kitchen;
 
-@property (assign, nonatomic) NSNumber *bottledWater;
-@property (assign, nonatomic) NSNumber *brilloPads;
-@property (assign, nonatomic) NSNumber *cardboardBoxes;
-@property (assign, nonatomic) NSNumber *cleaningRags;
-@property (assign, nonatomic) NSNumber *dishsoap;
-@property (assign, nonatomic) NSNumber *dishwasherSoap;
-@property (assign, nonatomic) NSNumber *foilwrap;
-@property (assign, nonatomic) NSNumber *foodSpices;
-@property (assign, nonatomic) NSNumber *foodStorageBags;
-@property (assign, nonatomic) NSNumber *garbageBags;
-@property (assign, nonatomic) NSNumber *handSoap;
-@property (assign, nonatomic) NSNumber *paperTowels;
-@property (assign, nonatomic) NSNumber *paperOrPlasticPlates;
-@property (assign, nonatomic) NSNumber *plasticSilverware;
-@property (assign, nonatomic) NSNumber *saranwrap;
+@property (assign, nonatomic) BOOL *bottledWater;
+@property (assign, nonatomic) BOOL *brilloPads;
+@property (assign, nonatomic) BOOL *cardboardBoxes;
+@property (assign, nonatomic) BOOL *cleaningRags;
+@property (assign, nonatomic) BOOL *dishsoap;
+@property (assign, nonatomic) BOOL *dishwasherSoap;
+@property (assign, nonatomic) BOOL *foilwrap;
+@property (assign, nonatomic) BOOL *foodSpices;
+@property (assign, nonatomic) BOOL *foodStorageBags;
+@property (assign, nonatomic) BOOL *garbageBags;
+@property (assign, nonatomic) BOOL *handSoap;
+@property (assign, nonatomic) BOOL *paperTowels;
+@property (assign, nonatomic) BOOL *paperOrPlasticPlates;
+@property (assign, nonatomic) BOOL *plasticSilverware;
+@property (assign, nonatomic) BOOL *saranwrap;
 
 
 @end
 
 @implementation KitchenTableViewController
 - (IBAction)saveKitchen:(id)sender {
+    
+//    self.kitchen.bottledWater = self.YES;
+//    self.kitchen.brilloPads = self.YES;
+    
+    
+    
+    
 }
 
 - (void)viewDidLoad {
@@ -64,9 +71,6 @@
                      [KitchenPreps prepsInKitchen:@"Paper/Plastic Plates" enabled:YES],
                      [KitchenPreps prepsInKitchen:@"Plastic Silverware" enabled:YES],
                      [KitchenPreps prepsInKitchen:@"Saranwrap" enabled:YES]];
-                     
-                     
-    
     
 
 }

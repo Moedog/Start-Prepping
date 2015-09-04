@@ -13,38 +13,40 @@
 @interface BathroomTableViewController ()
 @property (strong, nonatomic) NSArray *bathroom;
 
-@property (assign, nonatomic) NSNumber *antifungalItchCream;
-@property (assign, nonatomic) NSNumber *antibacterialOintment;
-@property (assign, nonatomic) NSNumber *birthControl;
-@property (assign, nonatomic) NSNumber *bugSpray;
-@property (assign, nonatomic) NSNumber *coldFluMedicine;
-@property (assign, nonatomic) NSNumber *coughSyrup;
-@property (assign, nonatomic) NSNumber *deodorant;
-@property (assign, nonatomic) NSNumber *extraTowels;
-@property (assign, nonatomic) NSNumber *feminineHygiene;
-@property (assign, nonatomic) NSNumber *firstAidKit;
-@property (assign, nonatomic) NSNumber *guazePads;
-@property (assign, nonatomic) NSNumber *handSoap;
-@property (assign, nonatomic) NSNumber *hydrogenPeroxide;
+@property (assign, nonatomic) BOOL *antifungalItchCream;
+@property (assign, nonatomic) BOOL *antibacterialOintment;
+@property (assign, nonatomic) BOOL *birthControl;
+@property (assign, nonatomic) BOOL *bugSpray;
+@property (assign, nonatomic) BOOL *coldFluMedicine;
+@property (assign, nonatomic) BOOL *coughSyrup;
+@property (assign, nonatomic) BOOL *deodorant;
+@property (assign, nonatomic) BOOL *extraTowels;
+@property (assign, nonatomic) BOOL *feminineHygiene;
+@property (assign, nonatomic) BOOL *firstAidKit;
+@property (assign, nonatomic) BOOL *guazePads;
+@property (assign, nonatomic) BOOL *handSoap;
+@property (assign, nonatomic) BOOL *hydrogenPeroxide;
 
 
-@property (assign, nonatomic) NSNumber *ibuprophen;
-@property (assign, nonatomic) NSNumber *lotion;
-@property (assign, nonatomic) NSNumber *mouthwash;
-@property (assign, nonatomic) NSNumber *razors;
-@property (assign, nonatomic) NSNumber *rubbingAlcohol;
-@property (assign, nonatomic) NSNumber *shampooBodyWash;
-@property (assign, nonatomic) NSNumber *shavingCream;
-@property (assign, nonatomic) NSNumber *soreThroatSpray;
-@property (assign, nonatomic) NSNumber *sunscreenLotion;
-@property (assign, nonatomic) NSNumber *toiletPaper;
-@property (assign, nonatomic) NSNumber *toothbrushes;
-@property (assign, nonatomic) NSNumber *toothpaste;
-@property (assign, nonatomic) NSNumber *vitamins;
+@property (assign, nonatomic) BOOL *ibuprophen;
+@property (assign, nonatomic) BOOL *lotion;
+@property (assign, nonatomic) BOOL *mouthwash;
+@property (assign, nonatomic) BOOL *razors;
+@property (assign, nonatomic) BOOL *rubbingAlcohol;
+@property (assign, nonatomic) BOOL *shampooBodyWash;
+@property (assign, nonatomic) BOOL *shavingCream;
+@property (assign, nonatomic) BOOL *soreThroatSpray;
+@property (assign, nonatomic) BOOL *sunscreenLotion;
+@property (assign, nonatomic) BOOL *toiletPaper;
+@property (assign, nonatomic) BOOL *toothbrushes;
+@property (assign, nonatomic) BOOL *toothpaste;
+@property (assign, nonatomic) BOOL *vitamins;
 
 @end
 
 @implementation BathroomTableViewController
+- (IBAction)bathroomSave:(id)sender {
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

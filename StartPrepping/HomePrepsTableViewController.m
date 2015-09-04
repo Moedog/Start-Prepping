@@ -13,9 +13,39 @@
 @interface HomePrepsTableViewController ()
 @property (strong, nonatomic) NSArray *home;
 
+@property (assign, nonatomic) BOOL *batteries;
+@property (assign, nonatomic) BOOL *boardGames;
+@property (assign, nonatomic) BOOL *candles;
+@property (assign, nonatomic) BOOL *ductTape;
+@property (assign, nonatomic) BOOL *electricFans;
+@property (assign, nonatomic) BOOL *extensionCords;
+@property (assign, nonatomic) BOOL *extraBlankets;
+@property (assign, nonatomic) BOOL *fireExtinguisher;
+@property (assign, nonatomic) BOOL *fiveGallonWaterContainers;
+@property (assign, nonatomic) BOOL *fiveGallonGasCans;
+@property (assign, nonatomic) BOOL *gardenSeeds;
+@property (assign, nonatomic) BOOL *gardenTools;
+@property (assign, nonatomic) BOOL *generator;
+
+@property (assign, nonatomic) BOOL *hamSatelliteRadio;
+@property (assign, nonatomic) BOOL *lightbulbs;
+@property (assign, nonatomic) BOOL *playingCards;
+@property (assign, nonatomic) BOOL *portableACUnit;
+@property (assign, nonatomic) BOOL *portableWaterHeater;
+@property (assign, nonatomic) BOOL *powerTools;
+@property (assign, nonatomic) BOOL *propaneTanks;
+@property (assign, nonatomic) BOOL *sewingKit;
+@property (assign, nonatomic) BOOL *spaceHeater;
+@property (assign, nonatomic) BOOL *spareCash;
+@property (assign, nonatomic) BOOL *tissues;
+@property (assign, nonatomic) BOOL *toolKit;
+@property (assign, nonatomic) BOOL *workGloves;
+
 @end
 
 @implementation HomePrepsTableViewController
+- (IBAction)saveHome:(id)sender {
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
