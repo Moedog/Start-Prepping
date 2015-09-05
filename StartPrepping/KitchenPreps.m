@@ -10,14 +10,21 @@
 
 @implementation KitchenPreps
 
-+ (instancetype)prepsInKitchen: (NSString *)prepsInKitchen enabled:(BOOL)enabled {
++ (instancetype)prepsInKitchen: (NSString *)prepsInKitchen {
     KitchenPreps *kitchen = [KitchenPreps new];
     kitchen.prepsInKitchen = prepsInKitchen;
-    kitchen.enabled = enabled;
     
     return kitchen;
     
     
+}
+
+- (void)setEnabled:(BOOL)enabled {
+    [[NSUserDefaults standardUserDefaults] setBool:enabled forKey:self.prepsInKitchen];
+}
+
+- (BOOL)enabled {
+    return [[NSUserDefaults standardUserDefaults] boolForKey:self.prepsInKitchen];
 }
 
 @end

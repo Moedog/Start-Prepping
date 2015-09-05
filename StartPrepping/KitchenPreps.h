@@ -13,7 +13,7 @@
 @property (strong) NSString *prepsInKitchen;
 @property (assign) BOOL enabled;
 
-+ (instancetype)prepsInKitchen: (NSString *)prepsInKitchen enabled:(BOOL)enabled;
++ (instancetype)prepsInKitchen: (NSString *)prepsInKitchen;
 
 @end
 

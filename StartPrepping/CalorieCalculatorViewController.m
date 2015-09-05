@@ -18,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //CODE TO CHANGE COLOR OF "BACK" BUTTON
+    [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:85/255.0 green:44/255.0 blue:16/255.0 alpha:1]];
+    [[UINavigationBar appearance] setTitleTextAttributes: [ NSDictionary dictionaryWithObjectsAndKeys:[UIColor brownColor],NSForegroundColorAttributeName, nil]];
+    
     self.numberAdults.dataSource = self;
     self.numberAdults.delegate = self;
     

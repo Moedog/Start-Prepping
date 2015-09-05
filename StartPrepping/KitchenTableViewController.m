@@ -13,22 +13,23 @@
 @interface KitchenTableViewController ()
 @property (strong, nonatomic) NSArray *kitchen;
 
-@property (assign, nonatomic) BOOL *bottledWater;
-@property (assign, nonatomic) BOOL *brilloPads;
-@property (assign, nonatomic) BOOL *cardboardBoxes;
-@property (assign, nonatomic) BOOL *cleaningRags;
-@property (assign, nonatomic) BOOL *dishsoap;
-@property (assign, nonatomic) BOOL *dishwasherSoap;
-@property (assign, nonatomic) BOOL *foilwrap;
-@property (assign, nonatomic) BOOL *foodSpices;
-@property (assign, nonatomic) BOOL *foodStorageBags;
-@property (assign, nonatomic) BOOL *garbageBags;
-@property (assign, nonatomic) BOOL *handSoap;
-@property (assign, nonatomic) BOOL *paperTowels;
-@property (assign, nonatomic) BOOL *paperOrPlasticPlates;
-@property (assign, nonatomic) BOOL *plasticSilverware;
-@property (assign, nonatomic) BOOL *saranwrap;
+@property (assign, nonatomic) BOOL bottledWater;
+@property (assign, nonatomic) BOOL brilloPads;
+@property (assign, nonatomic) BOOL cardboardBoxes;
+@property (assign, nonatomic) BOOL cleaningRags;
+@property (assign, nonatomic) BOOL dishsoap;
+@property (assign, nonatomic) BOOL dishwasherSoap;
+@property (assign, nonatomic) BOOL foilwrap;
+@property (assign, nonatomic) BOOL foodSpices;
+@property (assign, nonatomic) BOOL foodStorageBags;
+@property (assign, nonatomic) BOOL garbageBags;
+@property (assign, nonatomic) BOOL handSoap;
+@property (assign, nonatomic) BOOL paperTowels;
+@property (assign, nonatomic) BOOL paperOrPlasticPlates;
+@property (assign, nonatomic) BOOL plasticSilverware;
+@property (assign, nonatomic) BOOL saranwrap;
 
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @end
 
@@ -38,6 +39,12 @@
 //    self.kitchen.bottledWater = self.YES;
 //    self.kitchen.brilloPads = self.YES;
     
+    NSString *text = self.textView.text;
+    
+    // TODO: Save "text" into NSUserDefaults
+    
+    [[NSUserDefaults standardUserDefaults] setValue:text forKey:@"Type Notes"];
+    
     
     
     
@@ -46,31 +53,41 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // TODO: Load text from NSUserDefaults and store into self.textView.text
+    // self.textView.text = ...
+    
+    self.textView.text = [[NSUserDefaults standardUserDefaults] valueForKey:@"Type Notes"];
+    
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:85/255.0 green:44/255.0 blue:16/255.0 alpha:1]];
+    [[UINavigationBar appearance] setTitleTextAttributes: [ NSDictionary dictionaryWithObjectsAndKeys:[UIColor brownColor],NSForegroundColorAttributeName, nil]];
+    
     self.kitchen = @[
                      
-                     [KitchenPreps prepsInKitchen:@"Bottled Water" enabled:YES],
-                     [KitchenPreps prepsInKitchen:@"Brillo Pads" enabled:YES],
-                     [KitchenPreps prepsInKitchen:@"Cardboard Boxes" enabled:YES],
-                     [KitchenPreps prepsInKitchen:@"Cleaning Rags"enabled:YES],
-                     [KitchenPreps prepsInKitchen:@"Dish Soap" enabled:YES],
-                     [KitchenPreps prepsInKitchen:@"Dishwasher Soap" enabled:YES],
+                     [KitchenPreps prepsInKitchen:@"Bottled Water"],
+                     [KitchenPreps prepsInKitchen:@"Brillo Pads"],
+                     [KitchenPreps prepsInKitchen:@"Cardboard Boxes"],
+                     [KitchenPreps prepsInKitchen:@"Cleaning Rags"],
+                     [KitchenPreps prepsInKitchen:@"Dish Soap"],
+                     [KitchenPreps prepsInKitchen:@"Dishwasher Soap"],
                      
                      
-                     [KitchenPreps prepsInKitchen:@"Foilwrap" enabled:YES],
-                     [KitchenPreps prepsInKitchen:@"Food Spices" enabled:YES],
-                     [KitchenPreps prepsInKitchen:@"Food Storage Bags" enabled:YES],
-                     [KitchenPreps prepsInKitchen:@"Garbage Bags" enabled:YES],
-                     [KitchenPreps prepsInKitchen:@"Hand Soap" enabled:YES],
-                     [KitchenPreps prepsInKitchen:@"Paper Towels" enabled:YES],
-                     [KitchenPreps prepsInKitchen:@"Paper/Plastic Plates" enabled:YES],
-                     [KitchenPreps prepsInKitchen:@"Plastic Silverware" enabled:YES],
-                     [KitchenPreps prepsInKitchen:@"Saranwrap" enabled:YES]];
+                     [KitchenPreps prepsInKitchen:@"Foilwrap"],
+                     [KitchenPreps prepsInKitchen:@"Food Spices"],
+                     [KitchenPreps prepsInKitchen:@"Food Storage Bags"],
+                     [KitchenPreps prepsInKitchen:@"Garbage Bags"],
+                     [KitchenPreps prepsInKitchen:@"Hand Soap"],
+                     [KitchenPreps prepsInKitchen:@"Paper Towels"],
+                     [KitchenPreps prepsInKitchen:@"Paper/Plastic Plates"],
+                     [KitchenPreps prepsInKitchen:@"Plastic Silverware"],
+                     [KitchenPreps prepsInKitchen:@"Saranwrap"]];
     
 
 }
@@ -86,13 +103,11 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return self.kitchen.count;
 }
@@ -105,11 +120,23 @@
                              
     cell.kitchenLabel.text = prepsInKitchen.prepsInKitchen;
     
-    cell.kitchenSwitch.enabled = prepsInKitchen.enabled;
-    
+    cell.kitchenSwitch.on = prepsInKitchen.enabled;
+    [cell.kitchenSwitch addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
     return cell;
 }
 
+-(void) switchChanged:(UISwitch *) kitchenSwitch {
+    
+    for (KitchenCellController *cell in [self.tableView visibleCells]) {
+        if (cell.kitchenSwitch == kitchenSwitch) {
+            NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+            KitchenPreps *preps = [self.kitchen objectAtIndex:indexPath.row];
+            preps.enabled = kitchenSwitch.on;
+        }
+    }
+    
+    
+}
 
 /*
 // Override to support conditional editing of the table view.
