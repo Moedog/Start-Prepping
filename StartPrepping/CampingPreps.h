@@ -13,6 +13,6 @@
 @property (strong) NSString *prepsInCamping;
 @property (assign) BOOL enabled;
 
-+ (instancetype)prepsInCamping: (NSString *)prepsInCamping enabled:(BOOL)enabled;
++ (instancetype)prepsInCamping: (NSString *)prepsInCamping;
 
 @end

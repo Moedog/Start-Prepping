@@ -10,14 +10,21 @@
 
 @implementation BathroomPreps
 
-+ (instancetype)prepsInBathroom: (NSString *)prepsInBathroom enabled:(BOOL)enabled {
++ (instancetype)prepsInBathroom: (NSString *)prepsInBathroom {
     BathroomPreps *bathroom = [BathroomPreps new];
     bathroom.prepsInBathroom = prepsInBathroom;
-    bathroom.enabled = enabled;
     
     return bathroom;
     
-    
+}
+
+- (void)setEnabled:(BOOL)enabled {
+    [[NSUserDefaults standardUserDefaults] setBool:enabled forKey:self.prepsInBathroom];
+}
+
+- (BOOL)enabled {
+    return [[NSUserDefaults standardUserDefaults] boolForKey:self.prepsInBathroom];
+
 }
 
 @end

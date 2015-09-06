@@ -10,13 +10,20 @@
 
 @implementation HomePreps
 
-+ (instancetype)prepsInHome: (NSString *)prepsInHome enabled:(BOOL)enabled {
++ (instancetype)prepsInHome: (NSString *)prepsInHome {
     HomePreps *home = [HomePreps new];
     home.prepsInHome = prepsInHome;
-    home.enabled = enabled;
     
     return home;
     
+}
+
+- (void)setEnabled:(BOOL)enabled {
+    [[NSUserDefaults standardUserDefaults]setBool:enabled forKey:self.prepsInHome];
+}
+
+- (BOOL)enabled {
+    return [[NSUserDefaults standardUserDefaults] boolForKey:self.prepsInHome];
 }
 
 @end

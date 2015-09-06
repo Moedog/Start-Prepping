@@ -30,6 +30,7 @@
 @property (assign, nonatomic) BOOL *edgedWeapons;
 
 
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 @end
 
 @implementation SelfDefenseTableViewController

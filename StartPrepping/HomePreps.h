@@ -13,6 +13,6 @@
 @property (strong) NSString *prepsInHome;
 @property (assign) BOOL enabled;
 
-+ (instancetype)prepsInHome: (NSString *)prepsInHome enabled:(BOOL)enabled;
++ (instancetype)prepsInHome: (NSString *)prepsInHome;
 
 @end

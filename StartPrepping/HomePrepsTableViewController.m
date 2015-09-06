@@ -41,6 +41,8 @@
 @property (assign, nonatomic) BOOL *toolKit;
 @property (assign, nonatomic) BOOL *workGloves;
 
+@property (weak, nonatomic) IBOutlet UITextView *textView;
+
 @end
 
 @implementation HomePrepsTableViewController

@@ -42,10 +42,16 @@
 @property (assign, nonatomic) BOOL *toothpaste;
 @property (assign, nonatomic) BOOL *vitamins;
 
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 @end
 
 @implementation BathroomTableViewController
 - (IBAction)bathroomSave:(id)sender {
+    
+    NSString *text = self.textView.text;
+    
+    [[NSUserDefaults standardUserDefaults] setValue:text forKey:@"Type Notes"];
+    
 }
 
 - (void)viewDidLoad {
@@ -57,34 +63,38 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
+    self.textView.text = [[NSUserDefaults standardUserDefaults] valueForKey:@"Type Notes"];
+    
+    
+    
     self.bathroom = @[
-                      [BathroomPreps prepsInBathroom:@"Antifungal/Itch Cream" enabled:YES],
-                      [BathroomPreps prepsInBathroom:@"Antibacterial Ointment" enabled:YES],
-                      [BathroomPreps prepsInBathroom:@"Birth Control" enabled:YES],
-                      [BathroomPreps prepsInBathroom:@"Bug Spray" enabled:YES],
-                      [BathroomPreps prepsInBathroom:@"Cold/Flu Medicine" enabled:YES],
-                      [BathroomPreps prepsInBathroom:@"Cough Syrup" enabled:YES],
-                      [BathroomPreps prepsInBathroom:@"Deodorant" enabled:YES],
-                      [BathroomPreps prepsInBathroom:@"Extra Towels" enabled:YES],
+                      [BathroomPreps prepsInBathroom:@"Antifungal/Itch Cream"],
+                      [BathroomPreps prepsInBathroom:@"Antibacterial Ointment"],
+                      [BathroomPreps prepsInBathroom:@"Birth Control"],
+                      [BathroomPreps prepsInBathroom:@"Bug Spray"],
+                      [BathroomPreps prepsInBathroom:@"Cold/Flu Medicine"],
+                      [BathroomPreps prepsInBathroom:@"Cough Syrup"],
+                      [BathroomPreps prepsInBathroom:@"Deodorant"],
+                      [BathroomPreps prepsInBathroom:@"Extra Towels"],
                       
-                      [BathroomPreps prepsInBathroom:@"Feminine Hygiene" enabled:YES],
-                      [BathroomPreps prepsInBathroom:@"First Aid Kit" enabled:YES],
-                      [BathroomPreps prepsInBathroom:@"Guaze Pads"enabled:YES],
-                      [BathroomPreps prepsInBathroom:@"Hand Soap" enabled:YES],
-                      [BathroomPreps prepsInBathroom:@"Hydrogen Peroxide" enabled:YES],
-                      [BathroomPreps prepsInBathroom:@"Ibuprophen" enabled:YES],
-                      [BathroomPreps prepsInBathroom:@"Lotion" enabled:YES],
-                      [BathroomPreps prepsInBathroom:@"Mouthwash" enabled:YES],
-                      [BathroomPreps prepsInBathroom:@"Razors" enabled:YES],
-                      [BathroomPreps prepsInBathroom:@"Rubbing Alcohol" enabled:YES],
-                      [BathroomPreps prepsInBathroom:@"Shampoo/Body Wash" enabled:YES],
-                      [BathroomPreps prepsInBathroom:@"Shaving Cream" enabled:YES],
-                      [BathroomPreps prepsInBathroom:@"Sore Throat Spray" enabled:YES],
-                      [BathroomPreps prepsInBathroom:@"Sunscreen Lotion" enabled:YES],
-                      [BathroomPreps prepsInBathroom:@"Toilet Paper" enabled:YES],
-                      [BathroomPreps prepsInBathroom:@"Toothbrushes" enabled:YES],
-                      [BathroomPreps prepsInBathroom:@"Toothpaste" enabled:YES],
-                      [BathroomPreps prepsInBathroom:@"Vitamins" enabled: YES]];
+                      [BathroomPreps prepsInBathroom:@"Feminine Hygiene"],
+                      [BathroomPreps prepsInBathroom:@"First Aid Kit"],
+                      [BathroomPreps prepsInBathroom:@"Guaze Pads"],
+                      [BathroomPreps prepsInBathroom:@"Hand Soap"],
+                      [BathroomPreps prepsInBathroom:@"Hydrogen Peroxide"],
+                      [BathroomPreps prepsInBathroom:@"Ibuprophen"],
+                      [BathroomPreps prepsInBathroom:@"Lotion"],
+                      [BathroomPreps prepsInBathroom:@"Mouthwash"],
+                      [BathroomPreps prepsInBathroom:@"Razors"],
+                      [BathroomPreps prepsInBathroom:@"Rubbing Alcohol"],
+                      [BathroomPreps prepsInBathroom:@"Shampoo/Body Wash"],
+                      [BathroomPreps prepsInBathroom:@"Shaving Cream"],
+                      [BathroomPreps prepsInBathroom:@"Sore Throat Spray"],
+                      [BathroomPreps prepsInBathroom:@"Sunscreen Lotion"],
+                      [BathroomPreps prepsInBathroom:@"Toilet Paper"],
+                      [BathroomPreps prepsInBathroom:@"Toothbrushes"],
+                      [BathroomPreps prepsInBathroom:@"Toothpaste"],
+                      [BathroomPreps prepsInBathroom:@"Vitamins"]];
     
 }
 
@@ -115,11 +125,21 @@
     
     cell.bathroomLabel.text = prepsInBathroom.prepsInBathroom;
     
-    cell.bathroomSwitch.enabled = prepsInBathroom.enabled;
-    
+    cell.bathroomSwitch.on = prepsInBathroom.enabled;
+    [cell.bathroomSwitch addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
     return cell;
 }
 
+-(void) switchChanged:(UISwitch *) bathroomSwitch {
+    
+    for (BathroomCellController *cell in [self.tableView visibleCells]) {
+        if (cell.bathroomSwitch == bathroomSwitch) {
+            NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+            BathroomPreps *preps = [self.bathroom objectAtIndex:indexPath.row];
+            preps.enabled = bathroomSwitch.on;
+        }
+    }
+}
 
 /*
 // Override to support conditional editing of the table view.

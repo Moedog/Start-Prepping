@@ -36,17 +36,11 @@
 @implementation KitchenTableViewController
 - (IBAction)saveKitchen:(id)sender {
     
-//    self.kitchen.bottledWater = self.YES;
-//    self.kitchen.brilloPads = self.YES;
-    
     NSString *text = self.textView.text;
     
     // TODO: Save "text" into NSUserDefaults
     
     [[NSUserDefaults standardUserDefaults] setValue:text forKey:@"Type Notes"];
-    
-    
-    
     
 }
 
@@ -96,9 +90,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
-
 
 #pragma mark - Table view data source
 

@@ -13,7 +13,7 @@
 @property (strong) NSString *prepsInDefense;
 @property (assign) BOOL enabled;
 
-+ (instancetype)prepsInDefense: (NSString *)prepsInDefense enabled:(BOOL)enabled;
++ (instancetype)prepsInDefense: (NSString *)prepsInDefense;
 
 @end
 

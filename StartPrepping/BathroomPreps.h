@@ -13,6 +13,6 @@
 @property (strong) NSString *prepsInBathroom;
 @property (assign) BOOL enabled;
 
-+ (instancetype)prepsInBathroom: (NSString *)prepsInBathroom enabled:(BOOL)enabled;
++ (instancetype)prepsInBathroom: (NSString *)prepsInBathroom;
 
 @end

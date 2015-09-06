@@ -10,11 +10,21 @@
 
 @implementation DefensePreps
 
-+ (instancetype)prepsInDefense: (NSString *)prepsInDefense enabled:(BOOL)enabled {
++ (instancetype)prepsInDefense: (NSString *)prepsInDefense {
     DefensePreps *defense = [DefensePreps new];
     defense.prepsInDefense = prepsInDefense;
-    defense.enabled = enabled;
-    
+
     return defense;
+
 }
+
+- (void)setEnabled:(BOOL)enabled {
+    [[NSUserDefaults standardUserDefaults] setBool:enabled forKey:self.prepsInDefense];
+}
+
+- (BOOL)enabled {
+    return [[NSUserDefaults standardUserDefaults] boolForKey:self.prepsInDefense];
+    
+}
+
 @end

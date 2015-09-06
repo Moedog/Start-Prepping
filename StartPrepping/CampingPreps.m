@@ -11,14 +11,21 @@
 @implementation CampingPreps
 
 
-+ (instancetype)prepsInCamping: (NSString *)prepsInCamping enabled:(BOOL)enabled {
++ (instancetype)prepsInCamping: (NSString *)prepsInCamping {
     CampingPreps *camping = [CampingPreps new];
     camping.prepsInCamping = prepsInCamping;
-    camping.enabled = enabled;
     
     return camping;
 }
 
+- (void)setEnabled:(BOOL)enabled {
+    [[NSUserDefaults standardUserDefaults]
+     setBool:enabled forKey:self.prepsInCamping];
+}
+
+- (BOOL)enabled {
+    return [[NSUserDefaults standardUserDefaults] boolForKey:self.prepsInCamping];
+}
 
 
 @end

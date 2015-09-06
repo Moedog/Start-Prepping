@@ -49,6 +49,8 @@
 @property (assign, nonatomic) BOOL *waterContainers;
 @property (assign, nonatomic) BOOL *waterPurification;
 
+@property (weak, nonatomic) IBOutlet UITextView *textView;
+
 @end
 
 @implementation CampingTableViewController
