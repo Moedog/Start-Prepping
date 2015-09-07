@@ -16,7 +16,6 @@
     
     return kitchen;
     
-    
 }
 
 - (void)setEnabled:(BOOL)enabled {

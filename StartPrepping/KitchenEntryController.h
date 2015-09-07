@@ -14,6 +14,5 @@
 //- (void)addEntry:(Entry *)entry;
 //- (void)removeEntry:(Entry *)entry;
 
-- (void)save;
 
 @end

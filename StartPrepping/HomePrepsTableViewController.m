@@ -47,10 +47,18 @@
 
 @implementation HomePrepsTableViewController
 - (IBAction)saveHome:(id)sender {
+
+NSString *text = self.textView.text;
+
+[[NSUserDefaults standardUserDefaults] setValue:text forKey:@"Type Notes"];
+
 }
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.textView.text = [[NSUserDefaults standardUserDefaults] valueForKey:@"Type Notes"];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -60,35 +68,35 @@
     
     self.home = @[
                   
-                      [HomePreps prepsInHome:@"Batteries" enabled:YES],
-                      [HomePreps prepsInHome:@"Board Games" enabled:YES],
-                      [HomePreps prepsInHome:@"Candles" enabled:YES],
-                      [HomePreps prepsInHome:@"Duct Tape" enabled:YES],
-                      [HomePreps prepsInHome:@"Electric Fans" enabled:YES],
-                      [HomePreps prepsInHome:@"Extension Cords" enabled:YES],
-                      [HomePreps prepsInHome:@"Extra Blankets"enabled:YES],
-                      [HomePreps prepsInHome:@"Fire Extinguisher" enabled:YES],
-                      [HomePreps prepsInHome:@"Five Gallon Water Containers" enabled:YES],
-                      [HomePreps prepsInHome:@"Five Gallon Gas Cans" enabled:YES],
+                      [HomePreps prepsInHome:@"Batteries"],
+                      [HomePreps prepsInHome:@"Board Games"],
+                      [HomePreps prepsInHome:@"Candles"],
+                      [HomePreps prepsInHome:@"Duct Tape"],
+                      [HomePreps prepsInHome:@"Electric Fans"],
+                      [HomePreps prepsInHome:@"Extension Cords"],
+                      [HomePreps prepsInHome:@"Extra Blankets"],
+                      [HomePreps prepsInHome:@"Fire Extinguisher"],
+                      [HomePreps prepsInHome:@"Five Gallon Water Containers"],
+                      [HomePreps prepsInHome:@"Five Gallon Gas Cans"],
                       
                       
-                      [HomePreps prepsInHome:@"Garden Seeds" enabled:YES],
-                      [HomePreps prepsInHome:@"Garden Tools" enabled:YES],
-                      [HomePreps prepsInHome:@"Generator" enabled:YES],
-                      [HomePreps prepsInHome:@"Ham/Satellite Radio" enabled:YES],
-                      [HomePreps prepsInHome:@"Lightbulbs" enabled:YES],
-                      [HomePreps prepsInHome:@"Playing Cards" enabled:YES],
-                      [HomePreps prepsInHome:@"Portable AC Unit" enabled:YES],
-                      [HomePreps prepsInHome:@"Portable Water Heater" enabled:YES],
-                      [HomePreps prepsInHome:@"Power Tools" enabled:YES],
-                      [HomePreps prepsInHome:@"Propane Tanks" enabled:YES],
-                      [HomePreps prepsInHome:@"Sewing Kit" enabled:YES],
-                      [HomePreps prepsInHome:@"Space Heater" enabled:YES],
-                      [HomePreps prepsInHome:@"Spare Cash ($500 min.)" enabled:YES],
-                      [HomePreps prepsInHome:@"Stationary" enabled:YES],
-                      [HomePreps prepsInHome:@"Tissues" enabled:YES],
-                      [HomePreps prepsInHome:@"Tool Kit" enabled:YES],
-                      [HomePreps prepsInHome:@"Work Gloves" enabled:YES]];
+                      [HomePreps prepsInHome:@"Garden Seeds"],
+                      [HomePreps prepsInHome:@"Garden Tools"],
+                      [HomePreps prepsInHome:@"Generator"],
+                      [HomePreps prepsInHome:@"Ham/Satellite Radio"],
+                      [HomePreps prepsInHome:@"Lightbulbs"],
+                      [HomePreps prepsInHome:@"Playing Cards"],
+                      [HomePreps prepsInHome:@"Portable AC Unit"],
+                      [HomePreps prepsInHome:@"Portable Water Heater"],
+                      [HomePreps prepsInHome:@"Power Tools"],
+                      [HomePreps prepsInHome:@"Propane Tanks"],
+                      [HomePreps prepsInHome:@"Sewing Kit"],
+                      [HomePreps prepsInHome:@"Space Heater"],
+                      [HomePreps prepsInHome:@"Spare Cash ($500 min.)"],
+                      [HomePreps prepsInHome:@"Stationary"],
+                      [HomePreps prepsInHome:@"Tissues"],
+                      [HomePreps prepsInHome:@"Tool Kit"],
+                      [HomePreps prepsInHome:@"Work Gloves"]];
     
     
 }
@@ -101,30 +109,41 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
+
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
+
     // Return the number of rows in the section.
     return self.home.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    HomePrepsCellController *cell = [tableView dequeueReusableCellWithIdentifier:@"SwitchCell" forIndexPath:indexPath];
+    HomePrepsCellController *cell = [tableView dequeueReusableCellWithIdentifier:@"SwitchCell"];
     
     HomePreps *prepsInHome = self.home[indexPath.row];
     
     cell.homeLabel.text = prepsInHome.prepsInHome;
     
-    cell.homeSwitch.enabled = prepsInHome.enabled;
-    
+    cell.homeSwitch.on = prepsInHome.enabled;
+    [cell.homeSwitch addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
     return cell;
 }
 
+-(void) switchChanged:(UISwitch *) homeSwitch {
+    
+    for (HomePrepsCellController *cell in [self.tableView visibleCells])  {
+        if (cell.homeSwitch == homeSwitch) {
+            NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+            HomePreps *preps = [self.home objectAtIndex:indexPath.row];
+            preps.enabled = homeSwitch.on;
+            
+        }
+    }
+}
 
 /*
 // Override to support conditional editing of the table view.

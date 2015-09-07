@@ -35,10 +35,17 @@
 
 @implementation SelfDefenseTableViewController
 - (IBAction)defenseSave:(id)sender {
+    
+    NSString *text = self.textView.text;
+    
+    [[NSUserDefaults standardUserDefaults] setValue:text forKey:@"Type Notes"];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    self.textView.text = [[NSUserDefaults standardUserDefaults] valueForKey:@"Type Notes"];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -48,20 +55,20 @@
     
     self.defense = @[
                      
-                     [DefensePreps prepsInDefense:@"Handgun (9mm or .40cal)" enabled:YES],
-                     [DefensePreps prepsInDefense:@"Ammo For Handgun" enabled:YES],
-                     [DefensePreps prepsInDefense:@"Shotgun" enabled:YES],
-                     [DefensePreps prepsInDefense:@"Shotgun Shells" enabled:YES],
-                     [DefensePreps prepsInDefense:@"AR-15" enabled:YES],
-                     [DefensePreps prepsInDefense:@"Ammo For AR-15" enabled:YES],
-                     [DefensePreps prepsInDefense:@"Concealed Firearms Permit" enabled:YES],
-                     [DefensePreps prepsInDefense:@"Brass Knuckles"enabled:YES],
-                     [DefensePreps prepsInDefense:@"Bugout Vehicle" enabled:YES],
-                     [DefensePreps prepsInDefense:@"Bulletproof Vest" enabled:YES],
-                     [DefensePreps prepsInDefense:@"Holsters Or Carrying Cases" enabled:YES],
-                     [DefensePreps prepsInDefense:@"Mace/Pepper Spray" enabled:YES],
-                     [DefensePreps prepsInDefense:@"Survival Knife" enabled:YES],
-                     [DefensePreps prepsInDefense:@"Edged Weapons" enabled:YES]];
+                     [DefensePreps prepsInDefense:@"Handgun (9mm or .40cal)"],
+                     [DefensePreps prepsInDefense:@"Ammo For Handgun"],
+                     [DefensePreps prepsInDefense:@"Shotgun"],
+                     [DefensePreps prepsInDefense:@"Shotgun Shells"],
+                     [DefensePreps prepsInDefense:@"AR-15"],
+                     [DefensePreps prepsInDefense:@"Ammo For AR-15"],
+                     [DefensePreps prepsInDefense:@"Concealed Firearms Permit"],
+                     [DefensePreps prepsInDefense:@"Brass Knuckles"],
+                     [DefensePreps prepsInDefense:@"Bugout Vehicle"],
+                     [DefensePreps prepsInDefense:@"Bulletproof Vest"],
+                     [DefensePreps prepsInDefense:@"Holsters Or Carrying Cases"],
+                     [DefensePreps prepsInDefense:@"Mace/Pepper Spray"],
+                     [DefensePreps prepsInDefense:@"Survival Knife"],
+                     [DefensePreps prepsInDefense:@"Edged Weapons"]];
     
     
 }
@@ -74,30 +81,39 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return self.defense.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    SelfDefenseCellController *cell = [tableView dequeueReusableCellWithIdentifier:@"SwitchCell" forIndexPath:indexPath];
+    SelfDefenseCellController *cell = [tableView dequeueReusableCellWithIdentifier:@"SwitchCell"];
     
     DefensePreps *prepsInDefense = self.defense[indexPath.row];
     
     cell.defenseLabel.text = prepsInDefense.prepsInDefense;
     
     cell.defenseSwitch.enabled = prepsInDefense.enabled;
-    
+    [cell.defenseSwitch addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
     return cell;
 }
 
+
+-(void) switchChanged:(UISwitch *) defenseSwitch {
+    
+    for (SelfDefenseCellController *cell in [self.tableView visibleCells]) {
+        if (cell.defenseSwitch == defenseSwitch) {
+            NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+            DefensePreps *preps = [self.defense objectAtIndex:indexPath.row];
+            preps.enabled = defenseSwitch.on;
+        }
+    }
+}
 
 /*
 // Override to support conditional editing of the table view.

@@ -55,6 +55,10 @@
 
 @implementation CampingTableViewController
 - (IBAction)campingSave:(id)sender {
+    
+    NSString *text = self.textView.text;
+    
+    [[NSUserDefaults standardUserDefaults] setValue:text forKey:@"Type Notes"];
 }
 
 - (void)viewDidLoad {
@@ -95,7 +99,7 @@
 //    self.waterPurification = YES;
     
     
-    
+    self.textView.text = [[NSUserDefaults standardUserDefaults] valueForKey:@"Type Notes"];
     
     
     
@@ -107,41 +111,41 @@
     
     self.camping = @[
                      
-                     [CampingPreps prepsInCamping:@"Appropriate Footware" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Axe/Hatchet" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Blankets" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Camp Lantern" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Camp Stove" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Canteen" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Compass" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Cook Kit" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Cooler" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Fire Extinguisher" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Firestarters" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Fishing/Hunting Equipment" enabled:YES],
+                     [CampingPreps prepsInCamping:@"Appropriate Footware"],
+                     [CampingPreps prepsInCamping:@"Axe/Hatchet"],
+                     [CampingPreps prepsInCamping:@"Blankets"],
+                     [CampingPreps prepsInCamping:@"Camp Lantern"],
+                     [CampingPreps prepsInCamping:@"Camp Stove"],
+                     [CampingPreps prepsInCamping:@"Canteen"],
+                     [CampingPreps prepsInCamping:@"Compass"],
+                     [CampingPreps prepsInCamping:@"Cook Kit"],
+                     [CampingPreps prepsInCamping:@"Cooler"],
+                     [CampingPreps prepsInCamping:@"Fire Extinguisher"],
+                     [CampingPreps prepsInCamping:@"Firestarters"],
+                     [CampingPreps prepsInCamping:@"Fishing/Hunting Equipment"],
                      
                      
-                     [CampingPreps prepsInCamping:@"First Aid Kit" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Flashlights"enabled:YES],
-                     [CampingPreps prepsInCamping:@"Hiking or Bugout Pack" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Lawn Chairs" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Matches" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Propane" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Raincoat" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Rope" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Seasonal Clothing" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Single Burner Stove" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Sleeping Bags" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Small Bungee Cords" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Survival Knife" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Survival Radio" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Tarps" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Tents" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Table" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Toilet Paper" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Tomahawk" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Water Containers" enabled:YES],
-                     [CampingPreps prepsInCamping:@"Water Purification" enabled:YES]];
+                     [CampingPreps prepsInCamping:@"First Aid Kit"],
+                     [CampingPreps prepsInCamping:@"Flashlights"],
+                     [CampingPreps prepsInCamping:@"Hiking or Bugout Pack"],
+                     [CampingPreps prepsInCamping:@"Lawn Chairs"],
+                     [CampingPreps prepsInCamping:@"Matches"],
+                     [CampingPreps prepsInCamping:@"Propane"],
+                     [CampingPreps prepsInCamping:@"Raincoat"],
+                     [CampingPreps prepsInCamping:@"Rope"],
+                     [CampingPreps prepsInCamping:@"Seasonal Clothing"],
+                     [CampingPreps prepsInCamping:@"Single Burner Stove"],
+                     [CampingPreps prepsInCamping:@"Sleeping Bags"],
+                     [CampingPreps prepsInCamping:@"Small Bungee Cords"],
+                     [CampingPreps prepsInCamping:@"Survival Knife"],
+                     [CampingPreps prepsInCamping:@"Survival Radio"],
+                     [CampingPreps prepsInCamping:@"Tarps"],
+                     [CampingPreps prepsInCamping:@"Tents"],
+                     [CampingPreps prepsInCamping:@"Table"],
+                     [CampingPreps prepsInCamping:@"Toilet Paper"],
+                     [CampingPreps prepsInCamping:@"Tomahawk"],
+                     [CampingPreps prepsInCamping:@"Water Containers"],
+                     [CampingPreps prepsInCamping:@"Water Purification"]];
     
     
 }
@@ -154,13 +158,11 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return self.camping.count;
 }
@@ -173,10 +175,22 @@
     
     cell.campingLabel.text = prepsInCamping.prepsInCamping;
     
-    cell.campingSwitch.enabled = prepsInCamping.enabled;
-    
+    cell.campingSwitch.on = prepsInCamping.enabled;
+    [cell.campingSwitch addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
     return cell;
 }
+
+-(void) switchChanged:(UISwitch *) campingSwitch {
+    
+    for (CampingCellController *cell in [self.tableView visibleCells]) {
+        if (cell.campingSwitch == campingSwitch) {
+            NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+            CampingPreps *preps = [self.camping objectAtIndex:indexPath.row];
+            preps.enabled = campingSwitch.on;
+        }
+    }
+}
+
 
 
 /*
