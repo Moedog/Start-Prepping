@@ -50,21 +50,24 @@
     
     NSString *text = self.textView.text;
     
-    [[NSUserDefaults standardUserDefaults] setValue:text forKey:@"Type Notes"];
+    [[NSUserDefaults standardUserDefaults] setValue:text forKey:@"Notes"];
     
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    if ([[NSUserDefaults standardUserDefaults] valueForKey:@"Notes"]) {
+        self.textView.text = [[NSUserDefaults standardUserDefaults] valueForKey:@"Notes"];
+    } else {
+        self.textView.text = @"TYPE NOTES HERE";
+    }
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    self.textView.text = [[NSUserDefaults standardUserDefaults] valueForKey:@"Type Notes"];
-    
     
     
     self.bathroom = @[

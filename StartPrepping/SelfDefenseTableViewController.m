@@ -44,8 +44,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    self.textView.text = [[NSUserDefaults standardUserDefaults] valueForKey:@"Type Notes"];
+    if ([[NSUserDefaults standardUserDefaults] valueForKey:@"Notes"]) {
+        self.textView.text = [[NSUserDefaults standardUserDefaults] valueForKey:@"Notes"];
+    } else {
+        self.textView.text = @"TYPE NOTES HERE";
+    }
+
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -98,7 +102,7 @@
     
     cell.defenseLabel.text = prepsInDefense.prepsInDefense;
     
-    cell.defenseSwitch.enabled = prepsInDefense.enabled;
+    cell.defenseSwitch.on = prepsInDefense.enabled;
     [cell.defenseSwitch addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
     return cell;
 }

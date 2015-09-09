@@ -40,7 +40,7 @@
     
     // TODO: Save "text" into NSUserDefaults
     
-    [[NSUserDefaults standardUserDefaults] setValue:text forKey:@"Type Notes"];
+    [[NSUserDefaults standardUserDefaults] setValue:text forKey:@"Notes"];
     
 }
 
@@ -50,7 +50,11 @@
     // TODO: Load text from NSUserDefaults and store into self.textView.text
     // self.textView.text = ...
     
-    self.textView.text = [[NSUserDefaults standardUserDefaults] valueForKey:@"Type Notes"];
+    if ([[NSUserDefaults standardUserDefaults] valueForKey:@"Notes"]) {
+        self.textView.text = [[NSUserDefaults standardUserDefaults] valueForKey:@"Notes"];
+    } else {
+        self.textView.text = @"TYPE NOTES HERE";
+    }
     
     
     // Uncomment the following line to preserve selection between presentations.

@@ -8,6 +8,10 @@
 
 #import "InvestmentViewController.h"
 
+NSString * const goldValue = @"1100";
+NSString * const silverValue = @"16";
+NSString * const bitcoinValue = @"245";
+
 @interface InvestmentViewController ()
 
 // Example GOLD - Current Value:
@@ -27,6 +31,16 @@
 
 // Example Calculate Value In Dollars
 @property (weak, nonatomic) IBOutlet UILabel *valueInDollars;
+
+//@property (weak, nonatomic) UILabel * currentGoldPrice;
+//
+//@property (weak, nonatomic) UILabel * currentSilverPrice;
+//
+//@property (weak, nonatomic) UILabel * currentBitcoinPrice;
+
+@property (weak, nonatomic) IBOutlet UITextField *numberOfUnitsTextField;
+
+@property (weak, nonatomic) IBOutlet UITextField *numberOfDollarsTextField;
 
 @end
 
@@ -56,7 +70,7 @@
         self.currentValueLabel.text = @"GOLD - Current Value:";
         self.currencyAmount.text = @"Amount of Gold To Purchase (oz.)";
         self.currencyDollars.text = @"Amount of Dollars To Invest";
-        self.valueInCurrency.text = @"That amount is currently worth @%d oz. in gold.";
+        self.valueInCurrency.text = [NSString stringWithFormat:@"That amount is currently worth @%f oz. in gold.", [self calculateCostOfUnits]];
         self.valueInDollars.text = @"That amount is currently worth @%d dollars.";
 // SILVER
     }else if (self.currencySegment.selectedSegmentIndex == 1) {
@@ -73,9 +87,21 @@
         self.valueInCurrency.text = @"That amount is currently worth @%d bitcoin.";
         self.valueInDollars.text = @"That amount is currently worth @%d dollars.";
         }
+//-(NSInteger) *goldCalculation = gold = [currentGoldPrice * goldinput]
+    
 }
 
-
+- (CGFloat)calculateCostOfUnits {
+    
+    if (self.currencySegment.selectedSegmentIndex == 0) {
+        return [self.numberOfUnitsTextField.text intValue] * [goldValue intValue];
+    } else if (self.currencySegment.selectedSegmentIndex == 1) {
+        return [self.numberOfUnitsTextField.text intValue] * [silverValue intValue];
+    } else {
+        return [self.numberOfUnitsTextField.text intValue] * [bitcoinValue intValue];
+    }
+    
+}
 
 
 /*

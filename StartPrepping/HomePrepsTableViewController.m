@@ -58,7 +58,12 @@ NSString *text = self.textView.text;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.textView.text = [[NSUserDefaults standardUserDefaults] valueForKey:@"Type Notes"];
+    if ([[NSUserDefaults standardUserDefaults] valueForKey:@"Notes"]) {
+        self.textView.text = [[NSUserDefaults standardUserDefaults] valueForKey:@"Notes"];
+    } else {
+        self.textView.text = @"TYPE NOTES HERE";
+    }
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

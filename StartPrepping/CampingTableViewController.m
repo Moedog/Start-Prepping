@@ -64,44 +64,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    self.appropriateFootwear = YES;
-//    self.axeOrHatchet = YES;
-//    self.blankets = YES;
-//    self.campLantern = YES;
-//    self.campStove = YES;
-//    self.canteen = YES;
-//    self.compass = YES;
-//    self.cookKit = YES;
-//    self.cooler = YES;
-//    self.fireExtinguisher = YES;
-//    self.firestarters = YES;
-//    self.fishingOrHuntingEquipment = YES;
-//    self.firstAidKit = YES;
-//    self.flashlights = YES;
-//    self.hikingOrBugoutPack = YES;
-//    self.lawnchairs = YES;
-//    self.matches = YES;
-//    self.propane = YES;
-//    self.raincoat = YES;
-//    self.rope = YES;
-//    self.seasonalClothing = YES;
-//    self.singleBurnerStove = YES;
-//    self.sleepingBags = YES;
-//    self.smallBungeeCords = YES;
-//    self.survivalKnife = YES;
-//    self.survivalRadio = YES;
-//    self.tarps = YES;
-//    self.tents = YES;
-//    self.table = YES;
-//    self.toiletPaper = YES;
-//    self.tomahawk = YES;
-//    self.waterContainers = YES;
-//    self.waterPurification = YES;
-    
-    
-    self.textView.text = [[NSUserDefaults standardUserDefaults] valueForKey:@"Type Notes"];
-    
-    
+    if ([[NSUserDefaults standardUserDefaults] valueForKey:@"Notes"]) {
+        self.textView.text = [[NSUserDefaults standardUserDefaults] valueForKey:@"Notes"];
+    } else {
+        self.textView.text = @"TYPE NOTES HERE";
+    }
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
