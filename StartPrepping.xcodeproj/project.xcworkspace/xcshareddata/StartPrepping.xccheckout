@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>D394F20B-77FE-4C8C-9E34-24509E828B41</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>StartPrepping</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>0C63F825B90580CC8B71A0BED29F73EB682CE360</key>
 		<string>https://github.com/Moedog/Start-Prepping.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>StartPrepping.xcodeproj/project.xcworkspace</string>
+	<string>StartPrepping.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>0C63F825B90580CC8B71A0BED29F73EB682CE360</key>

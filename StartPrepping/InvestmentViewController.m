@@ -8,8 +8,8 @@
 
 #import "InvestmentViewController.h"
 
-NSString * const goldValue = @"1100";
-NSString * const silverValue = @"16";
+NSString * const goldValue = @"1110";
+NSString * const silverValue = @"15";
 NSString * const bitcoinValue = @"245";
 
 @interface InvestmentViewController ()
@@ -67,31 +67,70 @@ NSString * const bitcoinValue = @"245";
 //  GOLD
 - (IBAction)currencyChanged:(id)sender {
     if (self.currencySegment.selectedSegmentIndex == 0) {
-        self.currentValueLabel.text = @"GOLD - Current Value:";
+        self.currentValueLabel.text = @"GOLD - Aprox. Current Value: $1110/oz.";
         self.currencyAmount.text = @"Amount of Gold To Purchase (oz.)";
         self.currencyDollars.text = @"Amount of Dollars To Invest";
-        self.valueInCurrency.text = [NSString stringWithFormat:@"That amount is currently worth @%f oz. in gold.", [self calculateCostOfUnits]];
-        self.valueInDollars.text = @"That amount is currently worth @%d dollars.";
+//        NSInteger calculateCostOfUnits = goldValue * self.currencyAmount.text
+//        self.valueInCurrency.text = [NSString stringWithFormat:@"That amount is currently worth @%f oz. in gold.", [self calculateCostOfUnits]];
+//        self.valueInDollars.text = @"That amount is currently worth @%ld dollars.";
 // SILVER
     }else if (self.currencySegment.selectedSegmentIndex == 1) {
         self.currentValueLabel.text = @"SILVER - Current Value:";
         self.currencyAmount.text = @"Amount of Silver To Purchase (oz.)";
         self.currencyDollars.text = @"Amount of Dollars To Invest";
-        self.valueInCurrency.text = @"That amount is currently worth @%d oz. in silver.";
-        self.valueInDollars.text = @"That amount is currently worth @%d dollars.";
+//        self.valueInCurrency.text = @"That amount is currently worth @%f oz. in silver.";
+//        self.valueInDollars.text = @"That amount is currently worth @%f dollars.";
  // BITCOIN
     }else if (self.currencySegment.selectedSegmentIndex == 2) {
         self.currentValueLabel.text = @"BITCOIN - Curent Value:";
         self.currencyAmount.text = @"Amount of Bitcoin To Purchase";
         self.currencyDollars.text = @"Amount of Dollars To Invest";
-        self.valueInCurrency.text = @"That amount is currently worth @%d bitcoin.";
-        self.valueInDollars.text = @"That amount is currently worth @%d dollars.";
+//        self.valueInCurrency.text = @"That amount is currently worth @%f bitcoin.";
+//        self.valueInDollars.text = @"That amount is currently worth @%f dollars.";
         }
 //-(NSInteger) *goldCalculation = gold = [currentGoldPrice * goldinput]
     
 }
 
-- (CGFloat)calculateCostOfUnits {
+//NSInteger calculateCostOfUnits = goldValue * self.currencyAmount.text
+//self.valueInDollars.text = [NSString stringWithFormat: @"That amount is currently worth @ld dollars.", (long)goldValue];
+
+- (IBAction)costOfUnits:(id)sender {
+    
+        //GOLD
+    if (self.currencySegment.selectedSegmentIndex == 0) {
+        self.valueInDollars.text = [NSString stringWithFormat:@"That amount is currently worth %f U.S. dollars.", [self costOfUnits]];
+        
+        // SILVER
+    }else if (self.currencySegment.selectedSegmentIndex == 1) {
+        self.valueInDollars.text = [NSString stringWithFormat:@"That amount is currently worth %f U.S. dollars.", [self
+            costOfUnits]];
+
+        // BITCOIN
+    }else if (self.currencySegment.selectedSegmentIndex == 2) {
+        self.valueInDollars.text = [NSString stringWithFormat:@"That amount is currently worth %f U.S. dollars.", [self
+            costOfUnits]];
+
+    }
+}
+
+- (IBAction)amountOfUnits:(id)sender {
+    
+        //GOLD
+    if (self.currencySegment.selectedSegmentIndex == 0) {
+        self.valueInCurrency.text = [NSString stringWithFormat:@"That amount is currently worth %f oz. in gold.", [self amountOfUnits]];
+        
+        // SILVER
+    }else if (self.currencySegment.selectedSegmentIndex == 1) {
+        self.valueInCurrency.text = [NSString stringWithFormat:@"That amount is currently worth %f oz. in silver.", [self amountOfUnits]];
+        
+        //BITCOIN
+    }else if (self.currencySegment.selectedSegmentIndex == 2) {
+        self.valueInCurrency.text = [NSString stringWithFormat:@"That amount is currently worth %f in bitcoin.", [self amountOfUnits]];
+    }
+
+}
+- (CGFloat) costOfUnits {
     
     if (self.currencySegment.selectedSegmentIndex == 0) {
         return [self.numberOfUnitsTextField.text intValue] * [goldValue intValue];
@@ -102,6 +141,20 @@ NSString * const bitcoinValue = @"245";
     }
     
 }
+
+-(CGFloat) amountOfUnits {
+    
+    if (self.currencySegment.selectedSegmentIndex == 0) {
+        return [self.numberOfDollarsTextField.text intValue] / [goldValue intValue];
+    } else if (self.currencySegment.selectedSegmentIndex == 1) {
+        return [self.numberOfDollarsTextField.text intValue] / [silverValue intValue];
+    } else {
+        return [self.numberOfDollarsTextField.text intValue] / [bitcoinValue intValue];
+    }
+    
+}
+
+
 
 
 /*
