@@ -50,15 +50,15 @@
     
     NSString *text = self.textView.text;
     
-    [[NSUserDefaults standardUserDefaults] setValue:text forKey:@"Notes"];
+    [[NSUserDefaults standardUserDefaults] setValue:text forKey:@"bathroomNotes"];
     
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    if ([[NSUserDefaults standardUserDefaults] valueForKey:@"Notes"]) {
-        self.textView.text = [[NSUserDefaults standardUserDefaults] valueForKey:@"Notes"];
+    if ([[NSUserDefaults standardUserDefaults] valueForKey:@"bathroomNotes"]) {
+        self.textView.text = [[NSUserDefaults standardUserDefaults] valueForKey:@"bathroomNotes"];
     } else {
         self.textView.text = @"TYPE NOTES HERE";
     }

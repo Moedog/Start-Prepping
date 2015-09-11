@@ -38,14 +38,14 @@
     
     NSString *text = self.textView.text;
     
-    [[NSUserDefaults standardUserDefaults] setValue:text forKey:@"Type Notes"];
+    [[NSUserDefaults standardUserDefaults] setValue:text forKey:@"defenseNotes"];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    if ([[NSUserDefaults standardUserDefaults] valueForKey:@"Notes"]) {
-        self.textView.text = [[NSUserDefaults standardUserDefaults] valueForKey:@"Notes"];
+    if ([[NSUserDefaults standardUserDefaults] valueForKey:@"defenseNotes"]) {
+        self.textView.text = [[NSUserDefaults standardUserDefaults] valueForKey:@"defenseNotes"];
     } else {
         self.textView.text = @"TYPE NOTES HERE";
     }

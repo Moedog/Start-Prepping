@@ -50,7 +50,7 @@
 
 NSString *text = self.textView.text;
 
-[[NSUserDefaults standardUserDefaults] setValue:text forKey:@"Type Notes"];
+[[NSUserDefaults standardUserDefaults] setValue:text forKey:@"homePrepsNotes"];
 
 }
 
@@ -58,8 +58,8 @@ NSString *text = self.textView.text;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    if ([[NSUserDefaults standardUserDefaults] valueForKey:@"Notes"]) {
-        self.textView.text = [[NSUserDefaults standardUserDefaults] valueForKey:@"Notes"];
+    if ([[NSUserDefaults standardUserDefaults] valueForKey:@"homePrepsNotes"]) {
+        self.textView.text = [[NSUserDefaults standardUserDefaults] valueForKey:@"homePrepsNotes"];
     } else {
         self.textView.text = @"TYPE NOTES HERE";
     }

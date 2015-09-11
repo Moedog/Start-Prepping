@@ -40,7 +40,7 @@
     
     // TODO: Save "text" into NSUserDefaults
     
-    [[NSUserDefaults standardUserDefaults] setValue:text forKey:@"Notes"];
+    [[NSUserDefaults standardUserDefaults] setValue:text forKey:@"kitchenNotes"];
     
 }
 
@@ -50,8 +50,8 @@
     // TODO: Load text from NSUserDefaults and store into self.textView.text
     // self.textView.text = ...
     
-    if ([[NSUserDefaults standardUserDefaults] valueForKey:@"Notes"]) {
-        self.textView.text = [[NSUserDefaults standardUserDefaults] valueForKey:@"Notes"];
+    if ([[NSUserDefaults standardUserDefaults] valueForKey:@"kitchenNotes"]) {
+        self.textView.text = [[NSUserDefaults standardUserDefaults] valueForKey:@"kitchenNotes"];
     } else {
         self.textView.text = @"TYPE NOTES HERE";
     }
