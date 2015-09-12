@@ -2,8 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BMO-8v-WFa">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -44,153 +42,117 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Adults" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5MV-Ha-pS8">
-                                <rect key="frame" x="-9" y="63" width="146" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories Per Day Per Adult" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMp-R4-Mfy">
-                                <rect key="frame" x="112" y="63" width="201" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Children" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jn6-8Q-6By">
-                                <rect key="frame" x="-2" y="249" width="150" height="28"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="yGS-xT-Mxm"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories Per Day Per Child" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bj6-xD-dfa">
-                                <rect key="frame" x="150" y="234" width="144" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="9bW-4o-fo4"/>
-                                    <constraint firstAttribute="width" constant="144" id="aoO-ch-bhX"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <pickerView contentMode="scaleToFill" restorationIdentifier="caloriesAdults" translatesAutoresizingMaskIntoConstraints="NO" id="Zm8-h9-Qfo">
-                                <rect key="frame" x="194" y="96" width="134" height="130"/>
-                                <color key="backgroundColor" red="1" green="0.73676759839999995" blue="0.53666089640000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="130" id="XwL-XB-ZBH"/>
-                                    <constraint firstAttribute="width" constant="134" id="k39-Hy-tmU"/>
-                                </constraints>
-                            </pickerView>
-                            <pickerView contentMode="scaleToFill" restorationIdentifier="numberChildren" translatesAutoresizingMaskIntoConstraints="NO" id="nWv-VG-IT8">
-                                <rect key="frame" x="25" y="284" width="134" height="130"/>
-                                <color key="backgroundColor" red="1" green="0.73676759839999995" blue="0.53666089640000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="134" id="EJL-Xs-PzT"/>
-                                </constraints>
-                            </pickerView>
-                            <pickerView contentMode="scaleToFill" restorationIdentifier="numberAdults" translatesAutoresizingMaskIntoConstraints="NO" id="YzJ-Y3-udb">
-                                <rect key="frame" x="-7" y="97" width="134" height="130"/>
-                                <color key="backgroundColor" red="1" green="0.73676759839999995" blue="0.53666089640000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="134" id="74N-J9-s1R"/>
-                                    <constraint firstAttribute="height" constant="130" id="7Et-Mf-hsW"/>
-                                </constraints>
-                            </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkY-qd-9hM">
-                                <rect key="frame" x="118" y="417" width="87" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="87" id="c3K-lf-D0W"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="CALCULATE">
-                                    <color key="titleColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="calculateCalories:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ePV-r5-WYk"/>
-                                </connections>
-                            </button>
-                            <pickerView contentMode="scaleToFill" restorationIdentifier="caloriesChildren" translatesAutoresizingMaskIntoConstraints="NO" id="UHD-m7-e7V">
-                                <rect key="frame" x="194" y="284" width="134" height="130"/>
-                                <color key="backgroundColor" red="1" green="0.73676759839999995" blue="0.53666089640000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="134" id="nix-Qc-VFO"/>
-                                </constraints>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tn-0C-CFT">
-                                <rect key="frame" x="6" y="443" width="311" height="76"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="76" id="Ar3-ce-WHQ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculate Food Calorie Requirements" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3n-kn-TsD">
-                                <rect key="frame" x="9" y="20" width="304" height="42"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="2yT-tf-R8t"/>
-                                    <constraint firstAttribute="width" constant="304" id="YpR-vP-xhx"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="UMq-b1-6bf">
+                                <rect key="frame" x="9" y="20" width="640" height="890"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Calculate Food Calorie Requirements" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3n-kn-TsD">
+                                        <rect key="frame" x="0.0" y="0.0" width="283" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9kW-AF-hrV">
+                                        <rect key="frame" x="0.0" y="21" width="640" height="237"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bqT-ga-dzE">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="237"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Number of Adults" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5MV-Ha-pS8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <pickerView contentMode="scaleToFill" ambiguous="YES" restorationIdentifier="numberAdults" translatesAutoresizingMaskIntoConstraints="NO" id="YzJ-Y3-udb">
+                                                        <rect key="frame" x="0.0" y="21" width="320" height="216"/>
+                                                        <color key="backgroundColor" red="1" green="0.73676759839999995" blue="0.53666089640000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="tintColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </pickerView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="s8c-JZ-SFL">
+                                                <rect key="frame" x="320" y="0.0" width="320" height="237"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Calories Per Day Per Adult" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMp-R4-Mfy">
+                                                        <rect key="frame" x="119" y="0.0" width="201" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <pickerView contentMode="scaleToFill" ambiguous="YES" restorationIdentifier="caloriesAdults" translatesAutoresizingMaskIntoConstraints="NO" id="Zm8-h9-Qfo">
+                                                        <rect key="frame" x="0.0" y="21" width="320" height="216"/>
+                                                        <color key="backgroundColor" red="1" green="0.73676759839999995" blue="0.53666089640000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="tintColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </pickerView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="jCU-yC-Xoz">
+                                        <rect key="frame" x="0.0" y="258" width="320" height="237"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Calories Per Day Per Child" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bj6-xD-dfa">
+                                                <rect key="frame" x="120" y="0.0" width="200" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <pickerView contentMode="scaleToFill" ambiguous="YES" restorationIdentifier="caloriesChildren" translatesAutoresizingMaskIntoConstraints="NO" id="UHD-m7-e7V">
+                                                <rect key="frame" x="0.0" y="21" width="320" height="216"/>
+                                                <color key="backgroundColor" red="1" green="0.73676759839999995" blue="0.53666089640000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="tintColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            </pickerView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="4um-mm-lTc">
+                                        <rect key="frame" x="0.0" y="495" width="320" height="237"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Number of Children" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jn6-8Q-6By">
+                                                <rect key="frame" x="170" y="0.0" width="150" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <pickerView contentMode="scaleToFill" ambiguous="YES" restorationIdentifier="numberChildren" translatesAutoresizingMaskIntoConstraints="NO" id="nWv-VG-IT8">
+                                                <rect key="frame" x="0.0" y="21" width="320" height="216"/>
+                                                <color key="backgroundColor" red="1" green="0.73676759839999995" blue="0.53666089640000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="tintColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            </pickerView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XdE-p2-tMR">
+                                        <rect key="frame" x="0.0" y="732" width="240" height="128"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qNd-0J-ss5">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tn-0C-CFT">
+                                                        <rect key="frame" x="-36" y="26" width="311" height="76"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkY-qd-9hM">
+                                        <rect key="frame" x="0.0" y="860" width="85" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="CALCULATE">
+                                            <color key="titleColor" red="0.33319523359999997" green="0.171414178" blue="0.063469543609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="calculateCalories:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ePV-r5-WYk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.73676759839999995" blue="0.53666089640000003" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.097750218009762913" green="0.18901786313168245" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="AMp-R4-Mfy" firstAttribute="firstBaseline" secondItem="5MV-Ha-pS8" secondAttribute="firstBaseline" id="3bv-VS-s5l"/>
-                            <constraint firstItem="5MV-Ha-pS8" firstAttribute="baseline" secondItem="AMp-R4-Mfy" secondAttribute="firstBaseline" id="810-zy-LYI"/>
-                            <constraint firstItem="5tn-0C-CFT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-10" id="AEa-QW-NPk"/>
-                            <constraint firstItem="nWv-VG-IT8" firstAttribute="bottom" secondItem="UHD-m7-e7V" secondAttribute="bottom" id="ANX-Ai-hSR"/>
-                            <constraint firstItem="Zm8-h9-Qfo" firstAttribute="leading" secondItem="UHD-m7-e7V" secondAttribute="leading" id="BTZ-tx-dvD"/>
-                            <constraint firstItem="nWv-VG-IT8" firstAttribute="top" secondItem="UHD-m7-e7V" secondAttribute="top" id="Hje-vs-9eR"/>
-                            <constraint firstItem="YzJ-Y3-udb" firstAttribute="leading" secondItem="jn6-8Q-6By" secondAttribute="leading" constant="-5" id="JWr-c3-X3b"/>
-                            <constraint firstItem="YzJ-Y3-udb" firstAttribute="top" secondItem="I3n-kn-TsD" secondAttribute="bottom" constant="35" id="Mlu-dE-EMr"/>
-                            <constraint firstItem="nWv-VG-IT8" firstAttribute="centerX" secondItem="jn6-8Q-6By" secondAttribute="centerX" constant="-11.5" id="QK2-jl-PuG"/>
-                            <constraint firstItem="5MV-Ha-pS8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-25" id="QUr-Fy-6hh"/>
-                            <constraint firstItem="I3n-kn-TsD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Qcq-H4-hba"/>
-                            <constraint firstItem="AMp-R4-Mfy" firstAttribute="trailing" secondItem="Zm8-h9-Qfo" secondAttribute="trailing" constant="-15" id="TeX-hx-6dN"/>
-                            <constraint firstItem="5tn-0C-CFT" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="UW1-Sh-6KW"/>
-                            <constraint firstItem="Zm8-h9-Qfo" firstAttribute="top" secondItem="AMp-R4-Mfy" secondAttribute="bottom" constant="-8" id="Uh2-8r-nXi"/>
-                            <constraint firstItem="5tn-0C-CFT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1.5" id="Wcu-iE-67t"/>
-                            <constraint firstItem="5tn-0C-CFT" firstAttribute="top" secondItem="nWv-VG-IT8" secondAttribute="bottom" constant="29" id="ZMe-1d-QV5"/>
-                            <constraint firstItem="5tn-0C-CFT" firstAttribute="centerX" secondItem="dkY-qd-9hM" secondAttribute="centerX" id="aCr-b8-6Ka"/>
-                            <constraint firstItem="I3n-kn-TsD" firstAttribute="trailing" secondItem="AMp-R4-Mfy" secondAttribute="trailing" id="b1s-82-lfC"/>
-                            <constraint firstItem="5MV-Ha-pS8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-50" id="e0R-qu-l9j"/>
-                            <constraint firstItem="5MV-Ha-pS8" firstAttribute="centerY" secondItem="AMp-R4-Mfy" secondAttribute="centerY" constant="-10" id="epn-4e-zcg"/>
-                            <constraint firstItem="UHD-m7-e7V" firstAttribute="top" secondItem="Bj6-xD-dfa" secondAttribute="bottom" constant="5" id="fak-d3-kdg"/>
-                            <constraint firstItem="nWv-VG-IT8" firstAttribute="top" secondItem="jn6-8Q-6By" secondAttribute="bottom" constant="7" id="iV6-uP-5i6"/>
-                            <constraint firstItem="AMp-R4-Mfy" firstAttribute="leading" secondItem="Zm8-h9-Qfo" secondAttribute="leading" constant="15" id="j8r-Ob-ps4"/>
-                            <constraint firstItem="5MV-Ha-pS8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-54" id="lvP-gf-1DZ"/>
-                            <constraint firstItem="5MV-Ha-pS8" firstAttribute="top" secondItem="I3n-kn-TsD" secondAttribute="bottom" constant="1" id="mGZ-HN-Gn7"/>
-                            <constraint firstItem="dkY-qd-9hM" firstAttribute="centerX" secondItem="I3n-kn-TsD" secondAttribute="centerX" id="mcv-if-8cs"/>
-                            <constraint firstItem="Zm8-h9-Qfo" firstAttribute="top" secondItem="YzJ-Y3-udb" secondAttribute="top" id="nHp-l0-bFh"/>
-                            <constraint firstItem="YzJ-Y3-udb" firstAttribute="leading" secondItem="I3n-kn-TsD" secondAttribute="leading" constant="-16" id="nZR-fZ-cbU"/>
-                            <constraint firstItem="UHD-m7-e7V" firstAttribute="leading" secondItem="nWv-VG-IT8" secondAttribute="trailing" constant="35" id="nfq-PS-Hhc"/>
-                            <constraint firstItem="YzJ-Y3-udb" firstAttribute="leading" secondItem="5MV-Ha-pS8" secondAttribute="trailing" constant="-144" id="oIz-RS-VUE"/>
-                            <constraint firstItem="5tn-0C-CFT" firstAttribute="top" secondItem="dkY-qd-9hM" secondAttribute="bottom" constant="-4" id="vao-5g-tyr"/>
-                            <constraint firstItem="Bj6-xD-dfa" firstAttribute="leading" secondItem="jn6-8Q-6By" secondAttribute="trailing" constant="2" id="wZW-Am-adc"/>
-                            <constraint firstItem="AMp-R4-Mfy" firstAttribute="leading" secondItem="5MV-Ha-pS8" secondAttribute="trailing" constant="50" id="yj4-JZ-w1y"/>
-                            <constraint firstItem="Bj6-xD-dfa" firstAttribute="top" secondItem="Zm8-h9-Qfo" secondAttribute="bottom" constant="8" symbolic="YES" id="zdN-ZH-vHK"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="e0R-qu-l9j"/>
-                                <exclude reference="lvP-gf-1DZ"/>
-                                <exclude reference="j8r-Ob-ps4"/>
-                                <exclude reference="yj4-JZ-w1y"/>
-                                <exclude reference="nHp-l0-bFh"/>
-                                <exclude reference="QK2-jl-PuG"/>
-                            </mask>
-                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Calorie Calculator" image="Food" id="YRU-JD-hZh"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
