@@ -52,6 +52,8 @@
     
     [[NSUserDefaults standardUserDefaults] setValue:text forKey:@"bathroomNotes"];
     
+    [self.navigationController popViewControllerAnimated:YES];
+    
 }
 
 - (void)viewDidLoad {

@@ -59,6 +59,8 @@
     NSString *text = self.textView.text;
     
     [[NSUserDefaults standardUserDefaults] setValue:text forKey:@"campingNotes"];
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)viewDidLoad {

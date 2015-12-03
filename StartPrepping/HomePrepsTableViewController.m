@@ -52,6 +52,8 @@ NSString *text = self.textView.text;
 
 [[NSUserDefaults standardUserDefaults] setValue:text forKey:@"homePrepsNotes"];
 
+[self.navigationController popViewControllerAnimated:YES];
+
 }
 
 

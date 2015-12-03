@@ -42,6 +42,8 @@
     
     [[NSUserDefaults standardUserDefaults] setValue:text forKey:@"kitchenNotes"];
     
+    [self.navigationController popViewControllerAnimated:YES];
+    
 }
 
 - (void)viewDidLoad {

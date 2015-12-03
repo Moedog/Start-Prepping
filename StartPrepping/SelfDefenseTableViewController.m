@@ -39,6 +39,8 @@
     NSString *text = self.textView.text;
     
     [[NSUserDefaults standardUserDefaults] setValue:text forKey:@"defenseNotes"];
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)viewDidLoad {
