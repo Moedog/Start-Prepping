@@ -8,9 +8,9 @@
 
 #import "InvestmentViewController.h"
 
-NSString * const goldValue = @"1110";
+NSString * const goldValue = @"1100";
 NSString * const silverValue = @"15";
-NSString * const bitcoinValue = @"245";
+NSString * const bitcoinValue = @"350";
 
 @interface InvestmentViewController ()
 
@@ -67,7 +67,7 @@ NSString * const bitcoinValue = @"245";
 //  GOLD
 - (IBAction)currencyChanged:(id)sender {
     if (self.currencySegment.selectedSegmentIndex == 0) {
-        self.currentValueLabel.text = @"GOLD - Aprox. Current Value: $1110/oz.";
+        self.currentValueLabel.text = @"GOLD - Aprox. Current Value: $1100/oz.";
         self.currencyAmount.text = @"Amount of Gold To Purchase (oz.)";
         self.currencyDollars.text = @"Amount of Dollars To Invest";
 //        NSInteger calculateCostOfUnits = goldValue * self.currencyAmount.text
@@ -82,7 +82,7 @@ NSString * const bitcoinValue = @"245";
 //        self.valueInDollars.text = @"That amount is currently worth @%f dollars.";
  // BITCOIN
     }else if (self.currencySegment.selectedSegmentIndex == 2) {
-        self.currentValueLabel.text = @"BITCOIN - Aprox. Current Value: $245/bitcoin";
+        self.currentValueLabel.text = @"BITCOIN - Aprox. Current Value: $350/bitcoin";
         self.currencyAmount.text = @"Amount of Bitcoin To Purchase";
         self.currencyDollars.text = @"Amount of Dollars To Invest";
 //        self.valueInCurrency.text = @"That amount is currently worth @%f bitcoin.";
