@@ -43,7 +43,6 @@ self.view.backgroundColor = [UIColor whiteColor];
         
         return cell;
 }
-    
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
